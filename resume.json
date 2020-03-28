@@ -1,0 +1,48 @@
+{
+    "name": "Kevin Miller",
+    "phone" : "3174500255",
+    "email" : "kemiller2002@gmail.com",
+    "website" : "http://StructuredSight.com",
+    "github" : "https://github.com/kemiller2002",
+    "address" : {
+        "line": ["6312 N. Rural St."]
+        ,"city" : "Indianapolis"
+        ,"state" : "IN"
+        ,"zip" : "46220"
+    },
+    "education" : [
+        {
+            "institution" : "Kalamazoo College"
+            ,"degree" : "B.A."
+            ,"study" : "Psychology (Cognition, Learning)"
+            ,"start" : "1996"
+            ,"end" : "2000"
+            ,"awards" : ["Award for Excellence in Education", "Academic Scholaship"]
+        }
+    ],
+    "awards" : ["Microsft MVP 2016"]
+    ,"projects" : ["Book of F# - Technical Reviewer"]
+    ,"presentations" : [
+        "Covariance and Contravariance in C#"
+        ,"Code Contracts"
+        ,"Agile and Scrum using Team Foundation Server"
+        ,"Dynamic Language Runtime in C# 4.0"
+        ,"Introduction to JavaScript"
+        ,"Code Contracts in .Net 4.0"
+        ,"Currying in JavaScript"
+        ,"Attacking the System: SQL Injection Attacks"
+        ,"Social Engineering"
+        ,"Introduction to F#"
+        ,"Introduction to LINQ"
+        ,"The Social Engineering Savants – The Psychopathic Profile"
+        ,"Hacking .NET and IIS"
+        ,"Creating an Application Performance Monitoring Solution for .NET Applications"
+        ,"New Features in C# 7"
+        ,"Functional Programming in C#"
+        ,"Dependency Injection"
+        ,"My Team is Awesome and Yours Is Too"
+    ]
+
+
+
+}
