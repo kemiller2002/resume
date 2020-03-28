@@ -44,7 +44,119 @@
     ]
 
     ,"employment": [
+
         {
+            "company" : "T2 Systems"
+            ,"start" : {"month" : "October", "year": "2018"}
+            ,"end" : {"month" : "January", "year": "2020"}
+            ,"projects" : [{
+                "title" : "Data Archival Project"
+                ,"description": ""
+                ,"responsibilities" : [
+                    "System architecture design.",
+                    "Lead developer."
+                ]
+            }
+            ,{
+                "title" : ".NET CLR Profiler"
+                ,"description": ""
+                ,"responsibilities" : [
+                ]
+            }
+            ,{
+                "title" : "TCC Lunch and Learns"
+                ,"description": ""
+                ,"responsibilities" : [
+                ]
+            },
+            {
+                "title" : "Software Development Restructuring Initiative"
+                ,"description": ""
+                ,"responsibilities" : [
+                ]
+            },
+            {
+                "title" : "Single Signon Architecture"
+                ,"description": ""
+                ,"responsibilities" : [
+                ]
+            },
+            {
+                "title" : "Database Administration"
+                ,"description": ""
+                ,"responsibilities" : [
+                ]
+            }
+
+
+            ]
+            
+            ,"technologies" : [
+                "C#", "F#", "ASP.NET (Web API)", "TSQL", "JavaScript", "TypeScript", "React", "C++", "Assembly - MASM"
+            ]
+
+            ,"responsbilities":[
+                "Azure DevOps Administrator."
+                ,"Load Testing"
+                ,"Architectural Project Reviews."
+                ,"Extract Transform and Load Programs."
+                ,"Design Discussion and Prototyping of Application Migration to Azure."
+            ]
+        }
+        ,{
+            "company" : "TCC Software Solutions"
+            ,"start" : {"month" : "April", "year": "2015"}
+            ,"end" : {"month" : "September", "year": "2018"}
+            ,"projects" : [{
+                "title" : "Department of Natural Resources Project – Unity"
+                ,"description": "A complete rewrite of the existing legacy system designed to track all information concerning water quantity and location (streams, lakes, dams, wells, etc.)."
+                ,"responsibilities" : [
+                    "System architecture design.",
+                    "Software configuration management design and administration.",
+                    "Lead developer."
+                ]
+            }
+            ,{
+                "title" : "Microsoft Partnership Coordination"
+                ,"description": "TCC has a gold partnership with Microsoft granting special licensing, training, and sales opportunities"
+                ,"responsibilities" : [
+                    "Demonstrated to senior management its importance and benefits."
+                    ,"Administrated all aspects of the program."
+                    ,"Reviewed licenses available to TCC through the program and aligned sales, marketing, and operations needs with available software."
+                    ,"Realigned developer necessities with available software."
+                ]
+            }
+            ,{
+                "title" : "Internship Program"
+                ,"description": "A community outreach program designed to evaluate and hire students after graduating."
+                ,"responsibilities" : [
+                    "Evaluated and hired students interested in development."
+                    ,"Trained interns and managed projects (System Monitoring, Applicant Tracking, TypeScript Parser and CodeMap Generator, Real Time Server Monitoring System)."
+                ]
+            },
+            {
+                "title" : "TCC Meetup"
+                ,"description": "A monthly meetup group designed to engage the community for the purposes of training the TCC staff and helping with name recognition.  "
+                ,"responsibilities" : [
+                    "Initial idea and group creation."
+                    ,"Reviewed and recruited both staff and people outside of TCC to give presentations."
+                    ,"Handled community outreach initiatives to attract people outside of TCC to attend."
+                ]
+            }
+
+
+            ]
+            ,"technologies" : [
+                "C#", "F#", "ASP.NET (Web API)", "TSQL", "JavaScript", "TypeScript", "AngularJS (1.x – 2)"
+            ]
+            ,"responsbilities":[
+                "Team Foundation Server Administrator."
+                ,"Development Manager."
+                ,"Special Development Initiaves."
+            ]
+        }
+
+        ,{
             "company" : "Infinite AI"
             ,"start" : {"month" : "November", "year": "2014"}
             ,"end" : {"month" : "March", "year": "2015"}
@@ -70,7 +182,9 @@
 
             ]
             ,"description" : "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring."
-            ,"technologies" : ["VBScript", "Classic ASP", "Visual Basic", "TSQL", "Delphi", "J++", "JavaScript", "C++", "Perl", "DB2 SQL"]
+            ,"technologies" : [
+                "C#", "F#", "ASP.NET (Web API)", "TSQL", "PowerShell", "JavaScript", "AngularJS"
+            ]
             ,"responsbilities":[
                 "Proposed and consulted with the infrastructure team to select and purchase network monitoring software to prepare for third party audits."
                 ,"Consulted with the infrastructure team on production application access."
