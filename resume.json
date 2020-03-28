@@ -26,7 +26,7 @@
         "Covariance and Contravariance in C#"
         ,"Code Contracts"
         ,"Agile and Scrum using Team Foundation Server"
-        ,"Dynamic Language Runtime in C# 4.0"
+        ,"Dynamic Language Runtime in C#"
         ,"Introduction to JavaScript"
         ,"Code Contracts in .Net 4.0"
         ,"Currying in JavaScript"
@@ -41,6 +41,8 @@
         ,"Functional Programming in C#"
         ,"Dependency Injection"
         ,"My Team is Awesome and Yours Is Too"
+        ,"Obfuscation in .NET"
+        ,"Regular Expressions"
     ]
 
     ,"employment": [
