@@ -43,6 +43,88 @@
         ,"My Team is Awesome and Yours Is Too"
     ]
 
+    ,"employment": [
+        {
+            "company" : "Infinite AI"
+            ,"start" : {"month" : "November", "year": "2014"}
+            ,"end" : {"month" : "March", "year": "2015"}
+            ,"projects" : [{
+                "title" : "Authorization AI"
+                ,"description": "The system responsible for handling authentication and authorization.  It allowed users to share a common logon across all products."
+                ,"responsibilities" : ["Architecture and system creation."]
+            }
+            ,{
+                "title" : "Workflow Engine"
+                ,"description": "The system designed to integrate into different modules requiring a state machine to administrate and track workflows."
+                ,"responsibilities" : ["Architecture and system creation."]
+            }
+            ,{
+                "title" : "Enterprise AI"
+                ,"description": "A series of independent modules with a common framework offered as a single package to consumers."
+                ,"responsibilities" : [
+                    "Design and implementation of the system to allow client segregated databases from a single implementation."
+                    ,"Module design and creation."
+                    ,"Refactoring and code optimization."
+                ]
+            }
+
+            ]
+            ,"description" : "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring."
+            ,"technologies" : ["VBScript", "Classic ASP", "Visual Basic", "TSQL", "Delphi", "J++", "JavaScript", "C++", "Perl", "DB2 SQL"]
+            ,"responsbilities":[
+                "Proposed and consulted with the infrastructure team to select and purchase network monitoring software to prepare for third party audits."
+                ,"Consulted with the infrastructure team on production application access."
+                ,"Created requirements for the software change management process.  Outlined the necessary steps and reviewed systems to provide recommendations on implementation."
+                ,"Provided requirements and proposed solution for an automation testing framework.  Helped with the initial training and implementation of the Ranorex test suite."
+                ,"Proposed and implemented the solution to track and report application performance."
+                ,"Proposed and helped implement Redis state server.  Consulted to provide access controls securing stored information against attack vectors."
+            ]
+        }
+        ,{
+            "company" : "Performance Assessment Network"
+            ,"start" : {"month" : "January", "year": "2007"}
+            ,"end" : {"month" : "November", "year": "2014"}
+            ,"accomplishments" : []
+            ,"description" : "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring."
+            ,"responsbilities": [] 
+            ,"technologies" : [
+                "C#",
+                "JavaScript",
+                "TSQL",
+                "PowerShell",
+                "F#",
+                "Python",
+                "ASP.NET (Web Forms & MVC",
+                "WCF",
+                "REST",
+                "LaTeX",
+                "TypeScript",
+                "Redis"
+            ]
+        }
+        ,{
+            "company" : "Union Acceptance Corporation"
+            ,"start" : {"month" : "June", "year": "2000"}
+            ,"end" : {"month" : "October", "year": "2003"}
+            ,"accomplishments" : []
+            ,"responsbilities": []
+            ,"technologies" : ["VBScript", "Classic ASP", "Visual Basic", "TSQL", "Delphi", "J++", "JavaScript", "C++", "Perl", "DB2 SQL"]
+
+        }
+    ,   {
+        "company" : "JPMorgan Chase"
+        ,"start" : {"month" : "October", "year": "2003"}
+        ,"end" : {"month" : "January", "year": "2007"}
+        ,"accomplishments" : []
+        ,"responsbilities": []
+        ,"technologies" : ["C#", "ASP (2.0, 3.0)", "Java", "TSQL", "Delphi", "J++", "JavaScript"]
+
+    }
+
+
+
+    ]
+
 
 
 }
