@@ -44,7 +44,28 @@
     ]
 
     ,"employment": [
+        {
+            "company" : "RenPSG"
+            ,"start" : {"month" : "October", "year": "2018"}
+            ,"projects" : [{
+                "title" : ""
+                ,"description": ""
+                ,"responsibilities" : [
+                    "System architecture."
+                ]
+            }
+            ]
+            
+            ,"technologies" : [
+                "C#", "ASP.NET Core (Web API)", "JavaScript", "TypeScript", "Aurelia", "Web Components"
+            ]
 
+            ,"responsbilities":[
+                "Code reviews."
+                ,"Training."
+                ,"Technology evaluation."
+            ]
+        },
         {
             "company" : "T2 Systems"
             ,"start" : {"month" : "October", "year": "2018"}
@@ -53,30 +74,36 @@
                 "title" : "Data Archival Project"
                 ,"description": ""
                 ,"responsibilities" : [
-                    "System architecture design.",
-                    "Lead developer."
+                    "System architecture.",
+                    "Sole developer."
                 ]
             }
             ,{
                 "title" : ".NET CLR Profiler"
                 ,"description": ""
                 ,"responsibilities" : [
+                    "System architecture.",
+                    "Sole developer."
                 ]
             }
             ,{
-                "title" : "TCC Lunch and Learns"
-                ,"description": ""
+                "title" : "T2 Lunch and Learns"
+                ,"description": "A semi-monthly activity where an internal or external person teaches the development group on a topic."
                 ,"responsibilities" : [
+                    "Initial idea and creation."
+                    ,"Internal and external speaker recruitment."
+                    ,"Topic selection."
+                    ,"Presenting."
                 ]
-            },
-            {
+            }
+            ,{
                 "title" : "Software Development Restructuring Initiative"
-                ,"description": ""
+                ,"description": "A team formed to evaulate the current process at T2 and devise solutions for problems and frustrations by the staff."
                 ,"responsibilities" : [
                 ]
-            },
-            {
-                "title" : "Single Signon Architecture"
+            }
+            ,{
+                "title" : "User Migration Strategy for New Architecture"
                 ,"description": ""
                 ,"responsibilities" : [
                 ]
@@ -85,6 +112,10 @@
                 "title" : "Database Administration"
                 ,"description": ""
                 ,"responsibilities" : [
+                    "Query optimizations"
+                    ,"Index optimzations"
+                    ,"Server performance monitoring and remediation"
+                    ,"Review and reccomenation of RTO and RPO schedules"
                 ]
             }
 
@@ -96,11 +127,11 @@
             ]
 
             ,"responsbilities":[
-                "Azure DevOps Administrator."
-                ,"Load Testing"
-                ,"Architectural Project Reviews."
-                ,"Extract Transform and Load Programs."
-                ,"Design Discussion and Prototyping of Application Migration to Azure."
+                "Azure DevOps administrator."
+                ,"Load testing"
+                ,"Architectural project reviews."
+                ,"Extract transform and load programs."
+                ,"Design discussion and prototyping of application migration to Azure."
             ]
         }
         ,{
@@ -153,6 +184,7 @@
                 "Team Foundation Server Administrator."
                 ,"Development Manager."
                 ,"Special Development Initiaves."
+                ,"Azure consultant."
             ]
         }
 
@@ -225,7 +257,7 @@
             ,"technologies" : ["VBScript", "Classic ASP", "Visual Basic", "TSQL", "Delphi", "J++", "JavaScript", "C++", "Perl", "DB2 SQL"]
 
         }
-    ,   {
+        ,{
         "company" : "JPMorgan Chase"
         ,"start" : {"month" : "October", "year": "2003"}
         ,"end" : {"month" : "January", "year": "2007"}
