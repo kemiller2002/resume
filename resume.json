@@ -48,22 +48,31 @@
     ,"employment": [
         {
             "company" : "RenPSG"
-            ,"start" : {"month" : "October", "year": "2018"}
+            ,"start" : {"month" : "January", "year": "2020"}
             ,"projects" : [{
-                "title" : ""
-                ,"description": ""
+                "title" : "Grant Form Reccomendation"
+                ,"description": "An evaulation of business processes, and development of a new application to update user interface for clients and drive greater effencies in the organization."
                 ,"responsibilities" : [
                     "System architecture."
+                    ,"Development."
+                ]
+            }, 
+            {
+                "title" : "Web Component Framework"
+                ,"description": "A user interface framwork designed specifically to handle the client branding requirements of RenPSG.  The component framework aimes to take the client for development from weeks to 3 days or less."
+                ,"responsibilities" : [
+                    "Technology and archtecture review."
+                    ,"Development."
+                    ,"Deverloper oversight."
                 ]
             }
-            ]
-            
+        ]
             ,"technologies" : [
-                "C#", "ASP.NET Core (Web API)", "JavaScript", "TypeScript", "Aurelia", "Web Components"
+                "C#", "ASP.NET Core (Web API)", "JavaScript", "TypeScript", "Aurelia", "Web Components, Git"
             ]
 
             ,"responsbilities":[
-                "Code reviews."
+                "Code reviews across all technologies."
                 ,"Training."
                 ,"Technology evaluation."
             ]
@@ -100,8 +109,12 @@
             }
             ,{
                 "title" : "Software Development Restructuring Initiative"
-                ,"description": "A team formed to evaulate the current process at T2 and devise solutions for problems and frustrations by the staff."
+                ,"description": "A team formed to evaulate the current Agile process at T2 and devise solutions for problems and frustrations by the staff."
                 ,"responsibilities" : [
+                    "Team co-chair."
+                    ,"Meet with executive staff members to determine direction."
+                    ,"Drive project goals within the team."
+                    ,"Facilitate discussion and determine underlying cause for ineffieciences and team frustrations."
                 ]
             }
             ,{
@@ -125,15 +138,16 @@
             ]
             
             ,"technologies" : [
-                "C#", "F#", "ASP.NET (Web API)", "TSQL", "JavaScript", "TypeScript", "React", "C++", "Assembly - MASM"
+                "C#", "F#", "ASP.NET (Web API)", "TSQL", "JavaScript", "TypeScript", "React", "C++", "Assembly - MASM", "Git"
             ]
 
             ,"responsbilities":[
                 "Azure DevOps administrator."
-                ,"Load testing"
+                ,"Load testing."
                 ,"Architectural project reviews."
                 ,"Extract transform and load programs."
                 ,"Design discussion and prototyping of application migration to Azure."
+                ,"PCI compliance liason for the T2 Ascent product."
             ]
         }
         ,{
@@ -144,7 +158,7 @@
                 "title" : "Department of Natural Resources Project – Unity"
                 ,"description": "A complete rewrite of the existing legacy system designed to track all information concerning water quantity and location (streams, lakes, dams, wells, etc.)."
                 ,"responsibilities" : [
-                    "System architecture design.",
+                    "System architecture.",
                     "Software configuration management design and administration.",
                     "Lead developer."
                 ]
@@ -176,11 +190,9 @@
                     ,"Handled community outreach initiatives to attract people outside of TCC to attend."
                 ]
             }
-
-
             ]
             ,"technologies" : [
-                "C#", "F#", "ASP.NET (Web API)", "TSQL", "JavaScript", "TypeScript", "AngularJS (1.x – 2)"
+                "C#", "F#", "ASP.NET (Web API)", "TSQL", "JavaScript", "TypeScript", "AngularJS (1.x – 2)", "Git"
             ]
             ,"responsbilities":[
                 "Team Foundation Server Administrator."
