@@ -21,6 +21,12 @@
         }
     ],
     "awards" : ["Microsft MVP 2016"]
+    ,"training" : [
+        {
+            "name": "Advanced Distributed System Design",
+            "certificate": "https://www.credential.net/b6685451-de2a-44ce-9436-dd9b52ca88a9"
+        }]
+
     ,"projects" : ["Book of F# - Technical Reviewer"]
     ,"presentations" : [
         "Covariance and Contravariance in C#"
@@ -50,10 +56,11 @@
             "company" : "RenPSG"
             ,"start" : {"month" : "January", "year": "2020"}
             ,"projects" : [{
-                "title" : "Grant Form Reccomendation"
-                ,"description": "An evaulation of business processes, and development of a new application to update user interface for clients and drive greater effencies in the organization."
+                "title" : "Grant Reccomendation Project"
+                ,"description": "          An evaluation of business processes, and development of a new application to update user interface for clients and drive greater efficiencies in the organization."
                 ,"responsibilities" : [
-                    "System architecture."
+                    "Lead architect on front end architecture."
+                    ,"General architect on service design."
                     ,"Development."
                 ]
             }, 
@@ -83,7 +90,7 @@
             ,"end" : {"month" : "January", "year": "2020"}
             ,"projects" : [{
                 "title" : "Data Archival Project"
-                ,"description": ""
+                ,"description": "System to scan the database for records meeting certain criteria, remove them from the client installation, send them to the center, and verify the contents with stored records."
                 ,"responsibilities" : [
                     "System architecture.",
                     "Sole developer."
@@ -125,7 +132,7 @@
             },
             {
                 "title" : "Database Administration"
-                ,"description": ""
+                ,"description": "Monitor the centeral transaction server and data warehouse MSSQL Servers along with troubleshooting the 300+ client SQL Server installations."
                 ,"responsibilities" : [
                     "Query optimizations"
                     ,"Index optimzations"
