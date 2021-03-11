@@ -56,8 +56,8 @@
             "company" : "RenPSG"
             ,"start" : {"month" : "January", "year": "2020"}
             ,"projects" : [{
-                "title" : "Grant Reccomendation Project"
-                ,"description": "          An evaluation of business processes, and development of a new application to update user interface for clients and drive greater efficiencies in the organization."
+                "title" : "Grant Recommendation Project"
+                ,"description": "An evaluation of business processes, and development of a new application to update user interface for clients and drive greater efficiencies in the organization."
                 ,"responsibilities" : [
                     "Lead architect on front end architecture."
                     ,"General architect on service design."
@@ -66,16 +66,16 @@
             }, 
             {
                 "title" : "Web Component Framework"
-                ,"description": "A user interface framwork designed specifically to handle the client branding requirements of RenPSG.  The component framework aimes to take the client for development from weeks to 3 days or less."
+                ,"description": "A user interface framework designed specifically to handle the client branding requirements of RenPSG.  The component framework aims to take the client for development from weeks to 3 days or less."
                 ,"responsibilities" : [
-                    "Technology and archtecture review."
+                    "Technology and architecture review."
                     ,"Development."
                     ,"Deverloper oversight."
                 ]
             }
         ]
             ,"technologies" : [
-                "C#", "ASP.NET Core (Web API)", "JavaScript", "TypeScript", "Aurelia", "Web Components, Git"
+                "C#", "ASP.NET Core (Web API)", "JavaScript", "TypeScript", "Aurelia", "Web Components", "Git", "Vue"
             ]
 
             ,"responsbilities":[
@@ -116,12 +116,12 @@
             }
             ,{
                 "title" : "Software Development Restructuring Initiative"
-                ,"description": "A team formed to evaulate the current Agile process at T2 and devise solutions for problems and frustrations by the staff."
+                ,"description": "A team formed to evaulate the current Agile process at T2 and devise and implement solutions for problems and frustrations by the staff."
                 ,"responsibilities" : [
-                    "Team co-chair."
+                    "Team co-chair over multiple initiatives."
                     ,"Meet with executive staff members to determine direction."
                     ,"Drive project goals within the team."
-                    ,"Facilitate discussion and determine underlying cause for ineffieciences and team frustrations."
+                    ,"Facilitate discussion and determine underlying cause for inefficiencies and team frustrations."
                 ]
             }
             ,{
@@ -132,12 +132,12 @@
             },
             {
                 "title" : "Database Administration"
-                ,"description": "Monitor the centeral transaction server and data warehouse MSSQL Servers along with troubleshooting the 300+ client SQL Server installations."
+                ,"description": "Monitor the central transaction server and data warehouse MSSQL Servers along with troubleshooting the 300+ client SQL Server installations."
                 ,"responsibilities" : [
                     "Query optimizations"
-                    ,"Index optimzations"
+                    ,"Index optimizations"
                     ,"Server performance monitoring and remediation"
-                    ,"Review and reccomenation of RTO and RPO schedules"
+                    ,"Review and recommendation of RTO and RPO schedules"
                 ]
             }
 
@@ -154,7 +154,7 @@
                 ,"Architectural project reviews."
                 ,"Extract transform and load programs."
                 ,"Design discussion and prototyping of application migration to Azure."
-                ,"PCI compliance liason for the T2 Ascent product."
+                ,"PCI compliance liaison for the T2 Ascent product."
             ]
         }
         ,{
@@ -207,7 +207,7 @@
                 ,"Special Development Initiaves."
                 ,"Azure consultant."
             ]
-        }
+        }   
 
         ,{
             "company" : "Infinite AI"
