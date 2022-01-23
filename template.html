@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <style>
+            @page {
+                margin: 30cm;
+            }
+
+            @media print {
+                div.divFooter {
+                    position: fixed;
+                    bottom: 0;
+                }
+            }
+
+            [header]{
+                margin-bottom:1em;
+            }
+
+            [organization-name]{
+                display:inline-block;
+            }
+
+            [technologies]{
+                display: block;
+                padding:1em;
+            }
+
+            [organization-details]{
+                display:flex;
+                flex-wrap: wrap;
+            }
+
+            [organization-details] > [organization-name]{
+                flex-grow: 3;
+            }
+
+            h1[technologies]{
+                font-size: medium;
+            }
+    </style>
+
+    </head>
+    <body>
+        <div header>
+            <h1 data-type="name">${name}</h1>
+            <section contact>
+                <span data-type="phone">${phone}</span>
+                <span data-type="email">${email}</span>
+            </section>
+        </div>
+    <div employment>
+        <section organization-details>
+            <div organization-name>${employment.name}</div>
+            <div start-date>${employment.startDate}</div>
+            <div end-date>${employment.endDate}</div>
+        </section>
+        <section technologies>
+            <h1 technologies>${employment.technologies}</h1>
+        </section>
+        <section project>
+            <span name>${employment.project.name}</span>
+            <span description>${employment.project.description}</span>
+            <ol responsibilities each="${employment.project.responsibilities}">
+                <li additional-responsibilities>${item.name}</li>
+            </ol>
+        </section>
+
+        <section additional>
+            <ul each="${employment.additionalResponsibilities}">
+               <li additional-responsibilities>${item.name}</li> 
+            </ul>
+        </section>
+        
+    </div>
+
+    </body>
+
+
+
+    <footer>
+        <contact>
+            ${name}
+        </contact>
+    </footer>
+
+    </html>

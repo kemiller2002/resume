@@ -1,297 +1,342 @@
 {
-    "name": "Kevin Miller",
-    "phone" : "3174500255",
-    "email" : "kemiller2002@gmail.com",
-    "website" : "http://StructuredSight.com",
-    "github" : "https://github.com/kemiller2002",
-    "address" : {
-        "line": ["6312 N. Rural St."]
-        ,"city" : "Indianapolis"
-        ,"state" : "IN"
-        ,"zip" : "46220"
-    },
-    "education" : [
-        {
-            "institution" : "Kalamazoo College"
-            ,"degree" : "B.A."
-            ,"study" : "Psychology (Cognition, Learning)"
-            ,"start" : "1996"
-            ,"end" : "2000"
-            ,"awards" : ["Award for Excellence in Education", "Academic Scholaship"]
-        }
-    ],
-    "awards" : ["Microsft MVP 2016"]
-    ,"training" : [
-        {
-            "name": "Advanced Distributed System Design",
-            "certificate": "https://www.credential.net/b6685451-de2a-44ce-9436-dd9b52ca88a9"
-        }]
+  "name": "Kevin Miller",
+  "phone": "3174500255",
+  "email": "kemiller2002@gmail.com",
+  "website": "http://StructuredSight.com",
+  "github": "https://github.com/kemiller2002",
+  "address": {
+    "line": ["6312 N. Rural St."],
+    "city": "Indianapolis",
+    "state": "IN",
+    "zip": "46220"
+  },
+  "education": [
+    {
+      "institution": "Kalamazoo College",
+      "degree": "B.A.",
+      "study": "Psychology (Cognition, Learning)",
+      "start": "1996",
+      "end": "2000",
+      "awards": ["Award for Excellence in Education", "Academic Scholarship"]
+    }
+  ],
+  "awards": ["Microsoft MVP 2016"],
+  "training": [
+    {
+      "name": "Advanced Distributed System Design",
+      "certificate": "https://www.credential.net/b6685451-de2a-44ce-9436-dd9b52ca88a9"
+    }
+  ],
 
-    ,"projects" : ["Book of F# - Technical Reviewer"]
-    ,"presentations" : [
-        "Covariance and Contravariance in C#"
-        ,"Code Contracts"
-        ,"Agile and Scrum using Team Foundation Server"
-        ,"Dynamic Language Runtime in C#"
-        ,"Introduction to JavaScript"
-        ,"Code Contracts in .Net 4.0"
-        ,"Currying in JavaScript"
-        ,"Attacking the System: SQL Injection Attacks"
-        ,"Social Engineering"
-        ,"Introduction to F#"
-        ,"Introduction to LINQ"
-        ,"The Social Engineering Savants – The Psychopathic Profile"
-        ,"Hacking .NET and IIS"
-        ,"Creating an Application Performance Monitoring Solution for .NET Applications"
-        ,"New Features in C# 7"
-        ,"Functional Programming in C#"
-        ,"Dependency Injection"
-        ,"My Team is Awesome and Yours Is Too"
-        ,"Obfuscation in .NET"
-        ,"Regular Expressions"
-    ]
+  "projects": ["Book of F# - Technical Reviewer"],
+  "presentations": [
+    "Covariance and Contravariance in C#",
+    "Code Contracts",
+    "Agile and Scrum using Team Foundation Server",
+    "Dynamic Language Runtime in C#",
+    "Introduction to JavaScript",
+    "Code Contracts in .Net 4.0",
+    "Currying in JavaScript",
+    "Attacking the System: SQL Injection Attacks",
+    "Social Engineering",
+    "Introduction to F#",
+    "Introduction to LINQ",
+    "The Social Engineering Savants – The Psychopathic Profile",
+    "Hacking .NET and IIS",
+    "Creating an Application Performance Monitoring Solution for .NET Applications",
+    "New Features in C# 7",
+    "Functional Programming in C#",
+    "Dependency Injection",
+    "My Team is Awesome and Yours Is Too",
+    "Obfuscation in .NET",
+    "Regular Expressions"
+  ],
 
-    ,"employment": [
+  "employment": [
+    {
+      "company": "RenPSG",
+      "start": { "month": "January", "year": "2020" },
+      "projects": [
         {
-            "company" : "RenPSG"
-            ,"start" : {"month" : "January", "year": "2020"}
-            ,"projects" : [{
-                "title" : "Grant Recommendation Project"
-                ,"description": "An evaluation of business processes, and development of a new application to update user interface for clients and drive greater efficiencies in the organization."
-                ,"responsibilities" : [
-                    "Lead architect on front end architecture."
-                    ,"General architect on service design."
-                    ,"Development."
-                ]
-            }, 
-            {
-                "title" : "Web Component Framework"
-                ,"description": "A user interface framework designed specifically to handle the client branding requirements of RenPSG.  The component framework aims to take the client for development from weeks to 3 days or less."
-                ,"responsibilities" : [
-                    "Technology and architecture review."
-                    ,"Development."
-                    ,"Deverloper oversight."
-                ]
-            }
-        ]
-            ,"technologies" : [
-                "C#", "ASP.NET Core (Web API)", "JavaScript", "TypeScript", "Aurelia", "Web Components", "Git", "Vue"
-            ]
-
-            ,"responsbilities":[
-                "Code reviews across all technologies."
-                ,"Training."
-                ,"Technology evaluation."
-            ]
+          "title": "Grant Recommendation Project",
+          "description": "An evaluation of business processes, and development of a new application to update user interface for clients and drive greater efficiencies in the organization.",
+          "responsibilities": [
+            "Lead architect on front end architecture.",
+            "General architect on service design.",
+            "Development."
+          ],
+          "display": "none"
         },
         {
-            "company" : "T2 Systems"
-            ,"start" : {"month" : "October", "year": "2018"}
-            ,"end" : {"month" : "January", "year": "2020"}
-            ,"projects" : [{
-                "title" : "Data Archival Project"
-                ,"description": "System to scan the database for records meeting certain criteria, remove them from the client installation, send them to the center, and verify the contents with stored records."
-                ,"responsibilities" : [
-                    "System architecture.",
-                    "Sole developer."
-                ]
-            }
-            ,{
-                "title" : ".NET CLR Profiler"
-                ,"description": ""
-                ,"responsibilities" : [
-                    "System architecture.",
-                    "Sole developer."
-                ]
-            }
-            ,{
-                "title" : "T2 Lunch and Learns"
-                ,"description": "A semi-monthly activity where an internal or external person teaches the development group on a topic."
-                ,"responsibilities" : [
-                    "Initial idea and creation."
-                    ,"Internal and external speaker recruitment."
-                    ,"Topic selection."
-                    ,"Presenting."
-                ]
-            }
-            ,{
-                "title" : "Software Development Restructuring Initiative"
-                ,"description": "A team formed to evaulate the current Agile process at T2 and devise and implement solutions for problems and frustrations by the staff."
-                ,"responsibilities" : [
-                    "Team co-chair over multiple initiatives."
-                    ,"Meet with executive staff members to determine direction."
-                    ,"Drive project goals within the team."
-                    ,"Facilitate discussion and determine underlying cause for inefficiencies and team frustrations."
-                ]
-            }
-            ,{
-                "title" : "User Migration Strategy for New Architecture"
-                ,"description": ""
-                ,"responsibilities" : [
-                ]
-            },
-            {
-                "title" : "Database Administration"
-                ,"description": "Monitor the central transaction server and data warehouse MSSQL Servers along with troubleshooting the 300+ client SQL Server installations."
-                ,"responsibilities" : [
-                    "Query optimizations"
-                    ,"Index optimizations"
-                    ,"Server performance monitoring and remediation"
-                    ,"Review and recommendation of RTO and RPO schedules"
-                ]
-            }
-
-
-            ]
-            
-            ,"technologies" : [
-                "C#", "F#", "ASP.NET (Web API)", "TSQL", "JavaScript", "TypeScript", "React", "C++", "Assembly - MASM", "Git"
-            ]
-
-            ,"responsbilities":[
-                "Azure DevOps administrator."
-                ,"Load testing."
-                ,"Architectural project reviews."
-                ,"Extract transform and load programs."
-                ,"Design discussion and prototyping of application migration to Azure."
-                ,"PCI compliance liaison for the T2 Ascent product."
-            ]
+          "title": "Microsite portal implementation",
+          "description": "Refactor legacy portal into smaller composable systems to allow segregated rapid development and deployment",
+          "responsibilities": ["Lead architect", "Development"]
+        },
+        {
+          "title": "Microservice implementation",
+          "description": "Transform underlying application model and processes into a service based architecture meshed through GraphQL",
+          "responsibilities": ["Architect", "Development"]
+        },
+        {
+          "title": "Legacy portal stabilization initiative",
+          "description": "Assumed control of all aspects of legacy portal system, concerning stability.  Reorganized and set path for branching strategy and ",
+          "responsibilities": ["Architect", "Development"],
+          "display": "none"
         }
-        ,{
-            "company" : "TCC Software Solutions"
-            ,"start" : {"month" : "April", "year": "2015"}
-            ,"end" : {"month" : "September", "year": "2018"}
-            ,"projects" : [{
-                "title" : "Department of Natural Resources Project – Unity"
-                ,"description": "A complete rewrite of the existing legacy system designed to track all information concerning water quantity and location (streams, lakes, dams, wells, etc.)."
-                ,"responsibilities" : [
-                    "System architecture.",
-                    "Software configuration management design and administration.",
-                    "Lead developer."
-                ]
-            }
-            ,{
-                "title" : "Microsoft Partnership Coordination"
-                ,"description": "TCC has a gold partnership with Microsoft granting special licensing, training, and sales opportunities"
-                ,"responsibilities" : [
-                    "Demonstrated to senior management its importance and benefits."
-                    ,"Administrated all aspects of the program."
-                    ,"Reviewed licenses available to TCC through the program and aligned sales, marketing, and operations needs with available software."
-                    ,"Realigned developer necessities with available software."
-                ]
-            }
-            ,{
-                "title" : "Internship Program"
-                ,"description": "A community outreach program designed to evaluate and hire students after graduating."
-                ,"responsibilities" : [
-                    "Evaluated and hired students interested in development."
-                    ,"Trained interns and managed projects (System Monitoring, Applicant Tracking, TypeScript Parser and CodeMap Generator, Real Time Server Monitoring System)."
-                ]
-            },
-            {
-                "title" : "TCC Meetup"
-                ,"description": "A monthly meetup group designed to engage the community for the purposes of training the TCC staff and helping with name recognition.  "
-                ,"responsibilities" : [
-                    "Initial idea and group creation."
-                    ,"Reviewed and recruited both staff and people outside of TCC to give presentations."
-                    ,"Handled community outreach initiatives to attract people outside of TCC to attend."
-                ]
-            }
-            ]
-            ,"technologies" : [
-                "C#", "F#", "ASP.NET (Web API)", "TSQL", "JavaScript", "TypeScript", "AngularJS (1.x – 2)", "Git"
-            ]
-            ,"responsbilities":[
-                "Team Foundation Server Administrator."
-                ,"Development Manager."
-                ,"Special Development Initiaves."
-                ,"Azure consultant."
-            ]
-        }   
+      ],
+      "technologies": [
+        "C#",
+        ".NET Core",
+        "JavaScript",
+        "TypeScript",
+        "Aurelia",
+        "Web Components",
+        "Git",
+        "Vue.js",
+        "Microservices",
+        "SQL Server"
+      ],
 
-        ,{
-            "company" : "Infinite AI"
-            ,"start" : {"month" : "November", "year": "2014"}
-            ,"end" : {"month" : "March", "year": "2015"}
-            ,"projects" : [{
-                "title" : "Authorization AI"
-                ,"description": "The system responsible for handling authentication and authorization.  It allowed users to share a common logon across all products."
-                ,"responsibilities" : ["Architecture and system creation."]
-            }
-            ,{
-                "title" : "Workflow Engine"
-                ,"description": "The system designed to integrate into different modules requiring a state machine to administrate and track workflows."
-                ,"responsibilities" : ["Architecture and system creation."]
-            }
-            ,{
-                "title" : "Enterprise AI"
-                ,"description": "A series of independent modules with a common framework offered as a single package to consumers."
-                ,"responsibilities" : [
-                    "Design and implementation of the system to allow client segregated databases from a single implementation."
-                    ,"Module design and creation."
-                    ,"Refactoring and code optimization."
-                ]
-            }
-
-            ]
-            ,"description" : "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring."
-            ,"technologies" : [
-                "C#", "F#", "ASP.NET (Web API)", "TSQL", "PowerShell", "JavaScript", "AngularJS"
-            ]
-            ,"responsbilities":[
-                "Proposed and consulted with the infrastructure team to select and purchase network monitoring software to prepare for third party audits."
-                ,"Consulted with the infrastructure team on production application access."
-                ,"Created requirements for the software change management process.  Outlined the necessary steps and reviewed systems to provide recommendations on implementation."
-                ,"Provided requirements and proposed solution for an automation testing framework.  Helped with the initial training and implementation of the Ranorex test suite."
-                ,"Proposed and implemented the solution to track and report application performance."
-                ,"Proposed and helped implement Redis state server.  Consulted to provide access controls securing stored information against attack vectors."
-            ]
+      "responsibilities": [
+        { "Training": [] },
+        "Technology and architectural review",
+        "Mentorship"
+      ]
+    },
+    {
+      "company": "T2 Systems",
+      "start": { "month": "October", "year": "2018" },
+      "end": { "month": "January", "year": "2020" },
+      "projects": [
+        {
+          "title": "Data Archival Project",
+          "description": "System to scan the database for records meeting certain criteria, remove them from the client installation, send them to the center, and verify the contents with stored records.",
+          "responsibilities": ["System architecture.", "Development."]
+        },
+        {
+          "title": ".NET CLR Profiler",
+          "description": "",
+          "responsibilities": ["System architecture.", "Development"]
+        },
+        {
+          "title": "T2 Lunch and Learns",
+          "description": "A semi-monthly activity where an internal or external person teaches the development group on a topic.",
+          "responsibilities": [
+            "Initial idea and creation.",
+            "Internal and external speaker recruitment.",
+            "Topic selection.",
+            "Presenting."
+          ]
+        },
+        {
+          "title": "Software Development Restructuring Initiative",
+          "description": "A team formed to evaulate the current Agile process at T2 and devise and implement solutions for problems and frustrations by the staff.",
+          "responsibilities": [
+            "Team co-chair over multiple initiatives.",
+            "Meet with executive staff members to determine direction.",
+            "Drive project goals within the team.",
+            "Facilitate discussion and determine underlying cause for inefficiencies and team frustrations."
+          ]
+        },
+        {
+          "title": "User Migration Strategy for New Architecture",
+          "description": "",
+          "responsibilities": []
+        },
+        {
+          "title": "Database Administration",
+          "description": "Monitor the central transaction server and data warehouse MSSQL Servers along with troubleshooting the 300+ client SQL Server installations.",
+          "responsibilities": [
+            "Query optimizations",
+            "Index optimizations",
+            "Server performance monitoring and remediation",
+            "Review and recommendation of RTO and RPO schedules"
+          ]
         }
-        ,{
-            "company" : "Performance Assessment Network"
-            ,"start" : {"month" : "January", "year": "2007"}
-            ,"end" : {"month" : "November", "year": "2014"}
-            ,"accomplishments" : []
-            ,"description" : "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring."
-            ,"responsbilities": [] 
-            ,"technologies" : [
-                "C#",
-                "JavaScript",
-                "TSQL",
-                "PowerShell",
-                "F#",
-                "Python",
-                "ASP.NET (Web Forms & MVC",
-                "WCF",
-                "REST",
-                "LaTeX",
-                "TypeScript",
-                "Redis"
-            ]
-        }
-        ,{
-            "company" : "Union Acceptance Corporation"
-            ,"start" : {"month" : "June", "year": "2000"}
-            ,"end" : {"month" : "October", "year": "2003"}
-            ,"accomplishments" : []
-            ,"responsbilities": []
-            ,"technologies" : ["VBScript", "Classic ASP", "Visual Basic", "TSQL", "Delphi", "J++", "JavaScript", "C++", "Perl", "DB2 SQL"]
+      ],
 
-        }
-        ,{
-        "company" : "JPMorgan Chase"
-        ,"start" : {"month" : "October", "year": "2003"}
-        ,"end" : {"month" : "January", "year": "2007"}
-        ,"accomplishments" : []
-        ,"responsbilities": []
-        ,"technologies" : ["C#", "ASP (2.0, 3.0)", "Java", "TSQL", "Delphi", "J++", "JavaScript"]
+      "technologies": [
+        "C#",
+        "F#",
+        "ASP.NET (Web API)",
+        "TSQL",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "C++",
+        "Assembly - MASM",
+        "Git"
+      ],
 
+      "responsbilities": [
+        "Azure DevOps administrator.",
+        "Load testing.",
+        "Architectural project reviews.",
+        "Extract transform and load programs.",
+        "Design discussion and prototyping of application migration to Azure.",
+        "PCI compliance liaison for the T2 Ascent product."
+      ]
+    },
+    {
+      "company": "TCC Software Solutions",
+      "start": { "month": "April", "year": "2015" },
+      "end": { "month": "September", "year": "2018" },
+      "projects": [
+        {
+          "title": "Department of Natural Resources Project – Unity",
+          "description": "A complete rewrite of the existing legacy system designed to track all information concerning water quantity and location (streams, lakes, dams, wells, etc.).",
+          "responsibilities": [
+            "System architecture.",
+            "Software configuration management design and administration.",
+            "Lead developer."
+          ]
+        },
+        {
+          "title": "Microsoft Partnership Coordination",
+          "description": "TCC has a gold partnership with Microsoft granting special licensing, training, and sales opportunities",
+          "responsibilities": [
+            "Demonstrated to senior management its importance and benefits.",
+            "Administrated all aspects of the program.",
+            "Reviewed licenses available to TCC through the program and aligned sales, marketing, and operations needs with available software.",
+            "Realigned developer necessities with available software."
+          ]
+        },
+        {
+          "title": "Internship Program",
+          "description": "A community outreach program designed to evaluate and hire students after graduating.",
+          "responsibilities": [
+            "Evaluated and hired students interested in development.",
+            "Trained interns and managed projects (System Monitoring, Applicant Tracking, TypeScript Parser and CodeMap Generator, Real Time Server Monitoring System)."
+          ]
+        },
+        {
+          "title": "TCC Meetup",
+          "description": "A monthly meetup group designed to engage the community for the purposes of training the TCC staff and helping with name recognition.  ",
+          "responsibilities": [
+            "Initial idea and group creation.",
+            "Reviewed and recruited both staff and people outside of TCC to give presentations.",
+            "Handled community outreach initiatives to attract people outside of TCC to attend."
+          ]
+        }
+      ],
+      "technologies": [
+        "C#",
+        "F#",
+        "ASP.NET (Web API)",
+        "TSQL",
+        "JavaScript",
+        "TypeScript",
+        "AngularJS (1.x – 2)",
+        "Git"
+      ],
+      "responsbilities": [
+        "Team Foundation Server Administrator.",
+        "Development Manager.",
+        "Special Development Initiaves.",
+        "Azure consultant."
+      ]
+    },
+
+    {
+      "company": "Infinite AI",
+      "start": { "month": "November", "year": "2014" },
+      "end": { "month": "March", "year": "2015" },
+      "projects": [
+        {
+          "title": "Authorization AI",
+          "description": "The system responsible for handling authentication and authorization.  It allowed users to share a common logon across all products.",
+          "responsibilities": ["Architecture and system creation."]
+        },
+        {
+          "title": "Workflow Engine",
+          "description": "The system designed to integrate into different modules requiring a state machine to administrate and track workflows.",
+          "responsibilities": ["Architecture and system creation."]
+        },
+        {
+          "title": "Enterprise AI",
+          "description": "A series of independent modules with a common framework offered as a single package to consumers.",
+          "responsibilities": [
+            "Design and implementation of the system to allow client segregated databases from a single implementation.",
+            "Module design and creation.",
+            "Refactoring and code optimization."
+          ]
+        }
+      ],
+      "description": "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring.",
+      "technologies": [
+        "C#",
+        "F#",
+        "ASP.NET (Web API)",
+        "TSQL",
+        "PowerShell",
+        "JavaScript",
+        "AngularJS"
+      ],
+      "responsbilities": [
+        "Proposed and consulted with the infrastructure team to select and purchase network monitoring software to prepare for third party audits.",
+        "Consulted with the infrastructure team on production application access.",
+        "Created requirements for the software change management process.  Outlined the necessary steps and reviewed systems to provide recommendations on implementation.",
+        "Provided requirements and proposed solution for an automation testing framework.  Helped with the initial training and implementation of the Ranorex test suite.",
+        "Proposed and implemented the solution to track and report application performance.",
+        "Proposed and helped implement Redis state server.  Consulted to provide access controls securing stored information against attack vectors."
+      ]
+    },
+    {
+      "company": "Performance Assessment Network",
+      "start": { "month": "January", "year": "2007" },
+      "end": { "month": "November", "year": "2014" },
+      "accomplishments": [],
+      "description": "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring.",
+      "responsbilities": [],
+      "technologies": [
+        "C#",
+        "JavaScript",
+        "TSQL",
+        "PowerShell",
+        "F#",
+        "Python",
+        "ASP.NET (Web Forms & MVC",
+        "WCF",
+        "REST",
+        "LaTeX",
+        "TypeScript",
+        "Redis"
+      ]
+    },
+    {
+      "company": "Union Acceptance Corporation",
+      "start": { "month": "June", "year": "2000" },
+      "end": { "month": "October", "year": "2003" },
+      "accomplishments": [],
+      "responsbilities": [],
+      "technologies": [
+        "VBScript",
+        "Classic ASP",
+        "Visual Basic",
+        "TSQL",
+        "Delphi",
+        "J++",
+        "JavaScript",
+        "C++",
+        "Perl",
+        "DB2 SQL"
+      ]
+    },
+    {
+      "company": "JPMorgan Chase",
+      "start": { "month": "October", "year": "2003" },
+      "end": { "month": "January", "year": "2007" },
+      "accomplishments": [],
+      "responsbilities": [],
+      "technologies": [
+        "C#",
+        "ASP (2.0, 3.0)",
+        "Java",
+        "TSQL",
+        "Delphi",
+        "J++",
+        "JavaScript"
+      ]
     }
-
-
-
-    ]
-
-
-
+  ]
 }
