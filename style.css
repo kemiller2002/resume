@@ -1,0 +1,96 @@
+@page {
+  margin: 30cm;
+}
+
+footer {
+  display: none;
+}
+
+@media print {
+  footer {
+    position: fixed;
+    bottom: 25;
+    display: block;
+  }
+
+  body {
+    border: thin solid black;
+    padding: 0.25em;
+  }
+}
+
+[header] {
+  margin-bottom: 1em;
+}
+
+[organization-name] {
+  display: inline-block;
+}
+
+[organization-details] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[organization-details] > [organization-name] {
+  flex-grow: 3;
+}
+
+h1 {
+  font-size: medium;
+}
+
+h2 {
+  font-size: small;
+}
+
+[start-date]::after {
+  content: " - ";
+}
+
+[header] {
+  background-color: #555;
+  color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.25em;
+}
+
+[contact] {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+[data-phone]::before {
+  content: "ph:";
+}
+
+[data-email]::before {
+  content: "email:";
+}
+
+[data-name] {
+  flex-grow: 2;
+  margin-top: 0.25em;
+  margin-left: 0.25em;
+}
+
+[employment] {
+  border: thin solid black;
+  padding: 0.25em;
+}
+
+[organization-details] {
+  border-bottom: thin solid black;
+  padding-bottom: 0.25em;
+}
+
+[technologies] > h1 {
+  margin: 0em;
+  font-size: 10pt;
+}
+
+[education] > [degrees] {
+  display: flex;
+}

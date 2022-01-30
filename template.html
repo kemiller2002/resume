@@ -1,86 +1,93 @@
 <html>
-    <head>
-        <style>
-            @page {
-                margin: 30cm;
-            }
-
-            @media print {
-                div.divFooter {
-                    position: fixed;
-                    bottom: 0;
-                }
-            }
-
-            [header]{
-                margin-bottom:1em;
-            }
-
-            [organization-name]{
-                display:inline-block;
-            }
-
-            [technologies]{
-                display: block;
-                padding:1em;
-            }
-
-            [organization-details]{
-                display:flex;
-                flex-wrap: wrap;
-            }
-
-            [organization-details] > [organization-name]{
-                flex-grow: 3;
-            }
-
-            h1[technologies]{
-                font-size: medium;
-            }
-    </style>
-
-    </head>
-    <body>
-        <div header>
-            <h1 data-type="name">${name}</h1>
-            <section contact>
-                <span data-type="phone">${phone}</span>
-                <span data-type="email">${email}</span>
-            </section>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="html-transform.js"></script>
+  </head>
+  <body onload="loadData()">
+    <section header>
+      <h1 data-name>${name}</h1>
+      <section contact>
+        <span data-phone>${phone}</span>
+        <span data-email>${email}</span>
+        <span data-website>${website}</span>
+        <span data-stackoverflow>${stackoverflow}</span>
+      </section>
+    </section>
+    <section employment for-each="${employment as item}">
+      <section organization-details>
+        <div organization-name>${item.company}</div>
+        <div start-date>
+          <span>${item.start.month}</span><span>${item.start.year}</span>
         </div>
-    <div employment>
-        <section organization-details>
-            <div organization-name>${employment.name}</div>
-            <div start-date>${employment.startDate}</div>
-            <div end-date>${employment.endDate}</div>
-        </section>
-        <section technologies>
-            <h1 technologies>${employment.technologies}</h1>
-        </section>
-        <section project>
-            <span name>${employment.project.name}</span>
-            <span description>${employment.project.description}</span>
-            <ol responsibilities each="${employment.project.responsibilities}">
-                <li additional-responsibilities>${item.name}</li>
-            </ol>
-        </section>
+        <div end-date>
+          <span>${item.end.month}</span><span>${item.end.year}</span>
+        </div>
+      </section>
 
-        <section additional>
-            <ul each="${employment.additionalResponsibilities}">
-               <li additional-responsibilities>${item.name}</li> 
-            </ul>
-        </section>
-        
-    </div>
+      <section technologies>
+        <h1 for-each="${item.technologies as technology}">${technology}</h1>
+      </section>
 
-    </body>
+      <section project for-each="${item.projects as project}">
+        <h1 name>${project.title}</h1>
+        <div description>${project.description}</div>
+        <ul responsibilities>
+          <li
+            for-each="${project.responsibilities as responsibility}"
+            responsibilities
+          >
+            ${responsibility}
+          </li>
+        </ul> 
+      </section>
+     
+      <section additional step="step">
+        <ul>
+          <li step
+            for-each="${item.responsibilities as responsibility}"
+            additional-responsibilities
+          >
+            ${responsibility}
+          </li>
+        </ul>
+      </section>
+    </section>
+<!--
+    <section education>
+      <h1>Education</h1>
+      <div degrees>
+        <div institution>${institution}</div>
+        <div degree>${degree}</div>
+        <div start-date>${start.month} ${start.year}</div>
+        <div end-date>${end.month} ${end.year}</div>
+      </div>
+    </section>
 
+    <section training>
+      <h1>Training and Certifications</h1>
+      <div>${name}</div>
+    </section>
 
+    <section volunteering>
+      <h1>Volunteering</h1>
+      <div>${name}</div>
+    </section>
+
+    <section presentations>
+      <section>
+        <h1>Presentations</h1>
+        <div for-each="${presentations as presentation}">
+          <h2>${presentation.topic}</h2>
+                   <ul for-each="${presentation.title as title}">
+                    <li>${title}</li>
+                </ul> 
+        </div>
+      </section>
+    -->
+    </section>
 
     <footer>
-        <contact>
-            ${name}
-        </contact>
+      <contact>${name}</contact>
     </footer>
-
-    </html>
+  </body>
+</html>
