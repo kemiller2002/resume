@@ -83,67 +83,7 @@
       "company": "RenPSG",
       "start": { "month": "January", "year": "2020" },
       "end": null,
-
-      "accomplishments": [
-        {
-          "description": "Aligned product work with required development targets (timeline accuracy and predictability)."
-        },
-        {
-          "description": "Lead multiple teams and oversee initiatives consisting of employees and consultants across multiple continents."
-        },
-        {
-          "description": "Reduced operational expenses by 100k annually by optimizing vendor offerings."
-        },
-        {
-          "description": "Increased developer productivity by over 40% through evaluating and changing development processes."
-        },
-        {
-          "description": "Stabilized deployment processes by implementing a branching strategy more closely aligned to business processes."
-        },
-        {
-          "description": "Architected and lead system enhancements resulting in reducing staff operating expenses in excess of 500k annually."
-        },
-        {
-          "description": "Demonstrated, taught, and helped teams implement through formal training concepts relating to software development including: functional programming, ux design principles, and programming language concepts."
-        }
-      ],
-
       "projects": [
-        {
-          "title": "Ren Donor Advised Fund (DAF) Summit committee member",
-          "description": "Annual summit of organizations and donors surrounding the future of DAF accounts and charitable giving",
-          "responsibilities": ["Sponsorship offerings."],
-          "display": "none"
-        },
-        {
-          "title": "Head of Engineering",
-          "description": "",
-          "responsibilities": [],
-          "display": "none"
-        },
-
-        {
-          "title": "Head of SDLC (Agile) Practices",
-          "description": "Directed software development practices for team.",
-          "responsibilities": [
-            "Aligned project forecasting with acceptable variance of task completion.",
-            "Redesigned release approach to reduce time to market of enhancements."
-          ],
-          "display": "none"
-        },
-
-        {
-          "title": "Head of Quality Assurance",
-          "description": "Head of all quality assurance for Ren including off shore teams.",
-          "responsibilities": [
-            "Set direction of all manual and automated initiatives.",
-            "Increased testing efficiency by reviewing and altering efforts to reflect the optimal approach for projects.",
-            "Aligned multiple acquired organization's quality assurance initiatives under a unified approach resulting in increased efficiency with in the department.",
-            "Reduced inefficiency by refocusing approach of testing documentation."
-          ],
-          "display": "none"
-        },
-
         {
           "title": "Grant Recommendation Project",
           "description": "An evaluation of business processes, and development of a new application to update user interface for clients and drive greater efficiencies in the organization.",
@@ -157,8 +97,7 @@
         {
           "title": "Microsite portal implementation",
           "description": "Refactor legacy portal into smaller composable systems to allow segregated rapid development and deployment",
-          "responsibilities": ["Lead architect", "Development"],
-          "display": "none"
+          "responsibilities": ["Lead architect", "Development"]
         },
         {
           "title": "Microservice implementation",
@@ -167,7 +106,7 @@
         },
         {
           "title": "Legacy portal stabilization initiative",
-          "description": "Assumed control of all aspects of legacy portal system concerning stability.  Reorganized and set path for branching strategy and deployment process.",
+          "description": "Assumed control of all aspects of legacy portal system, concerning stability.  Reorganized and set path for branching strategy and ",
           "responsibilities": ["Architect", "Development"],
           "display": "none"
         }
@@ -182,9 +121,7 @@
         "Git",
         "Vue.js",
         "Microservices",
-        "SQL Server",
-        "React",
-        "Oracle"
+        "SQL Server"
       ],
 
       "responsibilities": ["Technology and architectural review", "Mentorship"]
@@ -193,23 +130,6 @@
       "company": "T2 Systems",
       "start": { "month": "October", "year": "2018" },
       "end": { "month": "January", "year": "2020" },
-      "accomplishments": [
-        {
-          "description": "Stabilized application and database deployment process aligning over 300 client installations resulting in reduction in operational and development expenses."
-        },
-        {
-          "description": "Reduced operational expenses and greatly increased application stability through evaluating, creating, and directing the implementation of tools and processes regarding reporting and application maintenance."
-        },
-        {
-          "description": "Implemented training program to introduce staff to new concepts and outside technologies for evaluation and implementation into existing systems."
-        },
-        {
-          "description": "Oversaw initiatives to evaluate and change software development practices around source control management, team empowerment, and requirements process flow."
-        },
-        {
-          "description": "Administrated Azure DevOps resulting in reduced development costs by implementing a more efficient build system and branching strategy."
-        }
-      ],
       "projects": [
         {
           "title": "Data Archival Project",
@@ -284,27 +204,6 @@
       "company": "TCC Software Solutions",
       "start": { "month": "April", "year": "2015" },
       "end": { "month": "September", "year": "2018" },
-      "accomplishments": [
-        {
-          "description": "Increased client visibility to TCC's Microsoft Gold Partner program and reorganized offerings resulting in a reduction of 250k licensing expenses annually."
-        },
-        {
-          "description": "Instituted internship program to evaluate and hire new staff after graduating from college allowing a reduction in recruiting expenses and increased project staff onboarding."
-        },
-        {
-          "description": "Managed teams across multiple projects.  Implemented improvements to communications within and across teams."
-        },
-        {
-          "description": "Developed training program and coupled it with community outreach initiatives to increase TCC's presence in the development community."
-        },
-        {
-          "description": "Architect on multiple projects while suggesting and implementing standards based on client needs."
-        },
-        {
-          "description": "Lead on client Team Foundation Server implementations."
-        }
-      ],
-
       "projects": [
         {
           "title": "Department of Natural Resources Project – Unity",
@@ -365,14 +264,6 @@
       "company": "Infinite AI",
       "start": { "month": "November", "year": "2014" },
       "end": { "month": "March", "year": "2015" },
-      "accomplishments": [
-        {
-          "description": "System development of various systems regarding authorization and workflow systems."
-        },
-        {
-          "description": "Technology evaluation and recommendations concerning servers and network security software."
-        }
-      ],
       "projects": [
         {
           "title": "Authorization AI",
@@ -394,7 +285,6 @@
           ]
         }
       ],
-
       "description": "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring.",
       "technologies": [
         "C#",
@@ -418,15 +308,7 @@
       "company": "Performance Assessment Network",
       "start": { "month": "January", "year": "2007" },
       "end": { "month": "November", "year": "2014" },
-      "accomplishments": [
-        {
-          "description": "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring."
-        },
-
-        {
-          "description": "Implemented a monthly training program around development technologies, software development, and security."
-        }
-      ],
+      "accomplishments": [],
       "description": "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring.",
       "responsibilities": [],
       "projects": [],

@@ -19,8 +19,23 @@ footer {
   }
 }
 
-[header] {
-  margin-bottom: 1em;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: medium;
+  margin: 0em;
+}
+
+h2 {
+  font-size: small;
+}
+
+ul {
+  margin: 0em;
+  list-style-type: none;
+  padding-left: 0.2em;
 }
 
 [organization-name] {
@@ -36,16 +51,42 @@ footer {
   flex-grow: 3;
 }
 
-h1 {
-  font-size: medium;
+h1[technologies] {
+  margin: 0em;
 }
 
-h2 {
+[technologies] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+[technologies] > span {
   font-size: small;
+  font-weight: 600pt;
 }
 
-[start-date]::after {
-  content: " - ";
+[technologies] > span ~ span {
+  margin-left: 0.2em;
+}
+
+[project] ~ [project] {
+  margin-top: 0.5em;
+}
+
+/*
+[technologies] > span ~ span > span::before {
+  content: ", ";
+  display: inline;
+}*/
+
+h1 > span ~ span {
+  padding-left: 0.2em;
+}
+
+[end-date]::before {
+  content: "-";
+  padding: 0 0.2em 0 0.2em;
 }
 
 [header] {
@@ -53,21 +94,14 @@ h2 {
   color: lightgray;
   display: flex;
   flex-wrap: wrap;
-  padding: 0.25em;
+  padding: 1em;
 }
 
 [contact] {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-}
-
-[data-phone]::before {
-  content: "ph:";
-}
-
-[data-email]::before {
-  content: "email:";
+  font-size: small;
 }
 
 [data-name] {
@@ -86,9 +120,17 @@ h2 {
   padding-bottom: 0.25em;
 }
 
+[technologies] {
+  border-bottom: thin solid black;
+}
+
 [technologies] > h1 {
   margin: 0em;
   font-size: 10pt;
+}
+
+[techologies] ~ [project] {
+  margin-top: 0.1em;
 }
 
 [education] > [degrees] {
