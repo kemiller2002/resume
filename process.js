@@ -26,8 +26,8 @@ function separateElement(html, terminatorStack, pNode) {
     parts: [],
     buffer: "",
     closeElement: false,
-    parent,
     children: [],
+    parent,
   });
 
   const node = pNode || createEmptyNode();
@@ -58,7 +58,7 @@ function separateElement(html, terminatorStack, pNode) {
         return separateElement(
           tail,
           ["close-element", ...terminatorStack],
-          node
+          assign(createEmptyNode())
         );
       }
       return separateElement(
@@ -70,7 +70,9 @@ function separateElement(html, terminatorStack, pNode) {
       switch (head) {
         case ">":
           const updatedNode = assign({
-            parts: [...node.parts, node.buffer],
+            parts: node.closeElement
+              ? [...node.parts]
+              : [...node.parts, node.buffer],
             buffer: "",
           });
 
@@ -84,20 +86,26 @@ function separateElement(html, terminatorStack, pNode) {
           const updatedNode = assign({
             parts: [...node.parts, node.buffer],
             buffer: "",
-            closeElement: true,
           });
 
-          const parent = Object.assign({}, updatedNode.parent, {
-            children: [...updatedNode.children, updatedNode],
-          });
+          const closeNode = updatedNode.parent
+            ? Object.assign(createEmptyNode(), updatedNode.parent, {
+                children: [...updatedNode.children, updatedNode],
+                closeElement: true,
+              })
+            : Object.assign(updatedNode, { closeElement: true });
 
-          return separateElement(tail, terminatorStack, parent);
+          return separateElement(tail, terminatorStack, closeNode);
         }
         case " ": {
-          return separateElement(tail, terminatorStack, {
-            parts: [...node.parts, node.buffer],
-            buffer: "",
-          });
+          return separateElement(
+            tail,
+            terminatorStack,
+            assign({
+              parts: [...node.parts, node.buffer],
+              buffer: "",
+            })
+          );
         }
         case '"': {
           return separateElement(
@@ -173,11 +181,11 @@ function run() {
 }
 
 function test() {
-  /*
   console.log(separateElement("<section list=whoa>", []));
   console.log(separateElement(`<section />`, []));
+  console.log(separateElement(`<section input="test"/>`, []));
   console.log(separateElement('<section list="double>quote">', []));
-  console.log(separateElement(`<section list='do" + '"uble>quote">`, []));*/
+  console.log(separateElement(`<section list='do" + '"uble>quote">`, []));
   console.log(separateElement("<section>inside</section>", []));
 }
 
