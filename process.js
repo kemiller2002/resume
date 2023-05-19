@@ -25,19 +25,19 @@ function tokenize(html, pTerminatorStack, pNodeStack) {
     closeElement: false,
     children: [],
   });
-  const nodeStack = pNodeStack || [];
+  const nodeStack = pNodeStack || [createEmptyNode()];
   const terminatorStack = pTerminatorStack || [];
-  const node = nodeStack.length > 0 ? nodeStack[0] : createEmptyNode();
+  const node = nodeStack[0];
   const nodeTail = nodeStack.length > 0 ? nodeStack.slice(1) : [];
   const head = (html || "")[0];
   const nextHead = html.length > 1 ? html[1] : undefined;
 
   const tail = html ? html.slice(1) : "";
   const terminator = terminatorStack[0] || "none";
-  const assign = (o) =>
+  const assign = (o, target) =>
     Object.assign(
       {},
-      node,
+      target || node,
       o,
       o.parts
         ? {
@@ -47,147 +47,94 @@ function tokenize(html, pTerminatorStack, pNodeStack) {
     );
 
   const updateNodeStack = (...rest) => [...rest, ...nodeTail];
-  console.log("buffer:", node.buffer, terminator, head);
-  if (html.length == 0) {
-    return assign({ parts: [...node.parts, node.buffer], buffer: "" });
-  }
-  console.log(nodeStack);
+  const replaceNodeHead = (newNode, sliceCount) => [
+    newNode,
+    ...nodeStack.slice(sliceCount || 1),
+  ];
+  const buffer = node.buffer;
+
+  const assignAndReplace = (o) => replaceNodeHead(assign(o));
+
   switch (terminator) {
-    case "none":
-      const parent = assign({
-        buffer: "",
-        parts: [...node.parts, node.buffer],
-      });
-      if (head === "<") {
-        return tokenize(
-          tail,
-          ["close-element", ...terminatorStack],
-          updateNodeStack(createEmptyNode(), parent)
-        );
-      }
-
-      return tokenize(
-        tail,
-        [...terminatorStack],
-        updateNodeStack(assign({ buffer: node.buffer + head }))
-      ); //HERE
-    case "close-element":
+    case "element": {
       switch (head) {
-        case ">":
-          const updatedNode = assign({
-            parts: node.closeElement
-              ? [...node.parts]
-              : [...node.parts, node.buffer],
-            buffer: "",
-          });
-
-          //here setting child to parent node.
-          const parentNode = nodeTail[0] || createEmptyNode();
-
-          const newParentNode = Object.assign({}, parentNode, {
-            children: [...parentNode.children, updatedNode],
-          });
-
-          return tokenize(
-            tail,
-            terminatorStack.slice(1),
-            updateNodeStack(updatedNode)
-          );
-
-        case "/": {
-          const updatedNode = assign({
-            parts: [...node.parts, node.buffer],
-            buffer: "",
-            closeElement: true,
-          });
-
-          const parent = nodeTail[0];
-          const parentWithNewChild = Object.assign({}, parent, {
-            children: [...parent.children, updatedNode],
-          });
-
-          console.log(updatedNode);
-
-          const newNodeStack = [parentWithNewChild, ...nodeTail.slice(1)];
-
-          return tokenize(tail, terminatorStack, newNodeStack);
-        }
         case " ": {
-          return tokenize(
-            tail,
-            terminatorStack,
-            updateNodeStack(
-              assign({
-                parts: [...node.parts, node.buffer],
-                buffer: "",
-              })
-            )
-          );
-        }
-        case '"': {
-          return tokenize(
-            tail,
-            ["double-quote", ...terminatorStack],
-            updateNodeStack(
-              assign({
-                buffer: node.buffer + head,
-              })
-            )
-          );
-        }
-      }
+          const newNode = assign({
+            buffer: "",
+            parts: [...node.parts, buffer],
+          });
+          const newStackHead = replaceNodeHead(newNode);
 
-      return tokenize(
-        tail,
-        terminatorStack,
-        updateNodeStack(
-          assign({
-            buffer: node.buffer + head,
-          })
-        )
-      );
-    case "single-quote":
-      switch (head) {
-        case "'":
-          return tokenize(
-            tail,
-            terminatorStack.slice(1),
-            updateNodeStack(assign({ buffer: node.buffer + head }))
+          return tokenize(tail, terminatorStack, newStackHead);
+        }
+        case "/": {
+          const newNode =
+            buffer !== ""
+              ? assign({
+                  buffer: "",
+                  parts: [...node.parts, buffer],
+                })
+              : node;
+
+          const parent = nodeStack[1];
+          const parentWithChild = assign(
+            {
+              children: [...parent.children, newNode],
+            },
+            parent
           );
 
+          const newNodeStack = replaceNodeHead(parentWithChild, 2);
+          const newTail = tail.substring(tail.indexOf(">"));
+          return tokenize(newTail, terminatorStack, newNodeStack);
+        }
+        case ">":
+          return tokenize(tail, terminatorStack.slice(1), nodeStack);
         default:
           return tokenize(
             tail,
             terminatorStack,
-            updateNodeStack(assign({ buffer: node.buffer + head }))
+            assignAndReplace({ buffer: node.buffer + head })
           );
       }
-    case "double-quote":
+    }
+    case "double-quote": {
       switch (head) {
         case '"':
           return tokenize(
             tail,
             terminatorStack.slice(1),
-            updateNodeStack(assign({ buffer: node.buffer + head }))
+            assignAndReplace({ buffer: node.buffer + head })
           );
-
+          break;
         default:
           return tokenize(
             tail,
             terminatorStack,
-            updateNodeStack(assign({ buffer: node.buffer + head }))
+            assignAndReplace({ buffer: node.buffer + head })
           );
       }
-    default:
+    }
+    default: {
       switch (head) {
-        case '"':
-          const terminatorStack = [...terminatorStack, "double-quote"];
+        case "<": {
+          const emptyNode = createEmptyNode();
+          const terminatorStackUpdated = ["element", ...terminatorStack];
+          const nodeStackUpdated = [emptyNode, ...nodeStack];
+
+          return tokenize(tail, terminatorStackUpdated, nodeStackUpdated);
+        }
+        case undefined: {
+          return node;
+        }
+        default:
           return tokenize(
             tail,
             terminatorStack,
-            updateNodeStack(assign({ buffer: node.buffer + head }))
+            assignAndReplace({ buffer: node.buffer + head })
           );
       }
+    }
   }
 }
 
@@ -213,10 +160,10 @@ function test() {
   //logOutput(`<section>`);
   //logOutput(`<section`);
   //logOutput(`<section />`);
-  //logOutput(`<section input="test"/>`);
-  //logOutput('<section list="double>quote">');
+  logOutput(`<section input="test"/>`);
+  logOutput('<section list="double>quote" />'); //here
   //logOutput(`<section list='do" + '"uble>quote">`);
-  logOutput("<section>inside<section>second</section></section>");
+  //logOutput("<section>inside<section>second</section></section>");
 }
 
 test();
