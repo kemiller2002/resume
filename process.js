@@ -1,6 +1,7 @@
 const fs = require("fs");
 const { sep } = require("path");
 const { buffer } = require("stream/consumers");
+const path = require("path");
 
 function findValue(data, term) {
   return data[term];
@@ -14,32 +15,25 @@ function combine(template, data) {
 }
 
 function processTemplate(template, data) {
-  const replacer = (s, p1) => {
-    return data[p1];
-  };
-
-  return template.replace(/\$\{([a-zA-Z0-1.]+)\}/g, replacer);
+  const tokenStructure = tokenize(template);
 }
 
-function separateElement(html, terminatorStack, pNode) {
-  const createEmptyNode = (parent) => ({
+function tokenize(html, pTerminatorStack, pNodeStack) {
+  const createEmptyNode = () => ({
     parts: [],
     buffer: "",
     closeElement: false,
     children: [],
-    parent,
   });
+  const nodeStack = pNodeStack || [];
+  const terminatorStack = pTerminatorStack || [];
+  const node = nodeStack.length > 0 ? nodeStack[0] : createEmptyNode();
+  const nodeTail = nodeStack.length > 0 ? nodeStack.slice(1) : [];
+  const head = (html || "")[0];
+  const nextHead = html.length > 1 ? html[1] : undefined;
 
-  const node = pNode || createEmptyNode();
-
-  if (html.length == 0) {
-    return node;
-  }
-
-  const head = html[0];
-  const tail = html.slice(1);
-  const terminator = terminatorStack[0] || "";
-
+  const tail = html ? html.slice(1) : "";
+  const terminator = terminatorStack[0] || "none";
   const assign = (o) =>
     Object.assign(
       {},
@@ -52,20 +46,31 @@ function separateElement(html, terminatorStack, pNode) {
         : {}
     );
 
+  const updateNodeStack = (...rest) => [...rest, ...nodeTail];
+  console.log("buffer:", node.buffer, terminator, head);
+  if (html.length == 0) {
+    return assign({ parts: [...node.parts, node.buffer], buffer: "" });
+  }
+  console.log(nodeStack);
   switch (terminator) {
-    case "":
+    case "none":
+      const parent = assign({
+        buffer: "",
+        parts: [...node.parts, node.buffer],
+      });
       if (head === "<") {
-        return separateElement(
+        return tokenize(
           tail,
           ["close-element", ...terminatorStack],
-          assign(createEmptyNode())
+          updateNodeStack(createEmptyNode(), parent)
         );
       }
-      return separateElement(
+
+      return tokenize(
         tail,
         [...terminatorStack],
-        assign({ buffer: node.buffer + head })
-      );
+        updateNodeStack(assign({ buffer: node.buffer + head }))
+      ); //HERE
     case "close-element":
       switch (head) {
         case ">":
@@ -76,95 +81,111 @@ function separateElement(html, terminatorStack, pNode) {
             buffer: "",
           });
 
-          return separateElement(
+          //here setting child to parent node.
+          const parentNode = nodeTail[0] || createEmptyNode();
+
+          const newParentNode = Object.assign({}, parentNode, {
+            children: [...parentNode.children, updatedNode],
+          });
+
+          return tokenize(
             tail,
             terminatorStack.slice(1),
-            node.closeElement ? updatedNode : createEmptyNode(updatedNode)
+            updateNodeStack(updatedNode)
           );
 
         case "/": {
           const updatedNode = assign({
             parts: [...node.parts, node.buffer],
             buffer: "",
+            closeElement: true,
           });
 
-          const closeNode = updatedNode.parent
-            ? Object.assign(createEmptyNode(), updatedNode.parent, {
-                children: [...updatedNode.children, updatedNode],
-                closeElement: true,
-              })
-            : Object.assign(updatedNode, { closeElement: true });
+          const parent = nodeTail[0];
+          const parentWithNewChild = Object.assign({}, parent, {
+            children: [...parent.children, updatedNode],
+          });
 
-          return separateElement(tail, terminatorStack, closeNode);
+          console.log(updatedNode);
+
+          const newNodeStack = [parentWithNewChild, ...nodeTail.slice(1)];
+
+          return tokenize(tail, terminatorStack, newNodeStack);
         }
         case " ": {
-          return separateElement(
+          return tokenize(
             tail,
             terminatorStack,
-            assign({
-              parts: [...node.parts, node.buffer],
-              buffer: "",
-            })
+            updateNodeStack(
+              assign({
+                parts: [...node.parts, node.buffer],
+                buffer: "",
+              })
+            )
           );
         }
         case '"': {
-          return separateElement(
+          return tokenize(
             tail,
             ["double-quote", ...terminatorStack],
-            assign({
-              buffer: node.buffer + head,
-            })
+            updateNodeStack(
+              assign({
+                buffer: node.buffer + head,
+              })
+            )
           );
         }
       }
 
-      return separateElement(
+      return tokenize(
         tail,
         terminatorStack,
-        assign({
-          buffer: node.buffer + head,
-        })
+        updateNodeStack(
+          assign({
+            buffer: node.buffer + head,
+          })
+        )
       );
     case "single-quote":
       switch (head) {
         case "'":
-          return separateElement(
+          return tokenize(
             tail,
             terminatorStack.slice(1),
-            assign({ buffer: node.buffer + head })
+            updateNodeStack(assign({ buffer: node.buffer + head }))
           );
 
         default:
-          return separateElement(
+          return tokenize(
             tail,
             terminatorStack,
-            assign({ buffer: node.buffer + head })
+            updateNodeStack(assign({ buffer: node.buffer + head }))
           );
       }
     case "double-quote":
       switch (head) {
         case '"':
-          return separateElement(
+          return tokenize(
             tail,
             terminatorStack.slice(1),
-            assign({ buffer: node.buffer + head })
+            updateNodeStack(assign({ buffer: node.buffer + head }))
           );
 
         default:
-          return separateElement(
+          return tokenize(
             tail,
             terminatorStack,
-            assign({ buffer: node.buffer + head })
+            updateNodeStack(assign({ buffer: node.buffer + head }))
           );
       }
     default:
       switch (head) {
         case '"':
           const terminatorStack = [...terminatorStack, "double-quote"];
-          return separateElement(
+          return tokenize(
             tail,
             terminatorStack,
-            assign({ buffer: node.buffer + head })
+            updateNodeStack(assign({ buffer: node.buffer + head }))
           );
       }
   }
@@ -180,13 +201,22 @@ function run() {
   fs.writeFileSync("resume.html", processedTemplate);
 }
 
+function logOutput(input) {
+  fs.writeFileSync(
+    path.join(__dirname, "test", `${input.replace(/[ \/]/g, "-")}.json`),
+    JSON.stringify([input, tokenize(input)])
+  );
+}
+
 function test() {
-  console.log(separateElement("<section list=whoa>", []));
-  console.log(separateElement(`<section />`, []));
-  console.log(separateElement(`<section input="test"/>`, []));
-  console.log(separateElement('<section list="double>quote">', []));
-  console.log(separateElement(`<section list='do" + '"uble>quote">`, []));
-  console.log(separateElement("<section>inside</section>", []));
+  logOutput("<section list=whoa />");
+  //logOutput(`<section>`);
+  //logOutput(`<section`);
+  //logOutput(`<section />`);
+  //logOutput(`<section input="test"/>`);
+  //logOutput('<section list="double>quote">');
+  //logOutput(`<section list='do" + '"uble>quote">`);
+  logOutput("<section>inside<section>second</section></section>");
 }
 
 test();
