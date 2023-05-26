@@ -19,12 +19,16 @@ function processTemplate(template, data) {
 }
 
 function tokenize(html, pTerminatorStack, pNodeStack) {
-  const createEmptyNode = () => ({
-    parts: [],
-    buffer: "",
-    closeElement: false,
-    children: [],
-  });
+  const createEmptyNode = (o) =>
+    Object.assign(
+      {
+        parts: [],
+        buffer: "",
+        closeElement: false,
+        children: [],
+      },
+      o
+    );
   const nodeStack = pNodeStack || [createEmptyNode()];
   const terminatorStack = pTerminatorStack || [];
   const node = nodeStack[0];
@@ -55,6 +59,8 @@ function tokenize(html, pTerminatorStack, pNodeStack) {
 
   const assignAndReplace = (o) => replaceNodeHead(assign(o));
 
+  log([head, ...arguments]);
+
   switch (terminator) {
     case "element": {
       switch (head) {
@@ -67,7 +73,20 @@ function tokenize(html, pTerminatorStack, pNodeStack) {
 
           return tokenize(tail, terminatorStack, newStackHead);
         }
+        case '"': {
+          const newNode = assign({
+            buffer: node.buffer + head,
+          });
+          const newStackHead = replaceNodeHead(newNode);
+
+          return tokenize(
+            tail,
+            ["double-quote", ...terminatorStack],
+            newStackHead
+          );
+        }
         case "/": {
+          /*
           const newNode =
             buffer !== ""
               ? assign({
@@ -86,11 +105,51 @@ function tokenize(html, pTerminatorStack, pNodeStack) {
 
           const newNodeStack = replaceNodeHead(parentWithChild, 2);
           const newTail = tail.substring(tail.indexOf(">"));
-          return tokenize(newTail, terminatorStack, newNodeStack);
+          */
+
+          const newNodeStack = assignAndReplace({ closeElement: true });
+
+          return tokenize(tail, terminatorStack, newNodeStack);
         }
         case ">":
-          return tokenize(tail, terminatorStack.slice(1), nodeStack);
+          /*START */
+
+          //maybe remove and handle tree after tokenizer.
+          if (node.closeElement) {
+            const newNode =
+              buffer !== ""
+                ? assign({
+                    buffer: "",
+                    parts: [...node.parts, buffer],
+                  })
+                : node;
+
+            const parent = nodeStack[1];
+            const parentWithChild = assign(
+              {
+                children: [...parent.children, newNode],
+              },
+              parent
+            );
+
+            const newNodeStack = replaceNodeHead(parentWithChild, 2);
+            const newTail = tail;
+            return tokenize(newTail, terminatorStack, newNodeStack);
+          }
+
+          /*HERE*/
+          const newStackUpdatedHead = assignAndReplace({
+            buffer: "",
+            parts: [...node.parts, node.buffer],
+          });
+
+          const newNodeStack = [createEmptyNode(), ...newStackUpdatedHead];
+
+          return tokenize(tail, terminatorStack.slice(1), newNodeStack);
         default:
+          if (!head) {
+            return node;
+          }
           return tokenize(
             tail,
             terminatorStack,
@@ -118,9 +177,14 @@ function tokenize(html, pTerminatorStack, pNodeStack) {
     default: {
       switch (head) {
         case "<": {
-          const emptyNode = createEmptyNode();
+          const elementType = nextHead == "/" ? "close" : "open";
+          const emptyNode = createEmptyNode({ elementType });
           const terminatorStackUpdated = ["element", ...terminatorStack];
-          const nodeStackUpdated = [emptyNode, ...nodeStack];
+          const bufferedHead = assign({
+            buffer: "",
+            parts: [...node.parts, node.buffer],
+          });
+          const nodeStackUpdated = [emptyNode, bufferedHead, ...nodeTail];
 
           return tokenize(tail, terminatorStackUpdated, nodeStackUpdated);
         }
@@ -148,22 +212,41 @@ function run() {
   fs.writeFileSync("resume.html", processedTemplate);
 }
 
+let output = [];
+function log() {
+  //console.log(arguments);
+  output.push(arguments);
+}
+
 function logOutput(input) {
-  fs.writeFileSync(
-    path.join(__dirname, "test", `${input.replace(/[ \/]/g, "-")}.json`),
-    JSON.stringify([input, tokenize(input)])
-  );
+  output = [];
+  console.log("start");
+  log("start");
+  try {
+    log(input);
+    log(tokenize(input));
+  } catch (e) {
+    log({ message: e.message, stack: e.stack.split("\n") });
+    //throw e;
+    console.log(e.message);
+  } finally {
+    fs.writeFileSync(
+      path.join(__dirname, "test", `${input.replace(/[ \/]/g, "-")}.json`),
+      JSON.stringify(output)
+    );
+  }
 }
 
 function test() {
-  logOutput("<section list=whoa />");
+  //logOutput("<section list=whoa />");
   //logOutput(`<section>`);
   //logOutput(`<section`);
   //logOutput(`<section />`);
-  logOutput(`<section input="test"/>`);
-  logOutput('<section list="double>quote" />'); //here
+  //logOutput(`<section input="test"/>`);
+  //logOutput('<section list="double>quote" />'); //here
+  //logOutput('<section list="double>quote"/>'); //here
   //logOutput(`<section list='do" + '"uble>quote">`);
-  //logOutput("<section>inside<section>second</section></section>");
+  logOutput("<section>inside<section>second</section></section>");
 }
 
 test();

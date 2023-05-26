@@ -69,17 +69,17 @@ function tokenize_old(html, pTerminatorStack, pNodeStack) {
     );
 
   const updateNodeStack = (...rest) => [...rest, ...nodeTail];
-  console.log("buffer:", node.buffer, terminator, head);
   if (html.length == 0) {
     return assign({ parts: [...node.parts, node.buffer], buffer: "" });
   }
-  console.log(nodeStack);
+
   switch (terminator) {
     case "none":
       const parent = assign({
         buffer: "",
         parts: [...node.parts, node.buffer],
       });
+
       if (head === "<") {
         return tokenize(
           tail,
@@ -127,8 +127,6 @@ function tokenize_old(html, pTerminatorStack, pNodeStack) {
           const parentWithNewChild = Object.assign({}, parent, {
             children: [...parent.children, updatedNode],
           });
-
-          console.log(updatedNode);
 
           const newNodeStack = [parentWithNewChild, ...nodeTail.slice(1)];
 
