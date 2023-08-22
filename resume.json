@@ -80,7 +80,7 @@
 
   "employment": [
     {
-      "company": "RenPSG",
+      "company": "Ren",
       "start": { "month": "January", "year": "2020" },
       "end": null,
 
@@ -116,9 +116,19 @@
           "display": "none"
         },
         {
+          "title": "Ren security board member for Product",
+          "description": "Advised and directed Ren's security board in regards to its software products and general application security.",
+          "responsibilities": ["Voting member"],
+          "display": "none"
+        },
+        {
           "title": "Head of Engineering",
-          "description": "",
-          "responsibilities": [],
+          "description": "Lead multiple engineering teams with an annual operating budget of 5 million dollars which is responsible for providing software solutions for 17 of the top 20 financial institutions administrating Donor Advised Funds in United States",
+          "responsibilities": [
+            "Change management compliance (SOC 2)",
+            "Training",
+            "Architecture"
+          ],
           "display": "none"
         },
 
@@ -127,16 +137,17 @@
           "description": "Directed software development practices for team.",
           "responsibilities": [
             "Aligned project forecasting with acceptable variance of task completion.",
-            "Redesigned release approach to reduce time to market of enhancements."
+            "Redesigned release approach to reduce time to market of enhancements.",
+            "Redesigned workflow process concerning requirements, work prioritization, and execution."
           ],
           "display": "none"
         },
 
         {
           "title": "Head of Quality Assurance",
-          "description": "Head of all quality assurance for Ren including off shore teams.",
+          "description": "Oversee all quality assurance for Ren.",
           "responsibilities": [
-            "Set direction of all manual and automated initiatives.",
+            "Set direction of all manual and automated initiatives resulting in increased efficiency.",
             "Increased testing efficiency by reviewing and altering efforts to reflect the optimal approach for projects.",
             "Aligned multiple acquired organization's quality assurance initiatives under a unified approach resulting in increased efficiency with in the department.",
             "Reduced inefficiency by refocusing approach of testing documentation."
@@ -356,7 +367,7 @@
       "responsibilities": [
         "Team Foundation Server Administrator.",
         "Development Manager.",
-        "Special Development Initiaves.",
+        "Special Development Initiatives.",
         "Azure consultant."
       ]
     },
