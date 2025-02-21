@@ -1,0 +1,163 @@
+<html>
+
+  <head>
+
+    <script>
+
+
+      const monthNames = {
+        "January": 0, "February": 1, "March": 2, "April": 3,
+        "May": 4, "June": 5, "July": 6, "August": 7,
+        "September": 8, "October": 9, "November": 10, "December": 11
+      };
+
+      function sortByStart(a, b) {
+        const convert = (tDate) => [
+          x => ({ ...x, monthNumber: monthNames[x.month] })
+          , x => ({ ...x, date: new Date(x.year, x.monthNumber, 1) })
+        ].reduce((s, i) => i(s), tDate)
+
+
+        return [
+          ({ a, b }) => ({ a: convert(a), b: convert(b) }),
+          ({ a, b }) => ({ a: a.date, b: b.date }),
+          ({ a, b }) => (b - a)
+
+        ].reduce((s, i) => i(s), { a: a.start, b: b.start })
+      }
+
+      window.addEventListener(
+        "DOMContentLoaded",
+        () =>
+          fetch("resume.json")
+            .then((d) => d.json())
+            .then(d => ({ ...d, display: true }))
+            .then(d => ({ ...d, employment: d.employment.toSorted(sortByStart) }))
+            .then(x => {
+              console.log(x);
+              return x;
+            })
+            .then((j) => ko.applyBindings(j)),
+        false
+      );
+
+    </script>
+    <link rel="stylesheet" href="resume.css">
+
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+      }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"
+      integrity="sha512-2AL/VEauKkZqQU9BHgnv48OhXcJPx9vdzxN1JrKDVc4FPU/MEE/BZ6d9l0mP7VmvLsjtYwqiYQpDskK9dG8KBA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </style>
+
+  </head>
+
+  <body id="main" data-bind="attr:{display:display}">
+    <div class="column-center">
+      <div class="header">
+        <h1 class="name">
+          <span class="name" data-bind="text: name"></span>
+        </h1>
+        <div class="contact">
+          <div class="contact-container">
+            <span class="material-symbols-outlined">call</span>
+            <div class="phone">
+              <span data-bind="text: phone.areaCode"></span><span data-bind="text: phone.prefix"></span><span
+                data-bind="text: phone.suffix"></span>
+
+            </div>
+          </div>
+          <div class="contact-container">
+            <span class="material-symbols-outlined">mail</span>
+            <span class="email" data-bind="text: email"></span>
+          </div>
+          <a href class="stackoverflow" data-bind="text: stackoverflow"></a>
+          <a href class="website" data-bind="text: website"></a>
+        </div>
+      </div>
+
+      <hr class="header-divider" />
+
+      <div class="employment">
+        <ul class="organization" data-bind="foreach:employment">
+          <li class="employment-entry">
+            <h3 class="employment-meta-data">
+              <div class="title" data-bind="text:title"></div>
+
+              <div class="organization-name" data-bind="text:company"></div>
+            </h3>
+
+            <div class="dates">
+              <div class="start">
+                <span class="month" data-bind="text:(start.month)"></span>
+                <span class="year" data-bind="text:(start.year)"></span>
+              </div>
+              <div class="end">
+                <span class="month" data-bind="text:end ? (end.month) : ''"></span>
+                <span class="year" data-bind="text:end ? end.year : ''"></span>
+              </div>
+            </div>
+
+
+            <div class="projects" data-bind="foreach:projects">
+              <div class="project">
+                <h4 class="title" data-bind="text:title"></h4>
+                <span class="description" data-bind="text:description"></span>
+                <ul class="responsiblities" data-bind="foreach: responsibilities">
+                  <li data-bind="text:$data"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accomplishments">
+              <h4>Accomplishments</h4>
+
+              <div data-bind="foreach: accomplishments">
+                <ul>
+                  <li class="presentation" data-bind="text:description"></li>
+                </ul>
+              </div>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Education</h2>
+        <div class="education" data-bind="foreach: education">
+          <div class="institution-description">
+            <span class="institution" data-bind="text:institution"></span>
+            <span class="dates">
+              <span class="start" data-bind="text:start.year"></span>
+              <span class="end" data-bind="text:end.year"></span>
+            </span>
+          </div>
+        </div>
+        <div>
+          <h2>Presentations</h2>
+          <div class="presentations" data-bind="foreach:presentations">
+            <ul>
+              <li class="presentation">
+                <span data-bind="text:topic"></span>
+                <ul data-bind="foreach:title">
+                  <li data-bind="text:$data"></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </body>
+
+</html>

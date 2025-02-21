@@ -1,0 +1,146 @@
+H1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+H3 {
+  margin: 0em;
+}
+
+H4 {
+  margin: 0em;
+}
+
+body {
+  display: none;
+}
+
+body[display="true"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-center {
+  padding: 0.25em;
+  max-width: 800px;
+}
+.name {
+  flex-grow: 2;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.phone > * ~ * {
+  margin-left: 0em;
+  padding-left: 0em;
+}
+.phone > * ~ *::before {
+  content: ".";
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.employment-entry {
+  display: grid;
+  grid-template-columns:
+    [border-left] 5% [border-left-2] 15%
+    [content-center-left] 10% [content-center] 40% [content-center-right] 10%
+    [border-right] 15% [border-right-2] 5%;
+
+  grid-template-rows:
+    [header] auto [responsibilities] auto
+    [accomplishments] auto;
+  margin-bottom: 1em;
+}
+
+.employment-meta-data {
+  grid-column-start: border-left;
+  grid-column-end: content-center;
+}
+
+.projects {
+  grid-column-start: content;
+}
+
+.employment-entry > .dates {
+  grid-row-start: header;
+  grid-column-start: content-center-right;
+  grid-column-end: -1;
+  justify-content: right;
+}
+
+.employment-entry > .title {
+  grid-row-start: header;
+  grid-column-start: border-left;
+  grid-column-end: content-center;
+}
+
+.organization-name {
+  font-size: medium;
+}
+
+.organization {
+  padding: 0em;
+}
+
+.employment-entry > .projects {
+  grid-row-start: responsibilities;
+  grid-column-start: border-left-2;
+  grid-column-end: border-right-2;
+}
+
+.employment-entry > .accomplishments {
+  grid-row-start: accomplishments;
+  grid-column-start: border-left-2;
+  grid-column-end: content-border-right;
+}
+
+.start ~ .end::before {
+  content: "-";
+  margin-left: 0.25em;
+}
+
+.dates {
+  display: flex;
+  flex-direction: row;
+}
+
+.project {
+  margin-bottom: 0.25em;
+}
+
+.project > .title {
+  display: block;
+}
+
+.project > .description {
+  display: block;
+}
+
+.institution-description {
+  display: flex;
+}
+
+.institution {
+  flex-grow: 2;
+}
+
+@page {
+  size: A4;
+  margin: 10mm;
+  border: 1px solid black;
+}

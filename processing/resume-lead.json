@@ -80,10 +80,16 @@
 
   "employment": [
     {
-      "company": "RenPSG",
+      "company": "Ren",
       "start": { "month": "January", "year": "2020" },
       "end": null,
       "projects": [
+        {
+          "title": "Head of Software Practices",
+          "description": "",
+          "responsibilities": [],
+          "display": "none"
+        },
         {
           "title": "Grant Recommendation Project",
           "description": "An evaluation of business processes, and development of a new application to update user interface for clients and drive greater efficiencies in the organization.",

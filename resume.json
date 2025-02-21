@@ -1,8 +1,8 @@
 {
   "name": "Kevin Miller",
-  "phone": "3174500255",
+  "phone": { "areaCode": "317", "prefix": "450", "suffix": "0255" },
   "email": "kemiller2002@gmail.com",
-  "website": "http://StructuredSight.com",
+  "website": "http://kemiller2002.github.io",
   "github": "https://github.com/kemiller2002",
   "stackoverflow": "http://stackoverflow.com/1942",
 
@@ -49,7 +49,11 @@
     },
     {
       "topic": "JavaScript",
-      "title": ["Introduction to JavaScript", "Currying in JavaScript"]
+      "title": [
+        "Introduction to JavaScript",
+        "Currying in JavaScript",
+        "Functional Pipelining"
+      ]
     },
 
     {
@@ -61,7 +65,10 @@
       ]
     },
 
-    { "topic": "Development", "title": ["Regular Expressions"] },
+    {
+      "topic": "Development",
+      "title": ["Regular Expressions", "Time: Taking a Minute to Ponder It"]
+    },
 
     {
       "topic": "Hacking",
@@ -82,29 +89,34 @@
     {
       "company": "Ren",
       "start": { "month": "January", "year": "2020" },
-      "end": null,
-
+      "end": { "month": "January", "year": "2025" },
+      "title": "Director of Engineering",
       "accomplishments": [
         {
-          "description": "Aligned product work with required development targets (timeline accuracy and predictability)."
+          "description": "Aligned product work with required development targets (timeline accuracy and predictability) with an error margin of less than 10%."
         },
         {
-          "description": "Lead multiple teams and oversee initiatives consisting of employees and consultants across multiple continents."
+          "description": "Reduced operational expenses by 100k annually by optimizing vendor offerings.",
+          "internalNotes": "CASS certification for post office.  Ended up outsourcing ot a check processing firm to handle."
         },
         {
-          "description": "Reduced operational expenses by 100k annually by optimizing vendor offerings."
+          "description": "Renegotiated contracts for an annual saving over 60% of current pricing."
         },
         {
-          "description": "Increased developer productivity by over 40% through evaluating and changing development processes."
+          "description": "Increased developer productivity in the DFX division by over 40% through evaluating and changing development processes.",
+          "internalNotes": "Branching and deployment process, along with stream lining requirements."
         },
         {
-          "description": "Stabilized deployment processes by implementing a branching strategy more closely aligned to business processes."
+          "description": "Stabilized deployment processes for the DFX engineering divisions by redesigning the branching strategy more closely aligned to business processes."
         },
         {
           "description": "Architected and lead system enhancements resulting in reducing staff operating expenses in excess of 500k annually."
         },
         {
           "description": "Demonstrated, taught, and helped teams implement through formal training concepts relating to software development including: functional programming, ux design principles, and programming language concepts."
+        },
+        {
+          "description": "Restructured the iPHI division engineering teams and processes to reduce time to market to less than 10% of it's previous cadence."
         }
       ],
 
@@ -112,35 +124,35 @@
         {
           "title": "Ren Donor Advised Fund (DAF) Summit committee member",
           "description": "Annual summit of organizations and donors surrounding the future of DAF accounts and charitable giving",
-          "responsibilities": ["Sponsorship offerings."],
-          "display": "none"
+          "responsibilities": [
+            "Increased sponsorship participation by 30% through redesigning packages and pricing models."
+          ]
         },
         {
-          "title": "Ren security board member for Product",
+          "title": "Ren security and compliance board member",
           "description": "Advised and directed Ren's security board in regards to its software products and general application security.",
-          "responsibilities": ["Voting member"],
-          "display": "none"
+          "responsibilities": ["Guidance on application and data security"]
         },
         {
           "title": "Head of Engineering",
-          "description": "Lead multiple engineering teams with an annual operating budget of 5 million dollars which is responsible for providing software solutions for 17 of the top 20 financial institutions administrating Donor Advised Funds in United States",
+          "description": "Lead 9 engineering teams with an annual operating budget of 5 million dollars which is responsible for providing software solutions for 17 of the top 20 financial institutions administrating Donor Advised Funds in United States",
           "responsibilities": [
             "Change management compliance (SOC 2)",
             "Training",
             "Architecture"
           ],
-          "display": "none"
+          "display": ["management"]
         },
 
         {
-          "title": "Head of SDLC (Agile) Practices",
-          "description": "Directed software development practices for team.",
+          "title": "Head of Agile Practices",
+          "description": "Directed software development practices for teams.",
           "responsibilities": [
-            "Aligned project forecasting with acceptable variance of task completion.",
-            "Redesigned release approach to reduce time to market of enhancements.",
+            "Aligned project forecasting with variance of 10% of task completion.",
+            "Redesigned release approach to reduce time to market of enhancements from 6 weeks to 2 days.",
             "Redesigned workflow process concerning requirements, work prioritization, and execution."
           ],
-          "display": "none"
+          "display": ["management", "architect", "developer"]
         },
 
         {
@@ -152,7 +164,14 @@
             "Aligned multiple acquired organization's quality assurance initiatives under a unified approach resulting in increased efficiency with in the department.",
             "Reduced inefficiency by refocusing approach of testing documentation."
           ],
-          "display": "none"
+          "display": ["management"]
+        },
+
+        {
+          "title": "Head of Enterprise Architecture Board",
+          "description": "Created and drove enterprise architecture group, resulting in consolidation of technologies, increased scalability, stability, and efficiency in time to market.",
+          "responsibilities": [],
+          "display": ["management"]
         },
 
         {
@@ -163,24 +182,25 @@
             "General architect on service design.",
             "Development."
           ],
-          "display": "none"
+          "display": ["management"]
         },
         {
           "title": "Microsite portal implementation",
           "description": "Refactor legacy portal into smaller composable systems to allow segregated rapid development and deployment",
           "responsibilities": ["Lead architect", "Development"],
-          "display": "none"
+          "display": ["architect", "developer"]
         },
         {
           "title": "Microservice implementation",
           "description": "Transform underlying application model and processes into a service based architecture meshed through GraphQL",
-          "responsibilities": ["Architect", "Development"]
+          "responsibilities": ["Architect", "Development"],
+          "display": ["architect", "developer"]
         },
         {
           "title": "Legacy portal stabilization initiative",
           "description": "Assumed control of all aspects of legacy portal system concerning stability.  Reorganized and set path for branching strategy and deployment process.",
           "responsibilities": ["Architect", "Development"],
-          "display": "none"
+          "display": ["architect", "developer"]
         }
       ],
       "technologies": [
@@ -192,7 +212,7 @@
         "Web Components",
         "Git",
         "Vue.js",
-        "Microservices",
+        "Distributed Systems (including Microservices)",
         "SQL Server",
         "React",
         "Oracle"
@@ -204,6 +224,7 @@
       "company": "T2 Systems",
       "start": { "month": "October", "year": "2018" },
       "end": { "month": "January", "year": "2020" },
+      "title": "Senior Developer",
       "accomplishments": [
         {
           "description": "Stabilized application and database deployment process aligning over 300 client installations resulting in reduction in operational and development expenses."
@@ -230,16 +251,16 @@
         {
           "title": ".NET CLR Profiler",
           "description": "",
-          "responsibilities": ["System architecture.", "Development"]
+          "responsibilities": ["System architecture", "Development"]
         },
         {
           "title": "T2 Lunch and Learns",
           "description": "A semi-monthly activity where an internal or external person teaches the development group on a topic.",
           "responsibilities": [
-            "Initial idea and creation.",
-            "Internal and external speaker recruitment.",
-            "Topic selection.",
-            "Presenting."
+            "Initial idea and creation",
+            "Internal and external speaker recruitment",
+            "Topic selection",
+            "Presenting"
           ]
         },
         {
@@ -295,6 +316,8 @@
       "company": "TCC Software Solutions",
       "start": { "month": "April", "year": "2015" },
       "end": { "month": "September", "year": "2018" },
+      "title": "Application Development Manager",
+
       "accomplishments": [
         {
           "description": "Increased client visibility to TCC's Microsoft Gold Partner program and reorganized offerings resulting in a reduction of 250k licensing expenses annually."
@@ -318,7 +341,7 @@
 
       "projects": [
         {
-          "title": "Department of Natural Resources Project – Unity",
+          "title": "Department of Natural Resources Project - Unity",
           "description": "A complete rewrite of the existing legacy system designed to track all information concerning water quantity and location (streams, lakes, dams, wells, etc.).",
           "responsibilities": [
             "System architecture.",
@@ -327,8 +350,8 @@
           ]
         },
         {
-          "title": "Microsoft Partnership Coordination",
-          "description": "TCC has a gold partnership with Microsoft granting special licensing, training, and sales opportunities",
+          "title": "Microsoft Gold Partnership Coordination",
+          "description": "A partnership granting special licensing, training, and sales opportunities",
           "responsibilities": [
             "Demonstrated to senior management its importance and benefits.",
             "Administrated all aspects of the program.",
@@ -376,6 +399,8 @@
       "company": "Infinite AI",
       "start": { "month": "November", "year": "2014" },
       "end": { "month": "March", "year": "2015" },
+      "title": "Developer III",
+
       "accomplishments": [
         {
           "description": "System development of various systems regarding authorization and workflow systems."
@@ -429,6 +454,8 @@
       "company": "Performance Assessment Network",
       "start": { "month": "January", "year": "2007" },
       "end": { "month": "November", "year": "2014" },
+      "title": "Developer II",
+
       "accomplishments": [
         {
           "description": "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring."
@@ -460,6 +487,8 @@
       "company": "Union Acceptance Corporation",
       "start": { "month": "June", "year": "2000" },
       "end": { "month": "October", "year": "2003" },
+      "title": "Application Developer II",
+      "projects": [],
       "accomplishments": [],
       "responsibilities": [],
       "technologies": [
@@ -479,6 +508,8 @@
       "company": "JPMorgan Chase",
       "start": { "month": "October", "year": "2003" },
       "end": { "month": "January", "year": "2007" },
+      "title": "Technical Officer",
+      "projects": [],
       "accomplishments": [],
       "responsibilities": [],
       "technologies": [
