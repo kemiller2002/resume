@@ -1,13 +1,30 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 H1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+H2 {
+  margin-bottom: 0.25em;
+}
+
 H3 {
   margin: 0em;
+  margin-bottom: 0.25em;
 }
 
 H4 {
   margin: 0em;
+}
+
+H5 {
+  margin: 0em;
+}
+
+section {
+  margin-bottom: 2em;
 }
 
 body {
@@ -58,7 +75,8 @@ body[display="true"] {
   display: grid;
   grid-template-columns:
     [border-left] 5% [border-left-2] 15%
-    [content-center-left] 10% [content-center] 40% [content-center-right] 10%
+    [content-center-left] 10% [content-center-left-2] 20%
+    [content-center-right-2] 20% [content-center-right] 10%
     [border-right] 15% [border-right-2] 5%;
 
   grid-template-rows:
@@ -69,7 +87,11 @@ body[display="true"] {
 
 .employment-meta-data {
   grid-column-start: border-left;
-  grid-column-end: content-center;
+  grid-column-end: content-center-right-2;
+}
+
+.employment-meta-data > .title {
+  display: block;
 }
 
 .projects {
@@ -78,7 +100,7 @@ body[display="true"] {
 
 .employment-entry > .dates {
   grid-row-start: header;
-  grid-column-start: content-center-right;
+  grid-column-start: content-center-right-2;
   grid-column-end: -1;
   justify-content: right;
 }
@@ -90,7 +112,7 @@ body[display="true"] {
 }
 
 .organization-name {
-  font-size: medium;
+  font-size: small;
 }
 
 .organization {
@@ -107,6 +129,12 @@ body[display="true"] {
   grid-row-start: accomplishments;
   grid-column-start: border-left-2;
   grid-column-end: content-border-right;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+:not(ul:has(li)) ~ .accomplishment-title {
+  display: none;
 }
 
 .start ~ .end::before {
@@ -137,6 +165,29 @@ body[display="true"] {
 
 .institution {
   flex-grow: 2;
+}
+
+.hide {
+  display: none;
+}
+
+.presentations {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation-wrapper {
+  page-break-inside: avoid;
+}
+
+ul.project {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+ul.awards {
+  margin: 0em;
+  list-style: none;
 }
 
 @page {

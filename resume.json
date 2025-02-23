@@ -7,7 +7,7 @@
   "stackoverflow": "http://stackoverflow.com/1942",
 
   "address": {
-    "line": ["6312 N. Rural St."],
+    "line": ["6312 N. Rural St"],
     "city": "Indianapolis",
     "state": "IN",
     "zip": "46220"
@@ -15,14 +15,22 @@
   "education": [
     {
       "institution": "Kalamazoo College",
-      "degree": "B.A.",
+      "degree": "B.A",
       "study": "Psychology (Cognition, Learning)",
       "start": { "year": "1996" },
       "end": { "year": "2000" },
-      "awards": ["Award for Excellence in Education", "Academic Scholarship"]
+      "awards": ["Award for Excellence in Education", "Academic Scholarship"],
+      "importance": 1
     }
   ],
-  "awards": ["Microsoft MVP 2016"],
+  "awards": [
+    {
+      "institution": "Microsoft",
+      "name": "Most Valuable Professional",
+      "end": { "year": "2016" },
+      "importance": 1
+    }
+  ],
   "training": [
     {
       "name": "Advanced Distributed System Design",
@@ -57,10 +65,10 @@
     },
 
     {
-      "topic": "Agile",
+      "topic": "Software Development",
       "title": [
         "Agile and Scrum using Team Foundation Server",
-        "Process Isn't Your Problem.  The Cultural Requirements of Agile.",
+        "Process Isn't Your Problem.  The Cultural Requirements of Agile",
         "My Team is Awesome and Yours Is Too"
       ]
     },
@@ -93,114 +101,137 @@
       "title": "Director of Engineering",
       "accomplishments": [
         {
-          "description": "Aligned product work with required development targets (timeline accuracy and predictability) with an error margin of less than 10%."
+          "description": "Aligned product work with required development targets (timeline accuracy and predictability) with an error margin of less than 10%",
+          "importance": 10
         },
         {
-          "description": "Reduced operational expenses by 100k annually by optimizing vendor offerings.",
-          "internalNotes": "CASS certification for post office.  Ended up outsourcing ot a check processing firm to handle."
+          "description": "Reduced operational expenses by 100k annually by optimizing vendor offerings",
+          "internalNotes": "CASS certification for post office.  Ended up outsourcing ot a check processing firm to handle",
+          "importance": 4
         },
         {
-          "description": "Renegotiated contracts for an annual saving over 60% of current pricing."
+          "description": "Renegotiated contracts for an annual saving over 60% of current pricing",
+          "importance": 3
         },
         {
-          "description": "Increased developer productivity in the DFX division by over 40% through evaluating and changing development processes.",
-          "internalNotes": "Branching and deployment process, along with stream lining requirements."
+          "description": "Increased developer productivity in the DFX division by over 40% through evaluating and changing development processes",
+          "internalNotes": "Branching and deployment process, along with stream lining requirements",
+          "importance": 8
         },
         {
-          "description": "Stabilized deployment processes for the DFX engineering divisions by redesigning the branching strategy more closely aligned to business processes."
+          "description": "Stabilized deployment processes for the DFX engineering divisions by redesigning the branching strategy more closely aligned to business processes",
+          "importance": 9
         },
         {
-          "description": "Architected and lead system enhancements resulting in reducing staff operating expenses in excess of 500k annually."
+          "description": "Architected and lead system enhancements resulting in reducing staff operating expenses in excess of 500k annually",
+          "importance": 6
         },
         {
-          "description": "Demonstrated, taught, and helped teams implement through formal training concepts relating to software development including: functional programming, ux design principles, and programming language concepts."
+          "description": "Demonstrated, taught, and helped teams implement through formal training concepts relating to software development including: functional programming, ux design principles, and programming language concepts",
+          "importance": 5
         },
         {
-          "description": "Restructured the iPHI division engineering teams and processes to reduce time to market to less than 10% of it's previous cadence."
+          "description": "Restructured the acquired engineering teams and processes to reduce time to market to less than 10% of it's previous cadence",
+          "importance": 9
+        },
+
+        {
+          "description": "Acquired over 50k of free training for development staff surrounding distributed architecture",
+          "importance": 4
         }
       ],
 
       "projects": [
         {
-          "title": "Ren Donor Advised Fund (DAF) Summit committee member",
+          "title": "Donor Advised Fund Summit committee member",
           "description": "Annual summit of organizations and donors surrounding the future of DAF accounts and charitable giving",
           "responsibilities": [
-            "Increased sponsorship participation by 30% through redesigning packages and pricing models."
-          ]
+            "Increased sponsorship participation by 30% through redesigning packages and pricing models"
+          ],
+          "importance": 1
         },
         {
           "title": "Ren security and compliance board member",
-          "description": "Advised and directed Ren's security board in regards to its software products and general application security.",
-          "responsibilities": ["Guidance on application and data security"]
+          "description": "Board focused on creating and revising policies on security and compliance",
+          "responsibilities": ["Advised on application and data security"],
+          "importance": 1
         },
         {
           "title": "Head of Engineering",
-          "description": "Lead 9 engineering teams with an annual operating budget of 5 million dollars which is responsible for providing software solutions for 17 of the top 20 financial institutions administrating Donor Advised Funds in United States",
+          "description": "Nine engineering teams both on and off shore which were responsible for providing software solutions for 17 of the top 20 financial institutions administrating Donor Advised Funds",
           "responsibilities": [
-            "Change management compliance (SOC 2)",
-            "Training",
-            "Architecture"
+            "Set organizational structure",
+            "Manager of managers and individual contributors"
           ],
-          "display": ["management"]
+          "display": ["management"],
+          "importance": 10
         },
 
         {
           "title": "Head of Agile Practices",
-          "description": "Directed software development practices for teams.",
+          "description": "Software development practices for engineering and quality assurance teams",
           "responsibilities": [
-            "Aligned project forecasting with variance of 10% of task completion.",
-            "Redesigned release approach to reduce time to market of enhancements from 6 weeks to 2 days.",
-            "Redesigned workflow process concerning requirements, work prioritization, and execution."
+            "Aligned project forecasting with variance of 10% of task completion",
+            "Redesigned release approach to reduce time to market of enhancements from 6 weeks to 2 days",
+            "Redesigned workflow process concerning requirements, work prioritization, and execution"
           ],
-          "display": ["management", "architect", "developer"]
+          "display": ["management", "architect", "developer"],
+          "importance": 9
         },
 
         {
           "title": "Head of Quality Assurance",
-          "description": "Oversee all quality assurance for Ren.",
+          "description": "Team responsible for all three of Ren's software platforms",
           "responsibilities": [
-            "Set direction of all manual and automated initiatives resulting in increased efficiency.",
-            "Increased testing efficiency by reviewing and altering efforts to reflect the optimal approach for projects.",
-            "Aligned multiple acquired organization's quality assurance initiatives under a unified approach resulting in increased efficiency with in the department.",
-            "Reduced inefficiency by refocusing approach of testing documentation."
+            "Set direction of all manual and automated initiatives resulting in increased efficiency",
+            "Increased testing efficiency by reviewing and altering efforts to reflect the optimal approach for projects",
+            "Aligned multiple acquired organization's quality assurance initiatives under a unified approach resulting in increased efficiency with in the department",
+            "Reduced inefficiency by refocusing approach of testing documentation"
           ],
-          "display": ["management"]
+          "display": ["management"],
+          "importance": 8
         },
 
         {
           "title": "Head of Enterprise Architecture Board",
-          "description": "Created and drove enterprise architecture group, resulting in consolidation of technologies, increased scalability, stability, and efficiency in time to market.",
-          "responsibilities": [],
-          "display": ["management"]
+          "description": "Group of executives and architects, resulting in consolidation of technologies, increased scalability, stability, and efficiency in time to market",
+          "responsibilities": ["Creation", "Management"],
+          "display": ["management"],
+          "importance": 2
         },
 
         {
           "title": "Grant Recommendation Project",
-          "description": "An evaluation of business processes, and development of a new application to update user interface for clients and drive greater efficiencies in the organization.",
+          "description": "An evaluation of business processes, and development of a new application to update user interface for clients and drive greater efficiencies in the organization",
           "responsibilities": [
-            "Lead architect on front end architecture.",
-            "General architect on service design.",
-            "Development."
+            "Lead architect on client side architecture",
+            "Architect on service design",
+            "Development"
           ],
-          "display": ["management"]
+          "display": ["management"],
+          "importance": 1
         },
         {
           "title": "Microsite portal implementation",
           "description": "Refactor legacy portal into smaller composable systems to allow segregated rapid development and deployment",
-          "responsibilities": ["Lead architect", "Development"],
-          "display": ["architect", "developer"]
+          "responsibilities": ["Lead architect and development"],
+          "display": ["architect", "developer"],
+          "importance": 1
         },
         {
           "title": "Microservice implementation",
           "description": "Transform underlying application model and processes into a service based architecture meshed through GraphQL",
-          "responsibilities": ["Architect", "Development"],
-          "display": ["architect", "developer"]
+          "responsibilities": ["Architecture and development"],
+          "display": ["architect", "developer"],
+          "importance": 1
         },
         {
           "title": "Legacy portal stabilization initiative",
-          "description": "Assumed control of all aspects of legacy portal system concerning stability.  Reorganized and set path for branching strategy and deployment process.",
-          "responsibilities": ["Architect", "Development"],
-          "display": ["architect", "developer"]
+          "description": "Assumed control of all aspects of legacy portal system concerning stability.  Reorganized and set path for branching strategy and deployment process",
+          "responsibilities": ["Architecture and development"],
+          "display": ["architect", "developer"],
+          "importance": 1,
+          "hide": true
         }
       ],
       "technologies": [
@@ -215,7 +246,13 @@
         "Distributed Systems (including Microservices)",
         "SQL Server",
         "React",
-        "Oracle"
+        "Oracle",
+        "AWS",
+        "Azure",
+        "Node.js",
+        "Docker",
+        "Kubernetes",
+        "Postgres"
       ],
 
       "responsibilities": ["Technology and architectural review", "Mentorship"]
@@ -227,66 +264,71 @@
       "title": "Senior Developer",
       "accomplishments": [
         {
-          "description": "Stabilized application and database deployment process aligning over 300 client installations resulting in reduction in operational and development expenses."
+          "description": "Stabilized application and database deployment process aligning over 300 client installations resulting in reduction in operational and development expenses",
+          "importance": 1
         },
         {
-          "description": "Reduced operational expenses and greatly increased application stability through evaluating, creating, and directing the implementation of tools and processes regarding reporting and application maintenance."
+          "description": "Reduced operational expenses and greatly increased application stability through evaluating, creating, and directing the implementation of tools and processes regarding reporting and application maintenance",
+          "importance": 1
         },
         {
-          "description": "Implemented training program to introduce staff to new concepts and outside technologies for evaluation and implementation into existing systems."
+          "description": "Implemented training program to introduce staff to new concepts and outside technologies for evaluation and implementation into existing systems",
+          "importance": 1
         },
         {
-          "description": "Oversaw initiatives to evaluate and change software development practices around source control management, team empowerment, and requirements process flow."
+          "description": "Oversaw initiatives to evaluate and change software development practices around source control management, team empowerment, and requirements process flow",
+          "importance": 1
         },
         {
-          "description": "Administrated Azure DevOps resulting in reduced development costs by implementing a more efficient build system and branching strategy."
+          "description": "Administrated Azure DevOps resulting in reduced development costs by implementing a more efficient build system and branching strategy",
+          "importance": 1
         }
       ],
       "projects": [
         {
           "title": "Data Archival Project",
-          "description": "System to scan the database for records meeting certain criteria, remove them from the client installation, send them to the center, and verify the contents with stored records.",
-          "responsibilities": ["System architecture.", "Development."]
+          "description": "System to scan the database for records meeting certain criteria, remove them from the client installation, send them to the center, and verify the contents with stored records",
+          "responsibilities": ["Architecture and development"],
+          "importance": 1
         },
         {
           "title": ".NET CLR Profiler",
-          "description": "",
-          "responsibilities": ["System architecture", "Development"]
+          "description": "A monitoring system which hooked into the .NET runtime for monitoring and reporting data surrounding exceptions",
+          "responsibilities": ["Architecture and development"],
+          "importance": 1
         },
         {
           "title": "T2 Lunch and Learns",
-          "description": "A semi-monthly activity where an internal or external person teaches the development group on a topic.",
-          "responsibilities": [
-            "Initial idea and creation",
-            "Internal and external speaker recruitment",
-            "Topic selection",
-            "Presenting"
-          ]
+          "description": "A semi-monthly activity where an internal or external person teaches the development group on a topic",
+          "responsibilities": ["Proposal, creation, and administration"],
+          "importance": 1
         },
         {
           "title": "Software Development Restructuring Initiative",
-          "description": "A team formed to evaluate the current Agile process at T2 and devise and implement solutions for problems and frustrations by the staff.",
+          "description": "A team formed to evaluate the current Agile process at T2 and devise and implement solutions for problems and frustrations by the staff",
           "responsibilities": [
-            "Team co-chair over multiple initiatives.",
-            "Meet with executive staff members to determine direction.",
-            "Drive project goals within the team.",
-            "Facilitate discussion and determine underlying cause for inefficiencies and team frustrations."
-          ]
+            "Team co-chair over multiple initiatives",
+            "Meet with executive staff members to determine direction",
+            "Drive project goals within the team",
+            "Facilitate discussion and determine underlying cause for inefficiencies and team frustrations"
+          ],
+          "importance": 1
         },
         {
-          "title": "User Migration Strategy for New Architecture",
-          "description": "",
-          "responsibilities": []
+          "title": "User Migration Strategy",
+          "description": "A comprehensive plan for moving users across multiple systems to a single microservice datastore",
+          "responsibilities": ["Architect"],
+          "importance": 1
         },
         {
           "title": "Database Administration",
-          "description": "Monitor the central transaction server and data warehouse MSSQL Servers along with troubleshooting the 300+ client SQL Server installations.",
+          "description": "Monitor the central transaction server and data warehouse MSSQL Servers along with troubleshooting the 300+ client SQL Server installations",
           "responsibilities": [
-            "Query optimizations",
-            "Index optimizations",
+            "Query and index optimizations",
             "Server performance monitoring and remediation",
             "Review and recommendation of RTO and RPO schedules"
-          ]
+          ],
+          "importance": 1
         }
       ],
 
@@ -304,77 +346,96 @@
       ],
 
       "responsibilities": [
-        "Azure DevOps administrator.",
-        "Load testing.",
-        "Architectural project reviews.",
-        "Extract transform and load programs.",
-        "Design discussion and prototyping of application migration to Azure.",
-        "PCI compliance liaison for the T2 Ascent product."
+        "Azure DevOps administrator",
+        "Load testing",
+        "Architectural project reviews",
+        "Extract transform and load programs",
+        "Design discussion and prototyping of application migration to Azure",
+        "PCI compliance liaison for the T2 Ascent product"
       ]
     },
     {
       "company": "TCC Software Solutions",
       "start": { "month": "April", "year": "2015" },
       "end": { "month": "September", "year": "2018" },
-      "title": "Application Development Manager",
+      "title": "Development Manager",
 
       "accomplishments": [
         {
-          "description": "Increased client visibility to TCC's Microsoft Gold Partner program and reorganized offerings resulting in a reduction of 250k licensing expenses annually."
+          "description": "Increased client visibility to TCC's Microsoft Gold Partner program and reorganized offerings resulting in a reduction of 250k licensing expenses annually",
+          "importance": 1
         },
         {
-          "description": "Instituted internship program to evaluate and hire new staff after graduating from college allowing a reduction in recruiting expenses and increased project staff onboarding."
+          "description": "Instituted internship program to evaluate and hire new staff after graduating from college allowing a reduction in recruiting expenses and increased project staff onboarding",
+          "importance": 1
         },
         {
-          "description": "Managed teams across multiple projects.  Implemented improvements to communications within and across teams."
+          "description": "Managed teams across multiple projects, and implemented improvements to communications within and across teams",
+          "importance": 1
         },
         {
-          "description": "Developed training program and coupled it with community outreach initiatives to increase TCC's presence in the development community."
+          "description": "Developed training program and coupled it with community outreach initiatives to increase TCC's presence in the development community",
+          "importance": 1
         },
         {
-          "description": "Architect on multiple projects while suggesting and implementing standards based on client needs."
+          "description": "Architect on multiple projects while suggesting and implementing standards based on client needs",
+          "importance": 1
         },
         {
-          "description": "Lead on client Team Foundation Server implementations."
+          "description": "Lead on client Team Foundation Server implementations",
+          "importance": 1
         }
       ],
 
       "projects": [
         {
-          "title": "Department of Natural Resources Project - Unity",
-          "description": "A complete rewrite of the existing legacy system designed to track all information concerning water quantity and location (streams, lakes, dams, wells, etc.).",
+          "title": "Development Manager",
+          "description": "Teams across multiple project divisions comprising of managers, developers, and analysts",
           "responsibilities": [
-            "System architecture.",
-            "Software configuration management design and administration.",
-            "Lead developer."
-          ]
+            "Manager of managers and individual contributors",
+            "Technical direction (development, quality assurance, and technical analysis)"
+          ],
+          "display": ["management"],
+          "importance": 10
         },
         {
-          "title": "Microsoft Gold Partnership Coordination",
+          "title": "Department of Natural Resources Project - Unity",
+          "description": "A complete rewrite of the existing legacy system designed to track all information concerning water quantity and location (streams, lakes, dams, wells, etc.)",
+          "responsibilities": [
+            "Architect",
+            "Software configuration management design and administration",
+            "Lead developer"
+          ],
+          "importance": 1
+        },
+        {
+          "title": "Microsoft Gold Partnership",
           "description": "A partnership granting special licensing, training, and sales opportunities",
           "responsibilities": [
-            "Demonstrated to senior management its importance and benefits.",
-            "Administrated all aspects of the program.",
-            "Reviewed licenses available to TCC through the program and aligned sales, marketing, and operations needs with available software.",
-            "Realigned developer necessities with available software."
-          ]
+            "Administrated all aspects of the program, including continued certification process",
+            "Reviewed available licenses through the program and aligned sales, marketing, and operations needs with available software",
+            "Realigned developer necessities with available software"
+          ],
+          "importance": 1
         },
         {
           "title": "Internship Program",
-          "description": "A community outreach program designed to evaluate and hire students after graduating.",
+          "description": "A community outreach program designed to evaluate and hire students after graduating",
           "responsibilities": [
-            "Evaluated and hired students interested in development.",
-            "Trained interns and managed projects (System Monitoring, Applicant Tracking, TypeScript Parser and CodeMap Generator, Real Time Server Monitoring System)."
-          ]
+            "Evaluated and hired students interested in development",
+            "Trained interns and managed projects (Applicant Tracking, TypeScript Parser and CodeMap Generator, Real Time Server Monitoring System)"
+          ],
+          "importance": 1
         },
         {
           "title": "TCC Meetup",
-          "description": "A monthly meetup group designed to engage the community for the purposes of training the TCC staff and helping with name recognition.  ",
+          "description": "A monthly meetup group designed to engage the community for the purposes of training the TCC staff and help with name recognition.  ",
           "responsibilities": [
-            "Initial idea and group creation.",
-            "Reviewed and recruited both staff and people outside of TCC to give presentations.",
-            "Handled community outreach initiatives to attract people outside of TCC to attend."
-          ]
+            "Initial idea and group creation",
+            "Reviewed and recruited both staff and people outside of TCC to give presentations",
+            "Handled community outreach initiatives to attract people outside of TCC to attend"
+          ],
+          "importance": 1
         }
       ],
       "technologies": [
@@ -384,14 +445,14 @@
         "TSQL",
         "JavaScript",
         "TypeScript",
-        "AngularJS (1.x – 2)",
+        "AngularJS",
         "Git"
       ],
       "responsibilities": [
-        "Team Foundation Server Administrator.",
-        "Development Manager.",
-        "Special Development Initiatives.",
-        "Azure consultant."
+        "Team Foundation Server Administrator",
+        "Development Manager",
+        "Special Development Initiatives",
+        "Azure consultant"
       ]
     },
 
@@ -400,38 +461,44 @@
       "start": { "month": "November", "year": "2014" },
       "end": { "month": "March", "year": "2015" },
       "title": "Developer III",
+      "summarize": true,
 
       "accomplishments": [
         {
-          "description": "System development of various systems regarding authorization and workflow systems."
+          "description": "Development regarding authorization and workflow systems",
+          "importance": 1
         },
         {
-          "description": "Technology evaluation and recommendations concerning servers and network security software."
+          "description": "Technology evaluation and recommendations concerning servers and network security software",
+          "importance": 1
         }
       ],
       "projects": [
         {
           "title": "Authorization AI",
-          "description": "The system responsible for handling authentication and authorization.  It allowed users to share a common logon across all products.",
-          "responsibilities": ["Architecture and system creation."]
+          "description": "The system responsible for handling authentication and authorization.  It allowed users to share a common logon across all products",
+          "responsibilities": ["Architecture and development"],
+          "importance": 1
         },
         {
           "title": "Workflow Engine",
-          "description": "The system designed to integrate into different modules requiring a state machine to administrate and track workflows.",
-          "responsibilities": ["Architecture and system creation."]
+          "description": "The system designed to integrate into different modules requiring a state machine to administrate and track workflows",
+          "responsibilities": ["Architecture and development"],
+          "importance": 1
         },
         {
           "title": "Enterprise AI",
-          "description": "A series of independent modules with a common framework offered as a single package to consumers.",
+          "description": "A series of independent modules with a common framework offered as a single package to consumers",
           "responsibilities": [
-            "Design and implementation of the system to allow client segregated databases from a single implementation.",
-            "Module design and creation.",
-            "Refactoring and code optimization."
-          ]
+            "Design and implementation of the system to allow client segregated databases from a single implementation",
+            "Module design and creation",
+            "Refactoring and code optimization"
+          ],
+          "importance": 1
         }
       ],
 
-      "description": "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring.",
+      "description": "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring",
       "technologies": [
         "C#",
         "F#",
@@ -442,30 +509,32 @@
         "AngularJS"
       ],
       "responsibilities": [
-        "Proposed and consulted with the infrastructure team to select and purchase network monitoring software to prepare for third party audits.",
-        "Consulted with the infrastructure team on production application access.",
-        "Created requirements for the software change management process.  Outlined the necessary steps and reviewed systems to provide recommendations on implementation.",
-        "Provided requirements and proposed solution for an automation testing framework.  Helped with the initial training and implementation of the Ranorex test suite.",
-        "Proposed and implemented the solution to track and report application performance.",
-        "Proposed and helped implement Redis state server.  Consulted to provide access controls securing stored information against attack vectors."
+        "Proposed and consulted with the infrastructure team to select and purchase network monitoring software to prepare for third party audits",
+        "Consulted with the infrastructure team on production application access",
+        "Created requirements for the software change management process.  Outlined the necessary steps and reviewed systems to provide recommendations on implementation",
+        "Provided requirements and proposed solution for an automation testing framework and assisted in training and implementation of Ranorex",
+        "Proposed and implemented the solution to track and report application performance",
+        "Proposed and assisted in implementation of Redis state server and consulted to provide access controls securing stored information"
       ]
     },
     {
-      "company": "Performance Assessment Network",
+      "company": "Pan / Equifax",
       "start": { "month": "January", "year": "2007" },
       "end": { "month": "November", "year": "2014" },
       "title": "Developer II",
 
       "accomplishments": [
         {
-          "description": "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring."
+          "description": "Created and maintained applications applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring",
+          "importance": 1
         },
 
         {
-          "description": "Implemented a monthly training program around development technologies, software development, and security."
+          "description": "Implemented a monthly training program around development technologies, software development, and security",
+          "importance": 1
         }
       ],
-      "description": "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring.",
+      "description": "Created and maintained applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring",
       "responsibilities": [],
       "projects": [],
       "technologies": [
@@ -502,7 +571,8 @@
         "C++",
         "Perl",
         "DB2 SQL"
-      ]
+      ],
+      "importance": 1
     },
     {
       "company": "JPMorgan Chase",
@@ -514,13 +584,14 @@
       "responsibilities": [],
       "technologies": [
         "C#",
-        "ASP (2.0, 3.0)",
+        "Classic ASP",
         "Java",
         "TSQL",
         "Delphi",
         "J++",
         "JavaScript"
-      ]
+      ],
+      "importance": 1
     }
   ]
 }

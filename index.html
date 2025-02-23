@@ -18,6 +18,7 @@
         ].reduce((s, i) => i(s), tDate)
 
 
+
         return [
           ({ a, b }) => ({ a: convert(a), b: convert(b) }),
           ({ a, b }) => ({ a: a.date, b: b.date }),
@@ -25,7 +26,9 @@
 
         ].reduce((s, i) => i(s), { a: a.start, b: b.start })
       }
-
+      function sortByImportanceHigh(a, b) {
+        return b.importance - a.importance;
+      }
       window.addEventListener(
         "DOMContentLoaded",
         () =>
@@ -33,10 +36,6 @@
             .then((d) => d.json())
             .then(d => ({ ...d, display: true }))
             .then(d => ({ ...d, employment: d.employment.toSorted(sortByStart) }))
-            .then(x => {
-              console.log(x);
-              return x;
-            })
             .then((j) => ko.applyBindings(j)),
         false
       );
@@ -94,9 +93,9 @@
         <ul class="organization" data-bind="foreach:employment">
           <li class="employment-entry">
             <h3 class="employment-meta-data">
-              <div class="title" data-bind="text:title"></div>
+              <span class="title" data-bind="text:title"></span>
 
-              <div class="organization-name" data-bind="text:company"></div>
+              <span class="organization-name" data-bind="text:company"></span>
             </h3>
 
             <div class="dates">
@@ -109,55 +108,78 @@
                 <span class="year" data-bind="text:end ? end.year : ''"></span>
               </div>
             </div>
-
-
-            <div class="projects" data-bind="foreach:projects">
-              <div class="project">
-                <h4 class="title" data-bind="text:title"></h4>
-                <span class="description" data-bind="text:description"></span>
-                <ul class="responsiblities" data-bind="foreach: responsibilities">
-                  <li data-bind="text:$data"></li>
-                </ul>
-              </div>
+            <div class="projects"
+              data-bind="foreach:{data:projects.filter(x => !x.hide).toSorted(sortByImportanceHigh)}">
+              <ul class="project">
+                <li>
+                  <h4 class="title" data-bind="text:title"></h4>
+                  <span class="description" data-bind="text:description"></span>
+                  <ul class="responsiblities" data-bind="foreach: responsibilities">
+                    <li data-bind="text:$data"></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
             <div class="accomplishments">
-              <h4>Accomplishments</h4>
+              <ul data-bind="foreach: accomplishments">
+                <li class="presentation" data-bind="text:description"></li>
+              </ul>
+              <h4 class="accomplishment-title">Accomplishments</h4>
 
-              <div data-bind="foreach: accomplishments">
-                <ul>
-                  <li class="presentation" data-bind="text:description"></li>
-                </ul>
-              </div>
             </div>
 
           </li>
         </ul>
       </div>
-      <div>
+      <section>
         <h2>Education</h2>
         <div class="education" data-bind="foreach: education">
           <div class="institution-description">
             <span class="institution" data-bind="text:institution"></span>
-            <span class="dates">
-              <span class="start" data-bind="text:start.year"></span>
-              <span class="end" data-bind="text:end.year"></span>
-            </span>
+            <div class="dates">
+              <div class="start">
+                <span class="year" data-bind="text:(start.year)"></span>
+              </div>
+              <div class="end">
+                <span class="year" data-bind="text:end ? end.year : ''"></span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <h2>Presentations</h2>
-          <div class="presentations" data-bind="foreach:presentations">
-            <ul>
-              <li class="presentation">
-                <span data-bind="text:topic"></span>
-                <ul data-bind="foreach:title">
-                  <li data-bind="text:$data"></li>
-                </ul>
-              </li>
+          <div>
+            <h5 class="awards">Academic Achievements</h5>
+            <ul class="awards" data-bind="foreach: awards">
+              <li data-bind="text:$data"></li>
             </ul>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section>
+        <h3>Awards</h2>
+          <ul class="awards" data-bind="foreach: awards">
+            <li class="institution-description">
+              <span class="institution" data-bind="text:institution"></span>
+              <span class="institution" data-bind="text:name"></span>
+              <span class="dates">
+                <span class="end" data-bind="text:end.year"></span>
+              </span>
+            </li>
+          </ul>
+      </section>
+
+      <section class="presentation-wrapper">
+        <h2>Presentations</h2>
+        <ul class="presentations" data-bind="foreach:presentations">
+          <li class="presentation">
+            <span data-bind="text:topic"></span>
+            <ul data-bind="foreach:title">
+              <li data-bind="text:$data"></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="presentation-overflow"></div>
+      </section>
+
   </body>
 
 </html>
