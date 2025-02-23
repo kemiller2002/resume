@@ -94,7 +94,6 @@
           <li class="employment-entry">
             <h3 class="employment-meta-data">
               <span class="title" data-bind="text:title"></span>
-
               <span class="organization-name" data-bind="text:company"></span>
             </h3>
 
@@ -108,6 +107,8 @@
                 <span class="year" data-bind="text:end ? end.year : ''"></span>
               </div>
             </div>
+
+            <!-- ko if: !$data.entryOnly -->
             <div class="projects"
               data-bind="foreach:{data:projects.filter(x => !x.hide).toSorted(sortByImportanceHigh)}">
               <ul class="project">
@@ -120,51 +121,57 @@
                 </li>
               </ul>
             </div>
+
             <div class="accomplishments">
-              <ul data-bind="foreach: accomplishments">
+              <ul data-bind="foreach: {data:accomplishments.filter(x => !x.hide)}">
                 <li class="presentation" data-bind="text:description"></li>
               </ul>
               <h4 class="accomplishment-title">Accomplishments</h4>
 
             </div>
-
+            <!-- /ko -->
           </li>
         </ul>
       </div>
       <section>
         <h2>Education</h2>
-        <div class="education" data-bind="foreach: education">
-          <div class="institution-description">
-            <span class="institution" data-bind="text:institution"></span>
-            <div class="dates">
-              <div class="start">
-                <span class="year" data-bind="text:(start.year)"></span>
-              </div>
-              <div class="end">
-                <span class="year" data-bind="text:end ? end.year : ''"></span>
+        <ul class="education" data-bind="foreach: education">
+          <li class="education">
+            <h4 class="institution" data-bind="text:institution"> </h4>
+            <div class="institution-description">
+              <h5 class="education-description">
+                <span data-bind="text:degree"></span>
+                <span data-bind="text:study"></span>
+              </h5>
+              <div class="dates">
+                <div class="start">
+                  <span class="year" data-bind="text:(start.year)"></span>
+                </div>
+                <div class="end">
+                  <span class="year" data-bind="text:end ? end.year : ''"></span>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <h5 class="awards">Academic Achievements</h5>
             <ul class="awards" data-bind="foreach: awards">
               <li data-bind="text:$data"></li>
             </ul>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
 
       <section>
-        <h3>Awards</h2>
-          <ul class="awards" data-bind="foreach: awards">
-            <li class="institution-description">
-              <span class="institution" data-bind="text:institution"></span>
+        <h2>Awards</h2>
+        <ul class="awards" data-bind="foreach: awards">
+          <li>
+            <h4 class="institution" data-bind="text:institution"></h4>
+            <div class="award-meta-data">
               <span class="institution" data-bind="text:name"></span>
-              <span class="dates">
+              <div class="dates">
                 <span class="end" data-bind="text:end.year"></span>
-              </span>
-            </li>
-          </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section class="presentation-wrapper">

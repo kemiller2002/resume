@@ -161,6 +161,7 @@ body[display="true"] {
 
 .institution-description {
   display: flex;
+  flex-grow: 2;
 }
 
 .institution {
@@ -169,6 +170,14 @@ body[display="true"] {
 
 .hide {
   display: none;
+}
+
+h5.education-description {
+  flex-grow: 2;
+}
+
+.dates {
+  justify-content: right;
 }
 
 .presentations {
@@ -190,8 +199,32 @@ ul.awards {
   list-style: none;
 }
 
+ul.education {
+  padding: 0em;
+}
+
+li.education {
+  list-style: none;
+}
+
+ul.awards {
+  padding: 0em;
+}
+
+.award-meta-data {
+  display: flex;
+}
+.award-meta-data > .institution {
+  flex-grow: 2;
+}
+
+.award-meta-data > .dates {
+  justify-content: right;
+}
+
 @page {
   size: A4;
   margin: 10mm;
   border: 1px solid black;
+  padding-top: 0.4em;
 }

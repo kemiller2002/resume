@@ -15,11 +15,11 @@
   "education": [
     {
       "institution": "Kalamazoo College",
-      "degree": "B.A",
+      "degree": "B.A.",
       "study": "Psychology (Cognition, Learning)",
       "start": { "year": "1996" },
       "end": { "year": "2000" },
-      "awards": ["Award for Excellence in Education", "Academic Scholarship"],
+      "awards": ["Academic Scholarship", "Award for Excellence in Education"],
       "importance": 1
     }
   ],
@@ -105,6 +105,14 @@
           "importance": 10
         },
         {
+          "description": "Redesigned release approach to reduce time to market of enhancements from 6 weeks to 2 days",
+          "importance": 10
+        },
+        {
+          "description": "Redesigned workflow process concerning requirements, work prioritization, and execution",
+          "importance": 10
+        },
+        {
           "description": "Reduced operational expenses by 100k annually by optimizing vendor offerings",
           "internalNotes": "CASS certification for post office.  Ended up outsourcing ot a check processing firm to handle",
           "importance": 4
@@ -170,11 +178,7 @@
         {
           "title": "Head of Agile Practices",
           "description": "Software development practices for engineering and quality assurance teams",
-          "responsibilities": [
-            "Aligned project forecasting with variance of 10% of task completion",
-            "Redesigned release approach to reduce time to market of enhancements from 6 weeks to 2 days",
-            "Redesigned workflow process concerning requirements, work prioritization, and execution"
-          ],
+          "responsibilities": [],
           "display": ["management", "architect", "developer"],
           "importance": 9
         },
@@ -195,7 +199,7 @@
         {
           "title": "Head of Enterprise Architecture Board",
           "description": "Group of executives and architects, resulting in consolidation of technologies, increased scalability, stability, and efficiency in time to market",
-          "responsibilities": ["Creation", "Management"],
+          "responsibilities": ["Creation"],
           "display": ["management"],
           "importance": 2
         },
@@ -214,16 +218,18 @@
         {
           "title": "Microsite portal implementation",
           "description": "Refactor legacy portal into smaller composable systems to allow segregated rapid development and deployment",
-          "responsibilities": ["Lead architect and development"],
+          "responsibilities": ["Architecture and development"],
           "display": ["architect", "developer"],
-          "importance": 1
+          "importance": 1,
+          "hide": true
         },
         {
           "title": "Microservice implementation",
           "description": "Transform underlying application model and processes into a service based architecture meshed through GraphQL",
           "responsibilities": ["Architecture and development"],
           "display": ["architect", "developer"],
-          "importance": 1
+          "importance": 1,
+          "hide": true
         },
         {
           "title": "Legacy portal stabilization initiative",
@@ -383,7 +389,8 @@
         },
         {
           "description": "Lead on client Team Foundation Server implementations",
-          "importance": 1
+          "importance": 1,
+          "hide": true
         }
       ],
 
@@ -402,9 +409,8 @@
           "title": "Department of Natural Resources Project - Unity",
           "description": "A complete rewrite of the existing legacy system designed to track all information concerning water quantity and location (streams, lakes, dams, wells, etc.)",
           "responsibilities": [
-            "Architect",
-            "Software configuration management design and administration",
-            "Lead developer"
+            "Architecture and development",
+            "Software configuration management design and administration"
           ],
           "importance": 1
         },
@@ -429,7 +435,7 @@
         },
         {
           "title": "TCC Meetup",
-          "description": "A monthly meetup group designed to engage the community for the purposes of training the TCC staff and help with name recognition.  ",
+          "description": "A monthly meetup group designed to engage the community for the purposes of training the TCC staff and help with name recognition  ",
           "responsibilities": [
             "Initial idea and group creation",
             "Reviewed and recruited both staff and people outside of TCC to give presentations",
@@ -461,7 +467,7 @@
       "start": { "month": "November", "year": "2014" },
       "end": { "month": "March", "year": "2015" },
       "title": "Developer III",
-      "summarize": true,
+      "entryOnly": true,
 
       "accomplishments": [
         {
@@ -522,7 +528,7 @@
       "start": { "month": "January", "year": "2007" },
       "end": { "month": "November", "year": "2014" },
       "title": "Developer II",
-
+      "entryOnly": true,
       "accomplishments": [
         {
           "description": "Created and maintained applications applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring",
@@ -572,7 +578,8 @@
         "Perl",
         "DB2 SQL"
       ],
-      "importance": 1
+      "importance": 1,
+      "entryOnly": true
     },
     {
       "company": "JPMorgan Chase",
@@ -591,6 +598,7 @@
         "J++",
         "JavaScript"
       ],
+      "entryOnly": true,
       "importance": 1
     }
   ]
