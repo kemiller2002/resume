@@ -38,7 +38,14 @@
     }
   ],
 
-  "projects": ["Book of F# - Technical Reviewer"],
+  "projects": [
+    {
+      "institution": "No Starch Press",
+      "name": "Book of F#",
+      "end": { "year": "2016" },
+      "importance": 1
+    }
+  ],
   "presentations": [
     {
       "topic": "C#",
@@ -52,7 +59,7 @@
         "Dependency Injection",
         "Obfuscation in .NET",
         "Code Contracts in .Net 4.0",
-        "Creating an Application Performance Monitoring Solution for .NET Applications"
+        "Creating an Application Performance Monitoring Solution"
       ]
     },
     {
@@ -65,7 +72,7 @@
     },
 
     {
-      "topic": "Software Development",
+      "topic": "Software Development Methodologies",
       "title": [
         "Agile and Scrum using Team Foundation Server",
         "Process Isn't Your Problem.  The Cultural Requirements of Agile",
@@ -74,7 +81,7 @@
     },
 
     {
-      "topic": "Development",
+      "topic": "General Development",
       "title": ["Regular Expressions", "Time: Taking a Minute to Ponder It"]
     },
 
@@ -98,7 +105,16 @@
       "company": "Ren",
       "start": { "month": "January", "year": "2020" },
       "end": { "month": "January", "year": "2025" },
-      "title": "Director of Engineering",
+      "title": [
+        {
+          "name": "Director of Engineering",
+          "display": true
+        },
+        {
+          "name": "Senior Architect",
+          "display": true
+        }
+      ],
       "accomplishments": [
         {
           "description": "Aligned product work with required development targets (timeline accuracy and predictability) with an error margin of less than 10%",
@@ -113,7 +129,7 @@
           "importance": 10
         },
         {
-          "description": "Reduced operational expenses by 100k annually by optimizing vendor offerings",
+          "description": "Reduced operational expenses by 100k annually by optimizing vendor offerings through understanding technology and supply chain optimizations",
           "internalNotes": "CASS certification for post office.  Ended up outsourcing ot a check processing firm to handle",
           "importance": 4
         },
@@ -176,9 +192,11 @@
         },
 
         {
-          "title": "Head of Agile Practices",
+          "title": "Head of Software Development Procedures",
           "description": "Software development practices for engineering and quality assurance teams",
-          "responsibilities": [],
+          "responsibilities": [
+            "Set direction of software development practices"
+          ],
           "display": ["management", "architect", "developer"],
           "importance": 9
         },
@@ -199,7 +217,7 @@
         {
           "title": "Head of Enterprise Architecture Board",
           "description": "Group of executives and architects, resulting in consolidation of technologies, increased scalability, stability, and efficiency in time to market",
-          "responsibilities": ["Creation"],
+          "responsibilities": ["Creation and administration"],
           "display": ["management"],
           "importance": 2
         },
@@ -213,7 +231,7 @@
             "Development"
           ],
           "display": ["management"],
-          "importance": 1
+          "importance": 6
         },
         {
           "title": "Microsite portal implementation",
@@ -242,6 +260,7 @@
       ],
       "technologies": [
         "C#",
+        ".NET",
         ".NET Core",
         "JavaScript",
         "TypeScript",
@@ -249,8 +268,9 @@
         "Web Components",
         "Git",
         "Vue.js",
-        "Distributed Systems (including Microservices)",
-        "SQL Server",
+        "Distributed Systems",
+        "Microservices",
+        "MSSQL Server",
         "React",
         "Oracle",
         "AWS",
@@ -258,7 +278,7 @@
         "Node.js",
         "Docker",
         "Kubernetes",
-        "Postgres"
+        "PostgreSQL"
       ],
 
       "responsibilities": ["Technology and architectural review", "Mentorship"]
@@ -267,7 +287,12 @@
       "company": "T2 Systems",
       "start": { "month": "October", "year": "2018" },
       "end": { "month": "January", "year": "2020" },
-      "title": "Senior Developer",
+      "title": [
+        {
+          "name": "Senior Developer",
+          "display": true
+        }
+      ],
       "accomplishments": [
         {
           "description": "Stabilized application and database deployment process aligning over 300 client installations resulting in reduction in operational and development expenses",
@@ -293,7 +318,7 @@
       "projects": [
         {
           "title": "Data Archival Project",
-          "description": "System to scan the database for records meeting certain criteria, remove them from the client installation, send them to the center, and verify the contents with stored records",
+          "description": "A system to locate clusters of related data based on certain changing criteria, remove them from the client installation, send them to the central reporting system, and verify the contents with stored records",
           "responsibilities": ["Architecture and development"],
           "importance": 1
         },
@@ -341,8 +366,8 @@
       "technologies": [
         "C#",
         "F#",
-        "ASP.NET (Web API)",
-        "TSQL",
+        "ASP.NET",
+        "SQL",
         "JavaScript",
         "TypeScript",
         "React",
@@ -364,7 +389,17 @@
       "company": "TCC Software Solutions",
       "start": { "month": "April", "year": "2015" },
       "end": { "month": "September", "year": "2018" },
-      "title": "Development Manager",
+      "title": [
+        {
+          "name": "Development Manager",
+          "display": true
+        },
+
+        {
+          "name": "Senior Architect",
+          "display": true
+        }
+      ],
 
       "accomplishments": [
         {
@@ -447,8 +482,8 @@
       "technologies": [
         "C#",
         "F#",
-        "ASP.NET (Web API)",
-        "TSQL",
+        "ASP.NET",
+        "SQL",
         "JavaScript",
         "TypeScript",
         "AngularJS",
@@ -466,7 +501,12 @@
       "company": "Infinite AI",
       "start": { "month": "November", "year": "2014" },
       "end": { "month": "March", "year": "2015" },
-      "title": "Developer III",
+      "title": [
+        {
+          "name": "Developer III",
+          "display": true
+        }
+      ],
       "entryOnly": true,
 
       "accomplishments": [
@@ -508,11 +548,11 @@
       "technologies": [
         "C#",
         "F#",
-        "ASP.NET (Web API)",
-        "TSQL",
+        "ASP.NET",
+        "SQL",
         "PowerShell",
         "JavaScript",
-        "AngularJS"
+        "Angular"
       ],
       "responsibilities": [
         "Proposed and consulted with the infrastructure team to select and purchase network monitoring software to prepare for third party audits",
@@ -527,7 +567,12 @@
       "company": "Pan / Equifax",
       "start": { "month": "January", "year": "2007" },
       "end": { "month": "November", "year": "2014" },
-      "title": "Developer II",
+      "title": [
+        {
+          "name": "Developer II",
+          "display": true
+        }
+      ],
       "entryOnly": true,
       "accomplishments": [
         {
@@ -546,11 +591,11 @@
       "technologies": [
         "C#",
         "JavaScript",
-        "TSQL",
+        "SQL",
         "PowerShell",
         "F#",
         "Python",
-        "ASP.NET (Web Forms & MVC",
+        "ASP.NET",
         "WCF",
         "REST",
         "LaTeX",
@@ -562,7 +607,12 @@
       "company": "Union Acceptance Corporation",
       "start": { "month": "June", "year": "2000" },
       "end": { "month": "October", "year": "2003" },
-      "title": "Application Developer II",
+      "title": [
+        {
+          "name": "Developer II",
+          "display": true
+        }
+      ],
       "projects": [],
       "accomplishments": [],
       "responsibilities": [],
@@ -570,7 +620,7 @@
         "VBScript",
         "Classic ASP",
         "Visual Basic",
-        "TSQL",
+        "SQL",
         "Delphi",
         "J++",
         "JavaScript",
@@ -585,7 +635,12 @@
       "company": "JPMorgan Chase",
       "start": { "month": "October", "year": "2003" },
       "end": { "month": "January", "year": "2007" },
-      "title": "Technical Officer",
+      "title": [
+        {
+          "name": "Technical Officer",
+          "display": true
+        }
+      ],
       "projects": [],
       "accomplishments": [],
       "responsibilities": [],
@@ -593,7 +648,7 @@
         "C#",
         "Classic ASP",
         "Java",
-        "TSQL",
+        "SQL",
         "Delphi",
         "J++",
         "JavaScript"

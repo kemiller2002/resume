@@ -7,7 +7,7 @@ H1 {
 }
 
 H2 {
-  margin-bottom: 0.25em;
+  margin-bottom: 0em;
 }
 
 H3 {
@@ -24,7 +24,7 @@ H5 {
 }
 
 section {
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 
 body {
@@ -50,6 +50,7 @@ body[display="true"] {
 .contact {
   display: flex;
   flex-direction: column;
+  gap: 0.25em;
 }
 .phone > * ~ * {
   margin-left: 0em;
@@ -81,7 +82,8 @@ body[display="true"] {
 
   grid-template-rows:
     [header] auto [responsibilities] auto
-    [accomplishments] auto;
+    [accomplishments] auto
+    [technologies] auto;
   margin-bottom: 1em;
 }
 
@@ -90,8 +92,13 @@ body[display="true"] {
   grid-column-end: content-center-right-2;
 }
 
-.employment-meta-data > .title {
-  display: block;
+span.title {
+  white-space: nowrap;
+}
+
+div.title > span.title:not(:last-child)::after {
+  content: "/";
+  margin: 0em 0.25em;
 }
 
 .projects {
@@ -183,6 +190,12 @@ h5.education-description {
 .presentations {
   display: flex;
   flex-direction: column;
+  flex-flow: column nowrap;
+  padding: 0em;
+}
+
+.presentation {
+  list-style-type: none;
 }
 
 .presentation-wrapper {
@@ -220,6 +233,42 @@ ul.awards {
 
 .award-meta-data > .dates {
   justify-content: right;
+}
+
+ul {
+  margin-top: 0em;
+}
+
+li.accomplishment {
+  list-style-type: square;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 0px;
+  padding-left: 0em;
+  gap: 0.25em;
+}
+section.technologies {
+  flex-direction: column;
+}
+.technology {
+  list-style-type: none;
+  margin-right: 0.25em;
+}
+
+.technology:not(:last-child)::after {
+  content: ",";
+}
+
+.employment-entry > .technologies {
+  grid-row-start: technologies;
+  grid-column-start: border-left-2;
+  grid-column-end: content-border-right;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 @page {

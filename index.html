@@ -16,9 +16,6 @@
           x => ({ ...x, monthNumber: monthNames[x.month] })
           , x => ({ ...x, date: new Date(x.year, x.monthNumber, 1) })
         ].reduce((s, i) => i(s), tDate)
-
-
-
         return [
           ({ a, b }) => ({ a: convert(a), b: convert(b) }),
           ({ a, b }) => ({ a: a.date, b: b.date }),
@@ -26,9 +23,19 @@
 
         ].reduce((s, i) => i(s), { a: a.start, b: b.start })
       }
+
+      function sortByTopic(a, b) {
+        return a.topic - b.topic;
+      }
+
       function sortByImportanceHigh(a, b) {
         return b.importance - a.importance;
       }
+
+      function sortAlphabetical(a, b) {
+        return a.localeCompare(b);
+      }
+
       window.addEventListener(
         "DOMContentLoaded",
         () =>
@@ -39,6 +46,17 @@
             .then((j) => ko.applyBindings(j)),
         false
       );
+
+      function getTechnologies(employment) {
+        return [
+          x => x.filter(y => !y.entryOnly),
+          x => x.map(y => y.technologies),
+          x => x.flat(),
+          x => new Set(x),
+          x => [...x],
+          x => x.toSorted(),
+        ].reduce((s, i) => i(s), employment);
+      }
 
     </script>
     <link rel="stylesheet" href="resume.css">
@@ -71,15 +89,12 @@
         </h1>
         <div class="contact">
           <div class="contact-container">
-            <span class="material-symbols-outlined">call</span>
             <div class="phone">
               <span data-bind="text: phone.areaCode"></span><span data-bind="text: phone.prefix"></span><span
                 data-bind="text: phone.suffix"></span>
-
             </div>
           </div>
           <div class="contact-container">
-            <span class="material-symbols-outlined">mail</span>
             <span class="email" data-bind="text: email"></span>
           </div>
           <a href class="stackoverflow" data-bind="text: stackoverflow"></a>
@@ -89,11 +104,13 @@
 
       <hr class="header-divider" />
 
-      <div class="employment">
+      <section class="employment">
         <ul class="organization" data-bind="foreach:employment">
           <li class="employment-entry">
             <h3 class="employment-meta-data">
-              <span class="title" data-bind="text:title"></span>
+              <div data-bind="foreach:{data:title}" class="title">
+                <span class="title" data-bind="text:$data.name"></span>
+              </div>
               <span class="organization-name" data-bind="text:company"></span>
             </h3>
 
@@ -124,16 +141,41 @@
 
             <div class="accomplishments">
               <ul data-bind="foreach: {data:accomplishments.filter(x => !x.hide)}">
-                <li class="presentation" data-bind="text:description"></li>
+                <li class="accomplishment" data-bind="text:description"></li>
               </ul>
               <h4 class="accomplishment-title">Accomplishments</h4>
 
             </div>
+
             <!-- /ko -->
           </li>
         </ul>
-      </div>
-      <section>
+      </section>
+
+
+      <section class="awards">
+        <h2>Awards</h2>
+        <ul class="awards" data-bind="foreach: awards">
+          <li>
+            <h4 class="institution" data-bind="text:institution"></h4>
+            <div class="award-meta-data">
+              <span class="institution" data-bind="text:name"></span>
+              <div class="dates">
+                <span class="end" data-bind="text:end.year"></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="technologies">
+        <h2>Technologies</h2>
+        <ul class="technologies" data-bind="foreach:{data:getTechnologies(employment)}">
+          <li data-bind="text:$data" class="technology"></li>
+        </ul>
+      </section>
+
+      <section class="education">
         <h2>Education</h2>
         <ul class="education" data-bind="foreach: education">
           <li class="education">
@@ -159,28 +201,13 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Awards</h2>
-        <ul class="awards" data-bind="foreach: awards">
-          <li>
-            <h4 class="institution" data-bind="text:institution"></h4>
-            <div class="award-meta-data">
-              <span class="institution" data-bind="text:name"></span>
-              <div class="dates">
-                <span class="end" data-bind="text:end.year"></span>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-
       <section class="presentation-wrapper">
         <h2>Presentations</h2>
-        <ul class="presentations" data-bind="foreach:presentations">
+        <ul class="presentations" data-bind="foreach:{data:presentations.toSorted(sortByTopic)}">
           <li class="presentation">
-            <span data-bind="text:topic"></span>
-            <ul data-bind="foreach:title">
-              <li data-bind="text:$data"></li>
+            <h3 data-bind="text:topic"></h3>
+            <ul data-bind="foreach:{data:title.toSorted(sortAlphabetical)}">
+              <li data-bind="text:$data" class="presentation"></li>
             </ul>
           </li>
         </ul>
