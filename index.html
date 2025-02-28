@@ -168,6 +168,22 @@
         </ul>
       </section>
 
+      <section class="projects">
+        <h2>Projects</h2>
+        <ul class="projects" data-bind="foreach: projects">
+          <li>
+            <h4 class="institution" data-bind="text:institution"></h4>
+            <div class="projects-meta-data">
+              <span class="institution" data-bind="text:name"></span>
+              <span class="description" data-bind="text:description"></span>
+              <div class="dates">
+                <span class="end" data-bind="text:end.year"></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
       <section class="technologies">
         <h2>Technologies</h2>
         <ul class="technologies" data-bind="foreach:{data:getTechnologies(employment)}">

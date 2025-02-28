@@ -207,9 +207,11 @@ ul.project {
   list-style-type: none;
 }
 
+ul.projects,
 ul.awards {
   margin: 0em;
   list-style: none;
+  padding: 0em;
 }
 
 ul.education {
@@ -220,13 +222,11 @@ li.education {
   list-style: none;
 }
 
-ul.awards {
-  padding: 0em;
-}
-
+.projects-meta-data,
 .award-meta-data {
   display: flex;
 }
+.projects-meta-data > .institution,
 .award-meta-data > .institution {
   flex-grow: 2;
 }
@@ -269,6 +269,19 @@ section.technologies {
   grid-column-end: content-border-right;
   display: flex;
   flex-direction: column-reverse;
+}
+
+.projects-meta-data > .institution {
+  flex-grow: 0;
+}
+
+.projects-meta-data > .description {
+  flex-grow: 2;
+}
+
+.projects-meta-data > .institution ~ .description::before {
+  content: "-";
+  margin: 0em 0.25em;
 }
 
 @page {

@@ -4,7 +4,7 @@
   "email": "kemiller2002@gmail.com",
   "website": "http://kemiller2002.github.io",
   "github": "https://github.com/kemiller2002",
-  "stackoverflow": "http://stackoverflow.com/1942",
+  "stackoverflow": "https://stackoverflow.com/users/1942/kemiller2002",
 
   "address": {
     "line": ["6312 N. Rural St"],
@@ -42,7 +42,8 @@
     {
       "institution": "No Starch Press",
       "name": "Book of F#",
-      "end": { "year": "2016" },
+      "description": "Technical Reviewer",
+      "end": { "year": "2014" },
       "importance": 1
     }
   ],
@@ -129,12 +130,12 @@
           "importance": 10
         },
         {
-          "description": "Reduced operational expenses by 100k annually by optimizing vendor offerings through understanding technology and supply chain optimizations",
-          "internalNotes": "CASS certification for post office.  Ended up outsourcing ot a check processing firm to handle",
+          "description": "Reduced operational expenses by $100,000 annually by optimizing vendor offerings through understanding technology and supply chain optimizations",
+          "internalNotes": "CASS certification for post office.  Ended up outsourcing to a check processing firm to handle",
           "importance": 4
         },
         {
-          "description": "Renegotiated contracts for an annual saving over 60% of current pricing",
+          "description": "Renegotiated contracts for an Annual savings exceeding 60% of current costs",
           "importance": 3
         },
         {
@@ -147,20 +148,20 @@
           "importance": 9
         },
         {
-          "description": "Architected and lead system enhancements resulting in reducing staff operating expenses in excess of 500k annually",
+          "description": "Architected and led system enhancements which resulted in reducing staff operating expenses in excess of 500k annually",
           "importance": 6
         },
         {
-          "description": "Demonstrated, taught, and helped teams implement through formal training concepts relating to software development including: functional programming, ux design principles, and programming language concepts",
+          "description": "Provided formal training on software development concepts, including functional programming, UX design principles, and programming languages",
           "importance": 5
         },
         {
-          "description": "Restructured the acquired engineering teams and processes to reduce time to market to less than 10% of it's previous cadence",
+          "description": "Restructured the acquired engineering teams and processes to reduce time to market to less than 10% of its previous cadence",
           "importance": 9
         },
 
         {
-          "description": "Acquired over 50k of free training for development staff surrounding distributed architecture",
+          "description": "Secured over $50,000 in free distributed architecture training for development staff",
           "importance": 4
         }
       ],
@@ -182,7 +183,7 @@
         },
         {
           "title": "Head of Engineering",
-          "description": "Nine engineering teams both on and off shore which were responsible for providing software solutions for 17 of the top 20 financial institutions administrating Donor Advised Funds",
+          "description": "Led nine engineering teams across onshore and offshore locations, delivering software solutions for 17 of the top 20 financial institutions managing Donor Advised Funds",
           "responsibilities": [
             "Set organizational structure",
             "Manager of managers and individual contributors"
@@ -205,9 +206,9 @@
           "title": "Head of Quality Assurance",
           "description": "Team responsible for all three of Ren's software platforms",
           "responsibilities": [
-            "Set direction of all manual and automated initiatives resulting in increased efficiency",
+            "Set direction of all manual and automated initiatives which resulted in increased efficiency",
             "Increased testing efficiency by reviewing and altering efforts to reflect the optimal approach for projects",
-            "Aligned multiple acquired organization's quality assurance initiatives under a unified approach resulting in increased efficiency with in the department",
+            "Aligned multiple acquired organization's quality assurance initiatives under a unified approach which resulted in increased efficiency within the department",
             "Reduced inefficiency by refocusing approach of testing documentation"
           ],
           "display": ["management"],
@@ -216,7 +217,7 @@
 
         {
           "title": "Head of Enterprise Architecture Board",
-          "description": "Group of executives and architects, resulting in consolidation of technologies, increased scalability, stability, and efficiency in time to market",
+          "description": "Group of executives and architects, which resulted in consolidation of technologies, increased scalability, stability, and efficiency in time to market",
           "responsibilities": ["Creation and administration"],
           "display": ["management"],
           "importance": 2
@@ -295,7 +296,7 @@
       ],
       "accomplishments": [
         {
-          "description": "Stabilized application and database deployment process aligning over 300 client installations resulting in reduction in operational and development expenses",
+          "description": "Stabilized application and database deployment process aligning over 300 client installations which resulted in reduction in operational and development expenses",
           "importance": 1
         },
         {
@@ -307,11 +308,11 @@
           "importance": 1
         },
         {
-          "description": "Oversaw initiatives to evaluate and change software development practices around source control management, team empowerment, and requirements process flow",
+          "description": "Led initiatives to improve software development practices, including source control management, team empowerment, and requirements workflow",
           "importance": 1
         },
         {
-          "description": "Administrated Azure DevOps resulting in reduced development costs by implementing a more efficient build system and branching strategy",
+          "description": "Administered Azure DevOps which resulted in reduced development costs by implementing a more efficient build system and branching strategy",
           "importance": 1
         }
       ],
@@ -353,7 +354,7 @@
         },
         {
           "title": "Database Administration",
-          "description": "Monitor the central transaction server and data warehouse MSSQL Servers along with troubleshooting the 300+ client SQL Server installations",
+          "description": "Monitor and optimize the central transaction server and data warehouse MSSQL Servers and directed the administration of 300+ client SQL Server installations",
           "responsibilities": [
             "Query and index optimizations",
             "Server performance monitoring and remediation",
@@ -403,7 +404,7 @@
 
       "accomplishments": [
         {
-          "description": "Increased client visibility to TCC's Microsoft Gold Partner program and reorganized offerings resulting in a reduction of 250k licensing expenses annually",
+          "description": "Increased client visibility to TCC's Microsoft Gold Partner program and reorganized offerings which resulted in a reduction of $250,000 licensing expenses annually",
           "importance": 1
         },
         {
@@ -411,11 +412,11 @@
           "importance": 1
         },
         {
-          "description": "Managed teams across multiple projects, and implemented improvements to communications within and across teams",
+          "description": "Managed teams across multiple projects, and implemented improvements in communication within and across teams",
           "importance": 1
         },
         {
-          "description": "Developed training program and coupled it with community outreach initiatives to increase TCC's presence in the development community",
+          "description": "Developed a training program and coupled it with community outreach initiatives to increase TCC's presence in the development community",
           "importance": 1
         },
         {
@@ -434,7 +435,7 @@
           "title": "Development Manager",
           "description": "Teams across multiple project divisions comprising of managers, developers, and analysts",
           "responsibilities": [
-            "Manager of managers and individual contributors",
+            "Managed both managers and individual contributors",
             "Technical direction (development, quality assurance, and technical analysis)"
           ],
           "display": ["management"],
@@ -442,7 +443,7 @@
         },
         {
           "title": "Department of Natural Resources Project - Unity",
-          "description": "A complete rewrite of the existing legacy system designed to track all information concerning water quantity and location (streams, lakes, dams, wells, etc.)",
+          "description": "A full system rewrite to replace the legacy infrastructure designed to track all information concerning water quantity and location (streams, lakes, dams, wells, etc.)",
           "responsibilities": [
             "Architecture and development",
             "Software configuration management design and administration"
@@ -544,7 +545,7 @@
         }
       ],
 
-      "description": "Responsible for creating and maintaining applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring",
+      "description": "Developed and maintained applications for scheduling, proctoring assessments, software configuration management, and system monitoring",
       "technologies": [
         "C#",
         "F#",
@@ -576,7 +577,7 @@
       "entryOnly": true,
       "accomplishments": [
         {
-          "description": "Created and maintained applications applications surrounding scheduling and proctoring assessments, software configuration management, and system monitoring",
+          "description": "Created and maintained applications for scheduling, proctoring assessments, software configuration management, and system monitoring",
           "importance": 1
         },
 
@@ -626,7 +627,7 @@
         "JavaScript",
         "C++",
         "Perl",
-        "DB2 SQL"
+        "IBM DB2 SQL"
       ],
       "importance": 1,
       "entryOnly": true
