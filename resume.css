@@ -97,8 +97,7 @@ span.title {
 }
 
 div.title > span.title:not(:last-child)::after {
-  content: "/";
-  margin: 0em 0.25em;
+  content: ",";
 }
 
 .projects {
@@ -212,6 +211,10 @@ ul.awards {
   margin: 0em;
   list-style: none;
   padding: 0em;
+}
+
+ul.awards > li {
+  margin-bottom: 0.25em;
 }
 
 ul.education {

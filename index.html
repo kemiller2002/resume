@@ -97,8 +97,8 @@
           <div class="contact-container">
             <span class="email" data-bind="text: email"></span>
           </div>
-          <a href class="stackoverflow" data-bind="text: stackoverflow"></a>
-          <a href class="website" data-bind="text: website"></a>
+          <a target="_blank" class="stackoverflow" data-bind="text: stackoverflow, attr: { href:stackoverflow}"></a>
+          <a target="_blank" class="website" data-bind="text: website, attr: { href:website}"></a>
         </div>
       </div>
 
@@ -154,8 +154,8 @@
 
 
       <section class="awards">
-        <h2>Awards</h2>
-        <ul class="awards" data-bind="foreach: awards">
+        <h2>Awards and Distinctions</h2>
+        <ul class="awards" data-bind="foreach: {data:awards.toSorted(sortByImportanceHigh)}">
           <li>
             <h4 class="institution" data-bind="text:institution"></h4>
             <div class="award-meta-data">

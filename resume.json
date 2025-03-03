@@ -4,7 +4,7 @@
   "email": "kemiller2002@gmail.com",
   "website": "http://kemiller2002.github.io",
   "github": "https://github.com/kemiller2002",
-  "stackoverflow": "https://stackoverflow.com/users/1942/kemiller2002",
+  "stackoverflow": "https://stackoverflow.com/users/1942",
 
   "address": {
     "line": ["6312 N. Rural St"],
@@ -28,7 +28,19 @@
       "institution": "Microsoft",
       "name": "Most Valuable Professional",
       "end": { "year": "2016" },
-      "importance": 1
+      "importance": 10
+    },
+    {
+      "institution": "Indiana State Fair",
+      "name": "Culinary Arts, Honorable Mention (x2)",
+      "end": { "year": "2023" },
+      "importance": 2
+    },
+    {
+      "institution": "CompleteLife",
+      "name": "Visual Chronicles Art Show",
+      "end": { "year": "2024" },
+      "importance": 3
     }
   ],
   "training": [
@@ -98,6 +110,10 @@
     {
       "topic": "F#",
       "title": ["Introduction to F#"]
+    },
+    {
+      "topic": "Git",
+      "title": ["Git The Last Database You'll Ever Need"]
     }
   ],
 
@@ -135,7 +151,7 @@
           "importance": 4
         },
         {
-          "description": "Renegotiated contracts for an Annual savings exceeding 60% of current costs",
+          "description": "Renegotiated contracts for an annual savings exceeding 60% of current costs",
           "importance": 3
         },
         {
@@ -148,7 +164,7 @@
           "importance": 9
         },
         {
-          "description": "Architected and led system enhancements which resulted in reducing staff operating expenses in excess of 500k annually",
+          "description": "Architected and led system enhancements, reducing staff operating expenses by over $500,000 annually",
           "importance": 6
         },
         {
@@ -156,7 +172,7 @@
           "importance": 5
         },
         {
-          "description": "Restructured the acquired engineering teams and processes to reduce time to market to less than 10% of its previous cadence",
+          "description": "Restructured acquired engineering teams and processes, reducing time to market by 90%",
           "importance": 9
         },
 
@@ -185,8 +201,8 @@
           "title": "Head of Engineering",
           "description": "Led nine engineering teams across onshore and offshore locations, delivering software solutions for 17 of the top 20 financial institutions managing Donor Advised Funds",
           "responsibilities": [
-            "Set organizational structure",
-            "Manager of managers and individual contributors"
+            "Established and optimized the organizational structure to improve efficiency and team alignment",
+            "Managed managers and individual contributors, ensuring strategic alignment and effective team leadership"
           ],
           "display": ["management"],
           "importance": 10
@@ -194,7 +210,7 @@
 
         {
           "title": "Head of Software Development Procedures",
-          "description": "Software development practices for engineering and quality assurance teams",
+          "description": "Set software development practices for engineering and quality assurance teams",
           "responsibilities": [
             "Set direction of software development practices"
           ],
@@ -204,12 +220,12 @@
 
         {
           "title": "Head of Quality Assurance",
-          "description": "Team responsible for all three of Ren's software platforms",
+          "description": "Led a high-performing team to ensure zero data loss, sustained operational efficiency, and the flawless management of client funds with no financial missteps",
           "responsibilities": [
             "Set direction of all manual and automated initiatives which resulted in increased efficiency",
             "Increased testing efficiency by reviewing and altering efforts to reflect the optimal approach for projects",
             "Aligned multiple acquired organization's quality assurance initiatives under a unified approach which resulted in increased efficiency within the department",
-            "Reduced inefficiency by refocusing approach of testing documentation"
+            "Improved efficiency by restructuring testing documentation processes"
           ],
           "display": ["management"],
           "importance": 8
@@ -218,14 +234,16 @@
         {
           "title": "Head of Enterprise Architecture Board",
           "description": "Group of executives and architects, which resulted in consolidation of technologies, increased scalability, stability, and efficiency in time to market",
-          "responsibilities": ["Creation and administration"],
+          "responsibilities": [
+            "Led the creation and administration of the Enterprise Architecture Board to drive technology consolidation and strategic decision-making"
+          ],
           "display": ["management"],
           "importance": 2
         },
 
         {
           "title": "Grant Recommendation Project",
-          "description": "An evaluation of business processes, and development of a new application to update user interface for clients and drive greater efficiencies in the organization",
+          "description": "Evaluated business processes and led the development of a new application to enhance the client user interface and improve operational efficiency",
           "responsibilities": [
             "Lead architect on client side architecture",
             "Architect on service design",
@@ -340,9 +358,9 @@
           "description": "A team formed to evaluate the current Agile process at T2 and devise and implement solutions for problems and frustrations by the staff",
           "responsibilities": [
             "Team co-chair over multiple initiatives",
-            "Meet with executive staff members to determine direction",
+            "Met with executive staff members to determine direction",
             "Drive project goals within the team",
-            "Facilitate discussion and determine underlying cause for inefficiencies and team frustrations"
+            "Facilitated discussion and determine underlying cause for inefficiencies and team frustrations"
           ],
           "importance": 1
         },
@@ -354,7 +372,7 @@
         },
         {
           "title": "Database Administration",
-          "description": "Monitor and optimize the central transaction server and data warehouse MSSQL Servers and directed the administration of 300+ client SQL Server installations",
+          "description": "Monitored and optimized central transaction servers and data warehouse MSSQL servers; directed the administration of 300+ client SQL Server installations",
           "responsibilities": [
             "Query and index optimizations",
             "Server performance monitoring and remediation",
@@ -412,7 +430,7 @@
           "importance": 1
         },
         {
-          "description": "Managed teams across multiple projects, and implemented improvements in communication within and across teams",
+          "description": "Managed teams across multiple projects and implemented improvements in communication within and across teams",
           "importance": 1
         },
         {
@@ -454,7 +472,7 @@
           "title": "Microsoft Gold Partnership",
           "description": "A partnership granting special licensing, training, and sales opportunities",
           "responsibilities": [
-            "Administrated all aspects of the program, including continued certification process",
+            "Managed all aspects of the program, including the certification process",
             "Reviewed available licenses through the program and aligned sales, marketing, and operations needs with available software",
             "Realigned developer necessities with available software"
           ],
@@ -465,7 +483,7 @@
           "description": "A community outreach program designed to evaluate and hire students after graduating",
           "responsibilities": [
             "Evaluated and hired students interested in development",
-            "Trained interns and managed projects (Applicant Tracking, TypeScript Parser and CodeMap Generator, Real Time Server Monitoring System)"
+            "Trained interns and managed projects (applicant tracking, TypeScript parser and code map generator, real time server monitoring system)"
           ],
           "importance": 1
         },
