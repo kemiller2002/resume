@@ -49,7 +49,15 @@
       "certificate": "https://www.credential.net/b6685451-de2a-44ce-9436-dd9b52ca88a9"
     }
   ],
-
+  "volunteering": [
+    {
+      "institution": "IPS 55",
+      "name": "Teaching Programming and Computer Science",
+      "start": { "year": "2016" },
+      "end": { "year": "2020" },
+      "importance": 1
+    }
+  ],
   "projects": [
     {
       "institution": "No Starch Press",
@@ -114,6 +122,13 @@
     {
       "topic": "Git",
       "title": ["Git The Last Database You'll Ever Need"]
+    }
+  ],
+
+  "focus": [
+    {
+      "name": "Low vision technology",
+      "importance": 1
     }
   ],
 
@@ -392,7 +407,8 @@
         "React",
         "C++",
         "Assembly - MASM",
-        "Git"
+        "Git",
+        "Azure DevOps"
       ],
 
       "responsibilities": [
@@ -506,7 +522,8 @@
         "JavaScript",
         "TypeScript",
         "AngularJS",
-        "Git"
+        "Git",
+        "Octopus Deploy"
       ],
       "responsibilities": [
         "Team Foundation Server Administrator",

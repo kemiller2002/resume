@@ -205,8 +205,10 @@ ul.project {
   padding-left: 0px;
   list-style-type: none;
 }
-
+ul.focus,
 ul.projects,
+ul.volunteering,
+ul.technologies,
 ul.awards {
   margin: 0em;
   list-style: none;
@@ -224,7 +226,7 @@ ul.education {
 li.education {
   list-style: none;
 }
-
+.volunteering-meta-data,
 .projects-meta-data,
 .award-meta-data {
   display: flex;
@@ -247,6 +249,15 @@ li.accomplishment {
 }
 
 .technologies {
+  /*  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 0px;
+  padding-left: 0em;
+  gap: 0.25em;*/
+}
+
+section.technologies > ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -254,6 +265,7 @@ li.accomplishment {
   padding-left: 0em;
   gap: 0.25em;
 }
+
 section.technologies {
   flex-direction: column;
 }
