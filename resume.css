@@ -47,6 +47,17 @@ body[display="true"] {
   text-align: center;
 }
 
+h1 > .name {
+  margin-bottom: 0.25em;
+  display: block;
+}
+
+h1 > .about {
+  display: block;
+  font-size: 0.5em;
+  font-weight: 300;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -64,6 +75,7 @@ body[display="true"] {
   display: flex;
   flex-direction: row;
   margin-right: 30px;
+  margin-bottom: 0.25em;
 }
 
 .contact-container {
