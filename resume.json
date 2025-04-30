@@ -6,7 +6,26 @@
   "github": "https://github.com/kemiller2002",
   "stackoverflow": "https://stackoverflow.com/users/1942",
 
-  "about": "A seasoned leader in food manufacturing and software development, recipient of Microsoft's prestigious MVP Award, impacting nearly 18 million through technical writing and presentations",
+  "about": "Seasoned software and engineering leader with 20+ years of success scaling teams, delivering complex systems, and driving operational transformation across industries. Recipient of Microsoft’s MVP Award, impacting over 18 million people through technical leadership, innovation, and public speaking. Proven ability to lead large distributed teams, architect enterprise-scale solutions, cut costs by hundreds of thousands of dollars annually, and radically improve speed to market. Passionate about building resilient organizations, mentoring leaders, and aligning technology to business outcomes.",
+
+  "highlights": [
+    {
+      "display": "true",
+      "text": "Scaled nine engineering teams delivering solutions to 17 of the top 20 financial institutions managing DAFs"
+    },
+    {
+      "display": "true",
+      "text": "Cut operational expenses by $500,000+ annually through technical innovation and vendor optimization"
+    },
+    {
+      "display": "true",
+      "text": "Recognized with Microsoft MVP Award for technical excellence and community leadership"
+    },
+    {
+      "display": "true",
+      "text": "Reduced time-to-market from 6 weeks to 2 days through organizational and process redesign"
+    }
+  ],
 
   "address": {
     "line": ["6312 N. Rural St"],
@@ -81,7 +100,6 @@
         "Functional Programming in C#",
         "Dependency Injection",
         "Obfuscation in .NET",
-        "Code Contracts in .Net 4.0",
         "Creating an Application Performance Monitoring Solution"
       ]
     },
@@ -123,7 +141,7 @@
     },
     {
       "topic": "Git",
-      "title": ["Git: The Last Database You'll Ever Need"]
+      "title": ["Git: The Last Database You'll Ever Need ;)"]
     }
   ],
 
@@ -314,7 +332,9 @@
         "Node.js",
         "Docker",
         "Kubernetes",
-        "PostgreSQL"
+        "PostgreSQL",
+        "AI Integration and Conversational AI",
+        "Jira"
       ],
 
       "responsibilities": ["Technology and architectural review", "Mentorship"]
@@ -525,7 +545,8 @@
         "TypeScript",
         "AngularJS",
         "Git",
-        "Octopus Deploy"
+        "Octopus Deploy",
+        "VersionOne"
       ],
       "responsibilities": [
         "Team Foundation Server Administrator",
@@ -694,5 +715,61 @@
       "entryOnly": true,
       "importance": 1
     }
-  ]
+  ],
+
+  "technologies": {
+    "Programming Languages": {
+      "C#": { "active": true },
+      "F#": { "active": true },
+      "C++": { "active": true },
+      "TypeScript": { "active": true },
+      "JavaScript": { "active": true },
+      "SQL": { "active": true },
+      "Java": { "active": true },
+      "Python": { "active": true },
+      "Ruby": { "active": true }
+    },
+    "Cloud Platforms and DevOps": {
+      "AWS": { "active": true },
+      "Azure": { "active": true },
+      "Azure DevOps": { "active": true },
+      "Kubernetes": { "active": true },
+      "Docker": { "active": true },
+      "Octopus Deploy": { "active": true }
+    },
+    "Web and Frontend Technologies": {
+      "React": { "active": true },
+      "Vue.js": { "active": true },
+      "AngularJS": { "active": true },
+      "Web Components": { "active": true },
+      "ASP.NET": { "active": true },
+      "Node.js": { "active": true }
+    },
+    "Databases": {
+      "PostgreSQL": { "active": true },
+      "MSSQL Server": { "active": true },
+      "Oracle": { "active": true },
+      "Cosmos DB": { "active": true },
+      "DynamoDB": { "active": true },
+      "Snowflake": { "active": true }
+    },
+    "AI, ML, and Cognitive Technologies": {
+      "Microsoft Cognitive Services": { "active": true },
+      "OpenAI GPT (ChatGPT, GPT-4)": { "active": true },
+      "Azure OpenAI Service": { "active": true },
+      "GitHub Copilot": { "active": true }
+    },
+    "Software Development and Architecture": {
+      "Microservices Architecture": { "active": true },
+      "Distributed Systems": { "active": true },
+      "Functional Programming": { "active": true },
+      "Secure Software Development Lifecycle (SSDLC)": { "active": true },
+      "Agile, Scrum, Kanban": { "active": true }
+    },
+    "Agile and Project Management Tools": {
+      "VersionOne": { "active": true },
+      "Jira": { "active": true },
+      "Azure DevOps Boards": { "active": true }
+    }
+  }
 }

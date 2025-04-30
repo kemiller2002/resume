@@ -58,6 +58,23 @@
         ].reduce((s, i) => i(s), employment);
       }
 
+      function getTechnologyGroupings(technologies) {
+        return [
+          x => Reflect.ownKeys(x).map(y => ({ name: y, technologies: technologies[y] }))
+        ].reduce((s, i) => i(s), technologies);
+      }
+
+      function getTechnologyNames(technologyGrouping) {
+
+
+        const data = [
+          t => ({ technologies: t, keys: Reflect.ownKeys(t) }),
+          t => t.keys.filter(k => t.technologies[k].active),
+          k => k.toSorted()
+        ].reduce((s, i) => i(s), technologyGrouping.technologies)
+        return data;
+      }
+
     </script>
     <link rel="stylesheet" href="resume.css">
 
@@ -103,6 +120,14 @@
       </div>
 
       <span class="about" data-bind="text:about"></span>
+
+
+      <div class="highlights">
+        <h3 class="highlights">Career Highlights</h3>
+        <ul class="highlights" data-bind="foreach: highlights">
+          <li class="highlight" data-bind="text:$data.text"></li>
+        </ul>
+      </div>
 
       <hr class="header-divider" />
 
@@ -215,8 +240,13 @@
 
       <section class="technologies">
         <h2>Technologies</h2>
-        <ul class="technologies" data-bind="foreach:{data:getTechnologies(employment)}">
-          <li data-bind="text:$data" class="technology"></li>
+        <ul class="technologies" data-bind="foreach:{data:getTechnologyGroupings(technologies)}">
+          <li class="technologyGroup">
+            <h5 data-bind="text:$data.name"></h5>
+            <ul class="technologies" data-bind="foreach:{data:getTechnologyNames($data)}">
+              <li data-bind="text:$data"></li>
+            </ul>
+          </li>
         </ul>
       </section>
 
@@ -248,10 +278,10 @@
 
       <section class="presentation-wrapper">
         <h2>Presentations</h2>
-        <ul class="presentations" data-bind="foreach:{data:presentations.toSorted(sortByTopic)}">
+        <ul class="presentations grid" data-bind="foreach:{data:presentations.toSorted(sortByTopic)}">
           <li class="presentation">
-            <h3 data-bind="text:topic"></h3>
-            <ul data-bind="foreach:{data:title.toSorted(sortAlphabetical)}">
+            <h5 data-bind="text:topic"></h5>
+            <ul class="presentationListing" data-bind="foreach:{data:title.toSorted(sortAlphabetical)}">
               <li data-bind="text:$data" class="presentation"></li>
             </ul>
           </li>
