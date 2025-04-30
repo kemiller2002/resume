@@ -240,7 +240,7 @@
 
       <section class="technologies">
         <h2>Technologies</h2>
-        <ul class="technologies" data-bind="foreach:{data:getTechnologyGroupings(technologies)}">
+        <ul class="technologies technologyGrid" data-bind="foreach:{data:getTechnologyGroupings(technologies)}">
           <li class="technologyGroup">
             <h5 data-bind="text:$data.name"></h5>
             <ul class="technologies" data-bind="foreach:{data:getTechnologyNames($data)}">

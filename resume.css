@@ -276,18 +276,9 @@ li.highlight {
   margin-bottom: 0.2em;
 }
 
-.technologies {
-  /*  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1 1 0px;
-  padding-left: 0em;
-  gap: 0.25em;*/
-}
-
-section.technologies > ul {
+ul.technologies {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   flex: 1 1 0px;
   padding-left: 0em;
@@ -354,6 +345,12 @@ ul.presentationListing {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, 300px);
+}
+
+ul.technologyGrid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, 250px);
 }
 
 li.presentation {
