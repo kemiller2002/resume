@@ -740,10 +740,11 @@
     "Web and Frontend Technologies": {
       "React": { "active": true },
       "Vue.js": { "active": true },
-      "AngularJS": { "active": true },
+      "Angular": { "active": true },
       "Web Components": { "active": true },
       "ASP.NET": { "active": true },
-      "Node.js": { "active": true }
+      "Node.js": { "active": true },
+      "Metabase": { "active": true }
     },
     "Databases": {
       "PostgreSQL": { "active": true },
