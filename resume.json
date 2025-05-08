@@ -37,7 +37,7 @@
     {
       "institution": "Kalamazoo College",
       "degree": "B.A.",
-      "study": "Psychology (Cognition, Learning)",
+      "study": "Psychology (Cognition, Learning), Economics minor coursework completed",
       "start": { "year": "1996" },
       "end": { "year": "2000" },
       "awards": ["Academic Scholarship", "Award for Excellence in Education"],
@@ -780,7 +780,6 @@
       "Playwright": { "active": true },
       "Selenium": { "active": true },
       "Karate": { "active": true },
-
       "CodedUI": { "active": true }
     }
   }
