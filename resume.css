@@ -350,7 +350,7 @@ ul.presentationListing {
 ul.technologyGrid {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, 250px);
+  grid-template-columns: repeat(auto-fit, 200px);
 }
 
 li.presentation {

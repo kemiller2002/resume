@@ -6,7 +6,7 @@
   "github": "https://github.com/kemiller2002",
   "stackoverflow": "https://stackoverflow.com/users/1942",
 
-  "about": "Seasoned software and engineering leader with 20+ years of success scaling teams, delivering complex systems, and driving operational transformation across industries. Recipient of Microsoft’s MVP Award, impacting over 18 million people through technical leadership, innovation, and public speaking. Proven ability to lead large distributed teams, architect enterprise-scale solutions, cut costs by hundreds of thousands of dollars annually, and radically improve speed to market. Passionate about building resilient organizations, mentoring leaders, and aligning technology to business outcomes.",
+  "about": "Seasoned software and engineering leader with 20+ years of success scaling teams, delivering complex systems, and driving operational transformation across industries. Recipient of Microsoft’s MVP Award, impacting over 18 million people through technical leadership, innovation, and public speaking. Proven ability to lead large distributed teams, architect enterprise-scale solutions, cut costs by hundreds of thousands of dollars annually, and radically improve speed to market. Passionate about building resilient organizations, mentoring leaders, and aligning technology to business outcomes",
 
   "highlights": [
     {
@@ -703,17 +703,97 @@
       "projects": [],
       "accomplishments": [],
       "responsibilities": [],
-      "technologies": [
-        "C#",
-        "Classic ASP",
-        "Java",
-        "SQL",
-        "Delphi",
-        "J++",
-        "JavaScript"
-      ],
+      "technologies": [],
       "entryOnly": true,
       "importance": 1
+    }
+  ],
+
+  "entrepreneurialVentures": [
+    {
+      "company": "The Candy Dish",
+      "start": { "month": "June", "year": "1996" },
+      "end": { "month": "March", "year": "2020" },
+      "title": [
+        {
+          "name": "Vice President",
+          "display": true
+        }
+      ],
+      "accomplishments": [
+        {
+          "description": "Expanded into B2B gifting and wholesale channels, improving revenue diversity and lowering per-unit distribution costs",
+          "importance": 1
+        },
+        {
+          "description": "Re-evaluated product line and sourcing strategy, identifying alternative ingredients and packaging materials that improved overall product quality while reducing production costs by over 20%",
+          "importance": 1
+        },
+        {
+          "description": "Realigned sales staff responsibilities to match individual strengths and customer segments, resulting in increased efficiency and a 25% boost in overall sales performance",
+          "importance": 1
+        }
+      ],
+      "technologies": [],
+      "responsibilities": [],
+      "importance": 1,
+      "entryOnly": false
+    },
+    {
+      "company": "Full Out Solutions",
+      "start": { "month": "October", "year": "2016" },
+      "end": { "month": "March", "year": "2019" },
+      "title": [
+        {
+          "name": "Co-Founder and Principal",
+          "display": true
+        }
+      ],
+      "accomplishments": [
+        {
+          "description": "Researched and prototyped an e-commerce integration that enabled cheer teams to sell branded merchandise directly through their websites, supporting team fundraising and brand promotion",
+          "importance": 1
+        },
+        {
+          "description": "Designed and developed a mobile application prototype allowing cheerleaders to track individual performance metrics and showcase highlight videos to collegiate and professional recruiters",
+          "importance": 1
+        },
+        {
+          "description": "Initiated development of a beat analysis engine to classify music by rhythm and tempo, enabling automated matching of songs to specific dance styles for choreography planning",
+          "importance": 1
+        }
+      ],
+      "responsibilities": [],
+      "importance": 1,
+      "entryOnly": false
+    },
+    {
+      "company": "Devatoria",
+      "start": { "month": "February", "year": "2018" },
+      "end": { "month": "March", "year": "2019" },
+      "title": [
+        {
+          "name": "Co-Founder and Principal",
+          "display": true
+        }
+      ],
+      "accomplishments": [
+        {
+          "description": "Conducted data analysis to identify organizations potentially operating illegally across state lines",
+          "importance": 1
+        },
+        {
+          "description": "Researched risk assessment and remediation strategies related to back taxes for both individuals and organizations",
+          "importance": 1
+        },
+        {
+          "description": "Investigated potential money laundering and illegal financial activities by banks involved in bankruptcy proceedings",
+          "importance": 1
+        }
+      ],
+      "responsibilities": [],
+      "importance": 1,
+      "entryOnly": false
     }
   ],
 

@@ -36,6 +36,11 @@
         return a.localeCompare(b);
       }
 
+      function log(item) {
+        console.log(item);
+        return item;
+      }
+
       window.addEventListener(
         "DOMContentLoaded",
         () =>
@@ -206,6 +211,38 @@
               <div class="dates">
                 <span class="end" data-bind="text:end.year"></span>
               </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="projects">
+        <h2>Entrepreneurial Ventures</h2>
+        <ul class="projects" data-bind="foreach: entrepreneurialVentures">
+          <li class="employment-entry">
+            <h3 class="employment-meta-data">
+              <div data-bind="foreach:{data:title}" class="title">
+                <span class="title" data-bind="text:$data.name"></span>
+              </div>
+              <span class="organization-name" data-bind="text:company"></span>
+            </h3>
+
+            <div class="dates">
+              <div class="start">
+                <span class="month" data-bind="text:(start.month)"></span>
+                <span class="year" data-bind="text:(start.year)"></span>
+              </div>
+              <div class="end">
+                <span class="month" data-bind="text:end ? (end.month) : ''"></span>
+                <span class="year" data-bind="text:end ? end.year : ''"></span>
+              </div>
+            </div>
+            <div class="accomplishments">
+              <ul data-bind="foreach: {data:accomplishments.filter(x => !x.hide)}">
+                <li class="accomplishment" data-bind="text:description"></li>
+              </ul>
+              <h4 class="accomplishment-title">Accomplishments</h4>
+
             </div>
           </li>
         </ul>
