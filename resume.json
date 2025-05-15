@@ -6,7 +6,11 @@
   "github": "https://github.com/kemiller2002",
   "stackoverflow": "https://stackoverflow.com/users/1942",
 
-  "about": "Seasoned software and engineering leader with 20+ years of success scaling teams, delivering complex systems, and driving operational transformation across industries. Recipient of Microsoft’s MVP Award, impacting over 18 million people through technical leadership, innovation, and public speaking. Proven ability to lead large distributed teams, architect enterprise-scale solutions, cut costs by hundreds of thousands of dollars annually, and radically improve speed to market. Passionate about building resilient organizations, mentoring leaders, and aligning technology to business outcomes",
+  "about": [
+    "Seasoned software and engineering leader with 20+ years of success scaling teams, delivering complex systems, and driving operational transformation across industries and ventures. Proven ability to lead distributed teams, architect enterprise-scale solutions, and reduce costs by hundreds of thousands of dollars while accelerating delivery from weeks to days.",
+    "In addition to leading engineering organizations, I’ve launched multiple software ventures—including a platform connecting student-athletes with collegiate cheer programs and a research initiative focused on corporate liability and consumer protection. I also ran a regional candy business founded by my father, where I helped expand operations and successfully navigate its acquisition. Trained as a chocolatier, I’ve also competed as a sous-chef in award-winning culinary competitions, bringing creativity, attention to detail, and discipline to every domain I lead.",
+    "Recipient of Microsoft’s MVP Award, with public speaking and technical leadership reaching over 18 million people. Passionate about building resilient organizations, mentoring emerging leaders, and aligning technology to business outcomes that matter."
+  ],
 
   "highlights": [
     {
@@ -779,15 +783,15 @@
       ],
       "accomplishments": [
         {
-          "description": "Conducted data analysis to identify organizations potentially operating illegally across state lines",
+          "description": "Identified a market opportunity to address legal and ethical blind spots by analyzing data on organizations potentially operating outside state regulations",
           "importance": 1
         },
         {
-          "description": "Researched risk assessment and remediation strategies related to back taxes for both individuals and organizations",
+          "description": "Conducted in-depth research into tax liability and remediation strategies, helping individuals and organizations navigate complex back-tax exposure",
           "importance": 1
         },
         {
-          "description": "Investigated potential money laundering and illegal financial activities by banks involved in bankruptcy proceedings",
+          "description": "Investigated financial misconduct patterns, including potential money laundering and regulatory violations by banks involved in bankruptcy cases, to support greater transparency and consumer protection",
           "importance": 1
         }
       ],
