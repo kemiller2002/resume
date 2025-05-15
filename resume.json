@@ -8,8 +8,8 @@
 
   "about": [
     "Seasoned software and engineering leader with 20+ years of success scaling teams, delivering complex systems, and driving operational transformation across industries and ventures. Proven ability to lead distributed teams, architect enterprise-scale solutions, and reduce costs by hundreds of thousands of dollars while accelerating delivery from weeks to days.",
-    "In addition to leading engineering organizations, I’ve launched multiple software ventures—including a platform connecting student-athletes with collegiate cheer programs and a research initiative focused on corporate liability and consumer protection. I also ran a regional candy business founded by my father, where I helped expand operations and successfully navigate its acquisition. Trained as a chocolatier, I’ve also competed as a sous-chef in award-winning culinary competitions, bringing creativity, attention to detail, and discipline to every domain I lead.",
-    "Recipient of Microsoft’s MVP Award, with public speaking and technical leadership reaching over 18 million people. Passionate about building resilient organizations, mentoring emerging leaders, and aligning technology to business outcomes that matter."
+    "In addition to leading engineering organizations, I've launched multiple software ventures, including a platform connecting student-athletes with collegiate cheer programs and a research initiative focused on corporate liability and consumer protection. I also ran a regional candy business founded by my father, where I helped expand operations and successfully navigate its acquisition. Trained as a chocolatier, I also competed as a sous-chef in award-winning culinary competitions, bringing creativity, attention to detail, and discipline to every domain I lead.",
+    "Recipient of Microsoft's MVP Award, with public speaking and technical leadership reaching over 18 million people. Passionate about building resilient organizations, mentoring emerging leaders, and aligning technology to business outcomes that matter."
   ],
 
   "highlights": [
@@ -749,7 +749,7 @@
       "end": { "month": "March", "year": "2019" },
       "title": [
         {
-          "name": "Co-Founder and Principal",
+          "name": "Co-Founder",
           "display": true
         }
       ],
@@ -777,7 +777,7 @@
       "end": { "month": "March", "year": "2019" },
       "title": [
         {
-          "name": "Co-Founder and Principal",
+          "name": "Co-Founder",
           "display": true
         }
       ],
