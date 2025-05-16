@@ -7,27 +7,31 @@
   "stackoverflow": "https://stackoverflow.com/users/1942",
 
   "about": [
-    "Seasoned software and engineering leader with 20+ years of success scaling teams, delivering complex systems, and driving operational transformation across industries and ventures. Proven ability to lead distributed teams, architect enterprise-scale solutions, and reduce costs by hundreds of thousands of dollars while accelerating delivery from weeks to days.",
+    "Seasoned software and engineering leader with over 25 years of success scaling teams, delivering complex systems, and driving operational transformation across industries and ventures. Proven ability to lead distributed teams, architect enterprise-scale solutions, and reduce costs by hundreds of thousands of dollars while accelerating delivery from weeks to days.",
     "In addition to leading engineering organizations, I've launched multiple software ventures, including a platform connecting student-athletes with collegiate cheer programs and a research initiative focused on corporate liability and consumer protection. I also ran a regional candy business founded by my father, where I helped expand operations and successfully navigate its acquisition. Trained as a chocolatier, I also competed as a sous-chef in award-winning culinary competitions, bringing creativity, attention to detail, and discipline to every domain I lead.",
     "Recipient of Microsoft's MVP Award, with public speaking and technical leadership reaching over 18 million people. Passionate about building resilient organizations, mentoring emerging leaders, and aligning technology to business outcomes that matter."
   ],
 
   "highlights": [
     {
-      "display": "true",
+      "display": true,
       "text": "Scaled nine engineering teams delivering solutions to 17 of the top 20 financial institutions managing DAFs"
     },
     {
-      "display": "true",
+      "display": true,
       "text": "Cut operational expenses by $500,000+ annually through technical innovation and vendor optimization"
     },
     {
-      "display": "true",
+      "display": true,
       "text": "Recognized with Microsoft MVP Award for technical excellence and community leadership"
     },
     {
-      "display": "true",
+      "display": true,
       "text": "Reduced time-to-market from 6 weeks to 2 days through organizational and process redesign"
+    },
+    {
+      "display": true,
+      "text": "Partnered closely with product and business stakeholders to align engineering priorities with customer impact and growth strategy"
     }
   ],
 
@@ -846,14 +850,17 @@
       "Microsoft Cognitive Services": { "active": true },
       "OpenAI GPT (ChatGPT, GPT-4)": { "active": true },
       "Azure OpenAI Service": { "active": true },
-      "GitHub Copilot": { "active": true }
+      "GitHub Copilot": { "active": true },
+      "LangChain": { "active": true }
     },
     "Software Development and Architecture": {
       "Microservices Architecture": { "active": true },
       "Distributed Systems": { "active": true },
       "Functional Programming": { "active": true },
       "Secure Software Development Lifecycle (SSDLC)": { "active": true },
-      "Agile, Scrum, Kanban": { "active": true }
+      "Agile, Scrum, Kanban": { "active": true },
+      "Product Management": { "active": true },
+      "Technical Roadmapping and Prioritization": { "active": true }
     },
     "Agile and Project Management Tools": {
       "VersionOne": { "active": true },
