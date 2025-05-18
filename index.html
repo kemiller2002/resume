@@ -139,7 +139,9 @@
       <hr class="header-divider" />
 
       <section class="employment">
+
         <ul class="organization" data-bind="foreach:employment">
+          <!-- ko if: !$data.entryOnly -->
           <li class="employment-entry">
             <h3 class="employment-meta-data">
               <div data-bind="foreach:{data:title}" class="title">
@@ -159,16 +161,18 @@
               </div>
             </div>
 
-            <!-- ko if: !$data.entryOnly -->
+
             <div class="projects"
               data-bind="foreach:{data:projects.filter(x => !x.hide).toSorted(sortByImportanceHigh)}">
               <ul class="project">
                 <li>
                   <h4 class="title" data-bind="text:title"></h4>
                   <span class="description" data-bind="text:description"></span>
+                  <!-- ko if: !$data.hideResponsibilities -->
                   <ul class="responsiblities" data-bind="foreach: responsibilities">
                     <li data-bind="text:$data"></li>
                   </ul>
+                  <!-- /ko -->
                 </li>
               </ul>
             </div>
@@ -181,9 +185,31 @@
 
             </div>
 
-            <!-- /ko -->
+
           </li>
+          <!-- /ko -->
         </ul>
+
+        <!-- ko if: $data.previousRoles -->
+        <div class="employment-entry">
+          <h3 class="employment-meta-data">
+            <div class="title">
+              <span class="title">Previous Roles</span>
+            </div>
+            <span class="organization-name"></span>
+          </h3>
+
+          <div class="dates">
+            <div class="start">
+              <span class="year" data-bind="text:($data.previousRoles.start.year)"></span>
+            </div>
+            <div class="end">
+              <span class="year" data-bind="text:($data.previousRoles.end.year)"></span>
+            </div>
+          </div>
+        </div>
+        <!-- /ko -->
+
       </section>
 
       <section class="projects">
@@ -207,27 +233,13 @@
                 <span class="year" data-bind="text:end ? end.year : ''"></span>
               </div>
             </div>
+
             <div class="accomplishments">
               <ul data-bind="foreach: {data:accomplishments.filter(x => !x.hide)}">
                 <li class="accomplishment" data-bind="text:description"></li>
               </ul>
               <h4 class="accomplishment-title">Accomplishments</h4>
 
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section class="awards">
-        <h2>Awards and Distinctions</h2>
-        <ul class="awards" data-bind="foreach: {data:awards.toSorted(sortByImportanceHigh)}">
-          <li>
-            <h4 class="institution" data-bind="text:institution"></h4>
-            <div class="award-meta-data">
-              <span class="institution" data-bind="text:name"></span>
-              <div class="dates">
-                <span class="end" data-bind="text:end.year"></span>
-              </div>
             </div>
           </li>
         </ul>
@@ -311,6 +323,21 @@
             <ul class="awards" data-bind="foreach: awards">
               <li data-bind="text:$data"></li>
             </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="awards">
+        <h2>Awards and Distinctions</h2>
+        <ul class="awards" data-bind="foreach: {data:awards.toSorted(sortByImportanceHigh)}">
+          <li>
+            <h4 class="institution" data-bind="text:institution"></h4>
+            <div class="award-meta-data">
+              <span class="institution" data-bind="text:name"></span>
+              <div class="dates">
+                <span class="end" data-bind="text:end.year"></span>
+              </div>
+            </div>
           </li>
         </ul>
       </section>

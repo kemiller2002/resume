@@ -191,7 +191,8 @@
         {
           "description": "Reduced operational expenses by $100,000 annually by optimizing vendor offerings through understanding technology and supply chain optimizations",
           "internalNotes": "CASS certification for post office.  Ended up outsourcing to a check processing firm to handle",
-          "importance": 4
+          "importance": 4,
+          "hide": true
         },
         {
           "description": "Renegotiated contracts for an annual savings exceeding 60% of current costs",
@@ -211,7 +212,7 @@
           "importance": 6
         },
         {
-          "description": "Provided formal training on software development concepts, including functional programming, UX design principles, and programming languages",
+          "description": "Trained staff on software development concepts, including functional programming, UX design principles, and programming languages",
           "importance": 5
         },
         {
@@ -229,6 +230,7 @@
         {
           "title": "Donor Advised Fund Summit committee member",
           "description": "Annual summit of organizations and donors surrounding the future of DAF accounts and charitable giving",
+          "hideResponsibilities": true,
           "responsibilities": [
             "Increased sponsorship participation by 30% through redesigning packages and pricing models"
           ],
@@ -238,6 +240,7 @@
           "title": "Ren security and compliance board member",
           "description": "Board focused on creating and revising policies on security and compliance",
           "responsibilities": ["Advised on application and data security"],
+          "hideResponsibilities": true,
           "importance": 1
         },
         {
@@ -247,6 +250,7 @@
             "Established and optimized the organizational structure to improve efficiency and team alignment",
             "Managed managers and individual contributors, ensuring strategic alignment and effective team leadership"
           ],
+          "hideResponsibilities": true,
           "display": ["management"],
           "importance": 10
         },
@@ -257,6 +261,7 @@
           "responsibilities": [
             "Set direction of software development practices"
           ],
+          "hideResponsibilities": true,
           "display": ["management", "architect", "developer"],
           "importance": 9
         },
@@ -270,6 +275,7 @@
             "Aligned multiple acquired organization's quality assurance initiatives under a unified approach which resulted in increased efficiency within the department",
             "Improved efficiency by restructuring testing documentation processes"
           ],
+          "hideResponsibilities": true,
           "display": ["management"],
           "importance": 8
         },
@@ -280,6 +286,7 @@
           "responsibilities": [
             "Led the creation and administration of the Enterprise Architecture Board to drive technology consolidation and strategic decision-making"
           ],
+          "hideResponsibilities": true,
           "display": ["management"],
           "importance": 2
         },
@@ -292,6 +299,7 @@
             "Architect on service design",
             "Development"
           ],
+          "hideResponsibilities": true,
           "display": ["management"],
           "importance": 6
         },
@@ -379,27 +387,32 @@
           "importance": 1
         }
       ],
+      "hideResponsbilities": true,
       "projects": [
         {
           "title": "Data Archival Project",
           "description": "A system to locate clusters of related data based on certain changing criteria, remove them from the client installation, send them to the central reporting system, and verify the contents with stored records",
           "responsibilities": ["Architecture and development"],
-          "importance": 1
+          "importance": 1,
+          "hideResponsibilities": true
         },
         {
           "title": ".NET CLR Profiler",
           "description": "A monitoring system which hooked into the .NET runtime for monitoring and reporting data surrounding exceptions",
           "responsibilities": ["Architecture and development"],
+          "hideResponsibilities": true,
           "importance": 1
         },
         {
           "title": "T2 Lunch and Learns",
           "description": "A semi-monthly activity where an internal or external person teaches the development group on a topic",
           "responsibilities": ["Proposal, creation, and administration"],
+          "hideResponsibilities": true,
           "importance": 1
         },
         {
           "title": "Software Development Restructuring Initiative",
+          "hideResponsibilities": true,
           "description": "A team formed to evaluate the current Agile process at T2 and devise and implement solutions for problems and frustrations by the staff",
           "responsibilities": [
             "Team co-chair over multiple initiatives",
@@ -411,12 +424,14 @@
         },
         {
           "title": "User Migration Strategy",
+          "hideResponsibilities": true,
           "description": "A comprehensive plan for moving users across multiple systems to a single microservice datastore",
           "responsibilities": ["Architect"],
           "importance": 1
         },
         {
           "title": "Database Administration",
+          "hideResponsibilities": true,
           "description": "Monitored and optimized central transaction servers and data warehouse MSSQL servers; directed the administration of 300+ client SQL Server installations",
           "responsibilities": [
             "Query and index optimizations",
@@ -503,9 +518,11 @@
             "Technical direction (development, quality assurance, and technical analysis)"
           ],
           "display": ["management"],
-          "importance": 10
+          "importance": 10,
+          "hideResponsibilities": true
         },
         {
+          "hideResponsibilities": true,
           "title": "Department of Natural Resources Project - Unity",
           "description": "A full system rewrite to replace the legacy infrastructure designed to track all information concerning water quantity and location (streams, lakes, dams, wells, etc.)",
           "responsibilities": [
@@ -522,6 +539,7 @@
             "Reviewed available licenses through the program and aligned sales, marketing, and operations needs with available software",
             "Realigned developer necessities with available software"
           ],
+          "hideResponsibilities": true,
           "importance": 1
         },
         {
@@ -531,6 +549,7 @@
             "Evaluated and hired students interested in development",
             "Trained interns and managed projects (applicant tracking, TypeScript parser and code map generator, real time server monitoring system)"
           ],
+          "hideResponsibilities": true,
           "importance": 1
         },
         {
@@ -538,9 +557,10 @@
           "description": "A monthly meetup group designed to engage the community for the purposes of training the TCC staff and help with name recognition  ",
           "responsibilities": [
             "Initial idea and group creation",
-            "Reviewed and recruited both staff and people outside of TCC to give presentations",
+            "Curated and hosted monthly community tech meetups to elevate team learning and grow TCC's engineering brand",
             "Handled community outreach initiatives to attract people outside of TCC to attend"
           ],
+          "hideResponsibilities": true,
           "importance": 1
         }
       ],
@@ -805,6 +825,7 @@
     }
   ],
 
+  "previousRoles": { "start": { "year": "2000" }, "end": { "year": "2014" } },
   "technologies": {
     "Programming Languages": {
       "C#": { "active": true },
