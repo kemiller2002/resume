@@ -144,11 +144,12 @@
                 <ul class="organization" data-bind="foreach:employment">
                     <!-- ko if: !$data.entryOnly -->
                     <li class="employment-entry">
-                        <h3 class="employment-meta-data">
+                        <h3 class="employment-meta-data executive">
+                            <span class="organization-name" data-bind="text:company"></span>
                             <div data-bind="foreach:{data:title}" class="title">
                                 <span class="title" data-bind="text:$data.name"></span>
                             </div>
-                            <span class="organization-name" data-bind="text:company"></span>
+
                         </h3>
 
                         <div class="dates">
@@ -202,11 +203,12 @@
                 <h2>Entrepreneurial Ventures</h2>
                 <ul class="projects" data-bind="foreach: entrepreneurialVentures">
                     <li class="employment-entry">
-                        <h3 class="employment-meta-data">
+                        <h3 class="employment-meta-data executive">
+                            <span class="organization-name" data-bind="text:company"></span>
                             <div data-bind="foreach:{data:title}" class="title">
                                 <span class="title" data-bind="text:$data.name"></span>
                             </div>
-                            <span class="organization-name" data-bind="text:company"></span>
+
                         </h3>
 
                         <div class="dates">

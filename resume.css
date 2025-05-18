@@ -133,6 +133,20 @@ div.title > span.title:not(:last-child)::after {
   font-size: small;
 }
 
+.executive > .organization-name {
+  font-size: medium;
+}
+
+.executive > .organization-name {
+  font-size: medium;
+}
+
+.executive > .title {
+  font-style: italic;
+  font-weight: 300;
+  font-size: medium;
+}
+
 .organization {
   padding: 0em;
 }
@@ -363,6 +377,10 @@ li.presentation {
 
 .executive-highlight {
   font-weight: 600;
+}
+
+h3.executive {
+  flex-direction: column-reverse;
 }
 
 @page {
