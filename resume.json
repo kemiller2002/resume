@@ -7,9 +7,7 @@
   "stackoverflow": "https://stackoverflow.com/users/1942",
 
   "about": [
-    "Seasoned software and engineering leader with over 25 years of success scaling teams, delivering complex systems, and driving operational transformation across industries and ventures. Proven ability to lead distributed teams, architect enterprise-scale solutions, and reduce costs by hundreds of thousands of dollars while accelerating delivery from weeks to days.",
-    "In addition to leading engineering organizations, I've launched multiple software ventures, including a platform connecting student-athletes with collegiate cheer programs and a research initiative focused on corporate liability and consumer protection. I also ran a regional candy business founded by my father, where I helped expand operations and successfully navigate its acquisition. Trained as a chocolatier, I also competed as a sous-chef in award-winning culinary competitions, bringing creativity, attention to detail, and discipline to every domain I lead.",
-    "Recipient of Microsoft's MVP Award, with public speaking and technical leadership reaching over 18 million people. Passionate about building resilient organizations, mentoring emerging leaders, and aligning technology to business outcomes that matter."
+    "Technology executive with 25+ years leading engineering organizations, scaling distributed teams, and delivering enterprise-grade solutions for financial, nonprofit, and consumer sectors. Proven record of accelerating delivery timelines, reducing operational costs, and aligning technical innovation with business outcomes. Founder of multiple ventures, recognized Microsoft MVP, and public speaker with over 18 million reached through conferences, content, and community engagement."
   ],
 
   "highlights": [
@@ -173,6 +171,41 @@
         {
           "name": "Senior Architect",
           "display": true
+        }
+      ],
+
+      "executiveAccomplishments": [
+        {
+          "highlight": "Cut operational expenses by over $500,000 annually",
+          "details": "by consolidating vendors and optimizing infrastructure through architectural redesign"
+        },
+        {
+          "highlight": "Reduced time-to-market from 6 weeks to 2 days",
+          "details": "by overhauling the software delivery pipeline, release strategy, and prioritization process"
+        },
+        {
+          "highlight": "Improved roadmap predictability to within 10% variance",
+          "details": "by aligning product planning with development execution and metrics-driven forecasting"
+        },
+        {
+          "highlight": "Increased developer productivity by 40% in the DFX division",
+          "details": "by reworking development workflows and instituting technical coaching"
+        },
+        {
+          "highlight": "Redesigned branching strategy and CI/CD processes",
+          "details": "stabilizing deployments and reducing hotfix incidents by over 75%"
+        },
+        {
+          "highlight": "Restructured an acquired engineering team",
+          "details": "reducing onboarding time and accelerating product integration by 90%"
+        },
+        {
+          "highlight": "Secured $50,000+ in free distributed systems training",
+          "details": "investing in staff growth without impacting the training budget"
+        },
+        {
+          "highlight": "Served on Enterprise Architecture and Security Compliance Boards",
+          "details": "guiding cross-functional decisions on scalability, risk, and regulatory alignment"
         }
       ],
       "accomplishments": [
@@ -365,6 +398,37 @@
           "display": true
         }
       ],
+
+      "executiveAccomplishments": [
+        {
+          "highlight": "Stabilized deployment across 300+ production environments",
+          "details": "aligning database and application updates to reduce support incidents and operational costs"
+        },
+        {
+          "highlight": "Reduced infrastructure and maintenance expenses",
+          "details": "by developing diagnostic tools and automating reporting for exception tracking and system health"
+        },
+        {
+          "highlight": "Improved team velocity and cross-functional collaboration",
+          "details": "by initiating Agile process reforms through a cross-team software development restructuring initiative"
+        },
+        {
+          "highlight": "Designed and implemented a .NET CLR Profiler",
+          "details": "enabling detailed exception monitoring and real-time diagnostics across enterprise applications"
+        },
+        {
+          "highlight": "Developed and executed a multi-system user migration strategy",
+          "details": "consolidating fragmented data sources into a unified microservices architecture"
+        },
+        {
+          "highlight": "Implemented training and knowledge-sharing programs",
+          "details": "including internal Lunch & Learns and onboarding initiatives to accelerate adoption of new technologies"
+        },
+        {
+          "highlight": "Optimized build and release processes via Azure DevOps",
+          "details": "reducing CI/CD cycle times and improving team autonomy"
+        }
+      ],
       "accomplishments": [
         {
           "description": "Stabilized application and database deployment process aligning over 300 client installations which resulted in reduction in operational and development expenses",
@@ -478,6 +542,33 @@
         {
           "name": "Senior Architect",
           "display": true
+        }
+      ],
+
+      "executiveAccomplishments": [
+        {
+          "highlight": "Reduced annual software licensing costs by $250,000",
+          "details": "by reconfiguring TCC's Microsoft Gold Partner program and optimizing license usage across projects"
+        },
+        {
+          "highlight": "Launched and scaled an internship program",
+          "details": "improving recruiting efficiency and reducing hiring costs by building a direct pipeline from local universities"
+        },
+        {
+          "highlight": "Architected major platform rewrite for Indiana DNR (Unity project)",
+          "details": "replacing legacy systems for statewide water resource management with modern, scalable infrastructure"
+        },
+        {
+          "highlight": "Improved internal collaboration and communication",
+          "details": "by standardizing development practices and aligning delivery across multiple project teams"
+        },
+        {
+          "highlight": "Established community-based training programs and public meetups",
+          "details": "increasing company visibility and creating a low-cost, high-impact employee development path"
+        },
+        {
+          "highlight": "Led architectural decisions across client engagements",
+          "details": "ensuring scalability, maintainability, and alignment with strategic business goals"
         }
       ],
 
@@ -748,6 +839,24 @@
           "display": true
         }
       ],
+      "executiveAccomplishments": [
+        {
+          "highlight": "Expanded into B2B gifting and wholesale",
+          "details": "diversifying revenue streams and improving distribution efficiency"
+        },
+        {
+          "highlight": "Reduced production costs by over 20%",
+          "details": "by reevaluating sourcing strategies and introducing alternative packaging and ingredients"
+        },
+        {
+          "highlight": "Boosted sales performance by 25%",
+          "details": "through reorganizing sales staff responsibilities to better match individual strengths and customer segments"
+        },
+        {
+          "highlight": "Positioned company for acquisition",
+          "details": "overseeing operational streamlining and strategic growth during final years of ownership"
+        }
+      ],
       "accomplishments": [
         {
           "description": "Expanded into B2B gifting and wholesale channels, improving revenue diversity and lowering per-unit distribution costs",
@@ -777,6 +886,21 @@
           "display": true
         }
       ],
+
+      "executiveAccomplishments": [
+        {
+          "highlight": "Prototyped an e-commerce platform enabling cheer teams to sell branded merchandise",
+          "details": "supporting team fundraising and self-sustainability"
+        },
+        {
+          "highlight": "Developed a performance-tracking mobile app",
+          "details": "allowing athletes to showcase highlight videos and individual stats to recruiters"
+        },
+        {
+          "highlight": "Initiated a beat analysis engine",
+          "details": "classifying music by rhythm and tempo to automate choreography matching for routines"
+        }
+      ],
       "accomplishments": [
         {
           "description": "Researched and prototyped an e-commerce integration that enabled cheer teams to sell branded merchandise directly through their websites, supporting team fundraising and brand promotion",
@@ -803,6 +927,20 @@
         {
           "name": "Co-Founder",
           "display": true
+        }
+      ],
+      "executiveAccomplishments": [
+        {
+          "highlight": "Identified legal and compliance risks",
+          "details": "by analyzing organizations potentially operating outside state regulations"
+        },
+        {
+          "highlight": "Helped individuals and businesses navigate back-tax liabilities",
+          "details": "researching exposure and remediation strategies"
+        },
+        {
+          "highlight": "Investigated financial misconduct in bankruptcy cases",
+          "details": "uncovering patterns related to money laundering and regulatory violations to support consumer protection efforts"
         }
       ],
       "accomplishments": [
