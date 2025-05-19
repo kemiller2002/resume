@@ -383,6 +383,17 @@ h3.executive {
   flex-direction: column-reverse;
 }
 
+ul.flex-column {
+  flex-direction: column;
+}
+
+.speaking-highlight {
+  font-weight: 600;
+}
+.speaking-highlight::after {
+  content: ":";
+}
+
 @page {
   size: A4;
   margin: 10mm;

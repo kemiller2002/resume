@@ -332,13 +332,11 @@
             </section>
 
             <section class="presentation-wrapper">
-                <h2>Public Speaking Engagements</h2>
-                <ul class="presentations grid" data-bind="foreach:{data:presentations.toSorted(sortByTopic)}">
+                <h2>Selected Speaking Topics</h2>
+                <ul class="presentations flex-column" data-bind="foreach:{data:selectedSpeakingTopics}">
                     <li class="presentation">
-                        <h5 data-bind="text:topic"></h5>
-                        <ul class="presentationListing" data-bind="foreach:{data:title.toSorted(sortAlphabetical)}">
-                            <li data-bind="text:$data" class="presentation"></li>
-                        </ul>
+                        <span data-bind="text:$data.highlight" class="speaking-highlight"></span>
+                        <span data-bind="text:$data.details"></span>
                     </li>
                 </ul>
                 <div class="presentation-overflow"></div>

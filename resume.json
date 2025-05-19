@@ -196,7 +196,7 @@
           "details": "stabilizing deployments and reducing hotfix incidents by over 75%"
         },
         {
-          "highlight": "Restructured an acquired engineering team",
+          "highlight": "Restructured an acquired engineering team,",
           "details": "reducing onboarding time and accelerating product integration by 90%"
         },
         {
@@ -841,7 +841,7 @@
       ],
       "executiveAccomplishments": [
         {
-          "highlight": "Expanded into B2B gifting and wholesale",
+          "highlight": "Expanded into B2B gifting and wholesale,",
           "details": "diversifying revenue streams and improving distribution efficiency"
         },
         {
@@ -963,6 +963,28 @@
     }
   ],
 
+  "selectedSpeakingTopics": [
+    {
+      "highlight": "C# & .NET",
+      "details": "LINQ, Dependency Injection, Code Contracts, Obfuscation"
+    },
+    {
+      "highlight": "JavaScript & Functional Programming",
+      "details": "Currying, Pipelining, Dynamic Languages"
+    },
+    {
+      "highlight": "Security & Hacking",
+      "details": "SQL Injection, Social Engineering, Hacking .NET"
+    },
+    {
+      "highlight": "Agile & Culture",
+      "details": "Agile Using TFS, Cultural Requirements of Agile"
+    },
+    {
+      "highlight": "General Topics",
+      "details": "Git Strategy, Time Management, Regular Expressions"
+    }
+  ],
   "previousRoles": { "start": { "year": "2000" }, "end": { "year": "2014" } },
   "technologies": {
     "Programming Languages": {
