@@ -53,21 +53,31 @@
   "awards": [
     {
       "institution": "Microsoft",
-      "name": "Most Valuable Professional",
+      "description": "Most Valuable Professional",
       "end": { "year": "2016" },
+      "name": "Developer Technologies",
       "importance": 10
     },
     {
       "institution": "Indiana State Fair",
-      "name": "Culinary Arts, Honorable Mention (x2)",
+      "name": "Honorable Mention (x2)",
+      "description": "Culinary Arts",
       "end": { "year": "2023" },
       "importance": 2
     },
     {
       "institution": "CompleteLife",
       "name": "Visual Chronicles Art Show",
+      "description": "Juried Exhibition",
       "end": { "year": "2024" },
       "importance": 3
+    },
+    {
+      "institution": "No Starch Press",
+      "name": "Book of F#",
+      "description": "Technical Reviewer",
+      "end": { "year": "2014" },
+      "importance": 1
     }
   ],
   "training": [
@@ -85,15 +95,7 @@
       "importance": 1
     }
   ],
-  "projects": [
-    {
-      "institution": "No Starch Press",
-      "name": "Book of F#",
-      "description": "Technical Reviewer",
-      "end": { "year": "2014" },
-      "importance": 1
-    }
-  ],
+  "projects": [],
   "presentations": [
     {
       "topic": "C#",

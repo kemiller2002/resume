@@ -80,6 +80,12 @@
                 return data;
             }
 
+            function checkDescription(description) {
+                console.log("HERE")
+                console.log(description);
+                return 'description' || ''
+            }
+
         </script>
         <link rel="stylesheet" href="resume.css">
 
@@ -319,13 +325,12 @@
             <section class="awards">
                 <h2>Awards and Distinctions</h2>
                 <ul class="awards" data-bind="foreach: {data:awards.toSorted(sortByImportanceHigh)}">
-                    <li>
-                        <h4 class="institution" data-bind="text:institution"></h4>
-                        <div class="award-meta-data">
-                            <span class="institution" data-bind="text:name"></span>
-                            <div class="dates">
-                                <span class="end" data-bind="text:end.year"></span>
-                            </div>
+                    <li class="institution-award">
+                        <h4 class="institution institution-award" data-bind="text:institution"></h4>
+                        <div class="award-meta-data awards-container">
+                            <span class="institution" data-bind="text:description"></span>,
+                            <span class="institution" data-bind="text:name"></span>,
+                            <span class="end" data-bind="text:end.year"></span>
                         </div>
                     </li>
                 </ul>

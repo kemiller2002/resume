@@ -394,6 +394,24 @@ ul.flex-column {
   content: ":";
 }
 
+h4.institution-award::after {
+  content: "-";
+  margin: 0em 0.25em;
+}
+
+h4.institution-award {
+  flex-grow: 0;
+}
+
+li.institution-award {
+  display: flex;
+  flex-direction: row;
+}
+
+.awards-container {
+  display: inline;
+}
+
 @page {
   size: A4;
   margin: 10mm;
