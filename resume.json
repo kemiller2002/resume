@@ -983,7 +983,9 @@
       "Kubernetes": { "active": true },
       "Docker": { "active": true },
       "Octopus Deploy": { "active": true },
-      "Kafka": { "active": true }
+      "Kafka": { "active": true },
+      "LaunchDarkly": { "active": true },
+      "Split.IO": { "active": true }
     },
     "Web and Frontend Technologies": {
       "React": { "active": true },
