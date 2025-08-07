@@ -2,7 +2,7 @@
   "name": "Kevin Miller",
   "phone": { "areaCode": "317", "prefix": "450", "suffix": "0255" },
   "email": "kemiller2002@gmail.com",
-  "website": "http://kemiller2002.github.io",
+  "website": "http://kevinmmiller.us",
   "github": "https://github.com/kemiller2002",
   "stackoverflow": "https://stackoverflow.com/users/1942",
 
@@ -161,6 +161,120 @@
   ],
 
   "employment": [
+    {
+      "company": "Echelon Foundry",
+      "start": { "month": "February", "year": "2024" },
+      "end": null,
+      "title": [
+        {
+          "name": "Founder & Principal Consultant",
+          "display": true
+        }
+      ],
+      "executiveAccomplishments": [
+        {
+          "highlight": "Launched Echelon Foundry consulting practice",
+          "details": "providing strategic technology and business advisory services to nonprofits, fintech companies, and investors"
+        },
+        {
+          "highlight": "Created and launched HelixNote",
+          "details": "an AI-driven documentation and case summarization platform for complex medical and regulatory domains"
+        },
+        {
+          "highlight": "Provided DAF platform consulting",
+          "details": "including donor lifecycle mapping, compliance review, and grant workflow optimization for financial institutions and nonprofits"
+        },
+        {
+          "highlight": "Conducted financial and technical due diligence",
+          "details": "reviewing technology company financials, product architecture, and market fit for investment decisions"
+        },
+        {
+          "highlight": "Advised on agile maturity assessments",
+          "details": "including survey design, question selection, and results interpretation to guide cultural and process improvements"
+        }
+      ],
+      "accomplishments": [
+        {
+          "description": "Advised nonprofits and financial institutions on DAF architecture, grant flow design, and compliance risk mitigation",
+          "importance": 10
+        },
+        {
+          "description": "Developed HelixNote, leveraging AI integration and prompt engineering to automate documentation workflows for complex cases",
+          "importance": 9
+        },
+        {
+          "description": "Reviewed fintech and technology company financials and operations for investor-led acquisition and funding evaluations",
+          "importance": 8
+        },
+        {
+          "description": "Provided agile leadership consulting, including survey creation and organizational maturity analysis to align delivery practices with strategic goals",
+          "importance": 7
+        }
+      ],
+      "projects": [
+        {
+          "title": "HelixNote AI Documentation Platform",
+          "description": "Designed and implemented AI-powered summarization and structured reporting system for regulated and complex environments",
+          "responsibilities": [
+            "Prompt engineering and AI model integration",
+            "Workflow automation design",
+            "User interface and reporting templates"
+          ],
+          "display": ["architect", "developer"],
+          "importance": 9
+        },
+        {
+          "title": "DAF Platform Advisory Engagement",
+          "description": "Consulted on system design and donor lifecycle processes for a national financial institution’s philanthropic platform",
+          "responsibilities": [
+            "Mapped donor journey and grant workflows",
+            "Recommended compliance and reporting improvements"
+          ],
+          "display": ["management", "architect"],
+          "importance": 8
+        },
+        {
+          "title": "Fintech Company Investment Review",
+          "description": "Conducted due diligence on a fintech platform’s architecture, financial performance, and market positioning for an investment group",
+          "responsibilities": [
+            "Reviewed infrastructure scalability and technical debt",
+            "Analyzed financial statements and revenue models"
+          ],
+          "display": ["management"],
+          "importance": 8
+        },
+        {
+          "title": "Agile Maturity Assessment",
+          "description": "Advised on the creation of a survey and question set to measure organizational agility and guide leadership interventions",
+          "responsibilities": [
+            "Defined key measurement categories",
+            "Drafted and refined survey questions",
+            "Advised on data interpretation for leadership workshops"
+          ],
+          "display": ["management"],
+          "importance": 7
+        }
+      ],
+      "technologies": [
+        "AI Integration",
+        "Azure OpenAI Service",
+        "LangChain",
+        "OpenAI GPT-4",
+        "Prompt Engineering",
+        "Agile Delivery",
+        "Financial Analysis",
+        "Architecture Assessment",
+        "Jira",
+        "Azure",
+        "AWS"
+      ],
+      "responsibilities": [
+        "Technology and architectural review",
+        "AI integration strategy",
+        "Donor lifecycle and compliance consulting",
+        "Agile process assessment and coaching"
+      ]
+    },
     {
       "company": "Ren",
       "start": { "month": "January", "year": "2020" },

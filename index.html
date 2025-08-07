@@ -1,360 +1,359 @@
 <html>
 
-  <head>
+    <head>
 
-    <script>
-
-
-      const monthNames = {
-        "January": 0, "February": 1, "March": 2, "April": 3,
-        "May": 4, "June": 5, "July": 6, "August": 7,
-        "September": 8, "October": 9, "November": 10, "December": 11
-      };
-
-      function sortByStart(a, b) {
-        const convert = (tDate) => [
-          x => ({ ...x, monthNumber: monthNames[x.month] })
-          , x => ({ ...x, date: new Date(x.year, x.monthNumber, 1) })
-        ].reduce((s, i) => i(s), tDate)
-        return [
-          ({ a, b }) => ({ a: convert(a), b: convert(b) }),
-          ({ a, b }) => ({ a: a.date, b: b.date }),
-          ({ a, b }) => (b - a)
-
-        ].reduce((s, i) => i(s), { a: a.start, b: b.start })
-      }
-
-      function sortByTopic(a, b) {
-        return a.topic - b.topic;
-      }
-
-      function sortByImportanceHigh(a, b) {
-        return b.importance - a.importance;
-      }
-
-      function sortAlphabetical(a, b) {
-        return a.localeCompare(b);
-      }
-
-      function log(item) {
-        console.log(item);
-        return item;
-      }
-
-      window.addEventListener(
-        "DOMContentLoaded",
-        () =>
-          fetch("resume.json")
-            .then((d) => d.json())
-            .then(d => ({ ...d, display: true }))
-            .then(d => ({ ...d, employment: d.employment.toSorted(sortByStart) }))
-            .then((j) => ko.applyBindings(j)),
-        false
-      );
-
-      function getTechnologies(employment) {
-        return [
-          x => x.filter(y => !y.entryOnly),
-          x => x.map(y => y.technologies),
-          x => x.flat(),
-          x => new Set(x),
-          x => [...x],
-          x => x.toSorted(),
-        ].reduce((s, i) => i(s), employment);
-      }
-
-      function getTechnologyGroupings(technologies) {
-        return [
-          x => Reflect.ownKeys(x).map(y => ({ name: y, technologies: technologies[y] }))
-        ].reduce((s, i) => i(s), technologies);
-      }
-
-      function getTechnologyNames(technologyGrouping) {
+        <script>
 
 
-        const data = [
-          t => ({ technologies: t, keys: Reflect.ownKeys(t) }),
-          t => t.keys.filter(k => t.technologies[k].active),
-          k => k.toSorted()
-        ].reduce((s, i) => i(s), technologyGrouping.technologies)
-        return data;
-      }
+            const monthNames = {
+                "January": 0, "February": 1, "March": 2, "April": 3,
+                "May": 4, "June": 5, "July": 6, "August": 7,
+                "September": 8, "October": 9, "November": 10, "December": 11
+            };
 
-    </script>
-    <link rel="stylesheet" href="resume.css">
+            function sortByStart(a, b) {
+                const convert = (tDate) => [
+                    x => ({ ...x, monthNumber: monthNames[x.month] })
+                    , x => ({ ...x, date: new Date(x.year, x.monthNumber, 1) })
+                ].reduce((s, i) => i(s), tDate)
+                return [
+                    ({ a, b }) => ({ a: convert(a), b: convert(b) }),
+                    ({ a, b }) => ({ a: a.date, b: b.date }),
+                    ({ a, b }) => (b - a)
 
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+                ].reduce((s, i) => i(s), { a: a.start, b: b.start })
+            }
 
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 24
-      }
-    </style>
+            function sortByTopic(a, b) {
+                return a.topic - b.topic;
+            }
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"
-      integrity="sha512-2AL/VEauKkZqQU9BHgnv48OhXcJPx9vdzxN1JrKDVc4FPU/MEE/BZ6d9l0mP7VmvLsjtYwqiYQpDskK9dG8KBA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </style>
+            function sortByImportanceHigh(a, b) {
+                return b.importance - a.importance;
+            }
 
-  </head>
+            function sortAlphabetical(a, b) {
+                return a.localeCompare(b);
+            }
 
-  <body id="main" data-bind="attr:{display:display}">
-    <div class="column-center">
-      <div class="header">
-        <h1 class="name">
-          <span class="name" data-bind="text: name"></span>
-        </h1>
-        <div class="contact">
-          <div class="contact-container">
-            <div class="phone">
-              <span data-bind="text: phone.areaCode"></span><span data-bind="text: phone.prefix"></span><span
-                data-bind="text: phone.suffix"></span>
-            </div>
-          </div>
-          <div class="contact-container">
-            <span class="email" data-bind="text: email"></span>
-          </div>
-          <a target="_blank" class="stackoverflow" data-bind="text: stackoverflow, attr: { href:stackoverflow}"></a>
-          <a target="_blank" class="website" data-bind="text: website, attr: { href:website}"></a>
-        </div>
-      </div>
+            function log(item) {
+                console.log(item);
+                return item;
+            }
 
-      <div class="about" data-bind="foreach:about">
-        <p data-bind="text:$data"></p>
-      </div>
+            window.addEventListener(
+                "DOMContentLoaded",
+                () =>
+                    fetch("resume.json")
+                        .then((d) => d.json())
+                        .then(d => ({ ...d, display: true }))
+                        .then(d => ({ ...d, employment: d.employment.toSorted(sortByStart) }))
+                        .then((j) => ko.applyBindings(j)),
+                false
+            );
 
+            function getTechnologies(employment) {
+                return [
+                    x => x.filter(y => !y.entryOnly),
+                    x => x.map(y => y.technologies),
+                    x => x.flat(),
+                    x => new Set(x),
+                    x => [...x],
+                    x => x.toSorted(),
+                ].reduce((s, i) => i(s), employment);
+            }
 
-      <div class="highlights">
-        <h3 class="highlights">Career Highlights</h3>
-        <ul class="highlights" data-bind="foreach: highlights">
-          <li class="highlight" data-bind="text:$data.text"></li>
-        </ul>
-      </div>
+            function getTechnologyGroupings(technologies) {
+                return [
+                    x => Reflect.ownKeys(x).map(y => ({ name: y, technologies: technologies[y] }))
+                ].reduce((s, i) => i(s), technologies);
+            }
 
-      <hr class="header-divider" />
-
-      <section class="employment">
-
-        <ul class="organization" data-bind="foreach:employment">
-          <!-- ko if: !$data.entryOnly -->
-          <li class="employment-entry">
-            <h3 class="employment-meta-data">
-              <div data-bind="foreach:{data:title}" class="title">
-                <span class="title" data-bind="text:$data.name"></span>
-              </div>
-              <span class="organization-name" data-bind="text:company"></span>
-            </h3>
-
-            <div class="dates">
-              <div class="start">
-                <span class="month" data-bind="text:(start.month)"></span>
-                <span class="year" data-bind="text:(start.year)"></span>
-              </div>
-              <div class="end">
-                <span class="month" data-bind="text:end ? (end.month) : ''"></span>
-                <span class="year" data-bind="text:end ? end.year : ''"></span>
-              </div>
-            </div>
+            function getTechnologyNames(technologyGrouping) {
 
 
-            <div class="projects"
-              data-bind="foreach:{data:projects.filter(x => !x.hide).toSorted(sortByImportanceHigh)}">
-              <ul class="project">
-                <li>
-                  <h4 class="title" data-bind="text:title"></h4>
-                  <span class="description" data-bind="text:description"></span>
-                  <!-- ko if: !$data.hideResponsibilities -->
-                  <ul class="responsiblities" data-bind="foreach: responsibilities">
-                    <li data-bind="text:$data"></li>
-                  </ul>
-                  <!-- /ko -->
-                </li>
-              </ul>
-            </div>
+                const data = [
+                    t => ({ technologies: t, keys: Reflect.ownKeys(t) }),
+                    t => t.keys.filter(k => t.technologies[k].active),
+                    k => k.toSorted()
+                ].reduce((s, i) => i(s), technologyGrouping.technologies)
+                return data;
+            }
 
-            <div class="accomplishments">
-              <ul data-bind="foreach: {data:accomplishments.filter(x => !x.hide)}">
-                <li class="accomplishment" data-bind="text:description"></li>
-              </ul>
-              <h4 class="accomplishment-title">Accomplishments</h4>
+            function checkDescription(description) {
+                console.log("HERE")
+                console.log(description);
+                return 'description' || ''
+            }
 
-            </div>
+        </script>
+        <link rel="stylesheet" href="resume.css">
 
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-          </li>
-          <!-- /ko -->
-        </ul>
+        <style>
+            .material-symbols-outlined {
+                font-variation-settings:
+                    'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 24
+            }
+        </style>
 
-        <!-- ko if: $data.previousRoles -->
-        <div class="employment-entry">
-          <h3 class="employment-meta-data">
-            <div class="title">
-              <span class="title">Previous Roles</span>
-            </div>
-            <span class="organization-name"></span>
-          </h3>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"
+            integrity="sha512-2AL/VEauKkZqQU9BHgnv48OhXcJPx9vdzxN1JrKDVc4FPU/MEE/BZ6d9l0mP7VmvLsjtYwqiYQpDskK9dG8KBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        </style>
 
-          <div class="dates">
-            <div class="start">
-              <span class="year" data-bind="text:($data.previousRoles.start.year)"></span>
-            </div>
-            <div class="end">
-              <span class="year" data-bind="text:($data.previousRoles.end.year)"></span>
-            </div>
-          </div>
-        </div>
-        <!-- /ko -->
+    </head>
 
-      </section>
-
-      <section class="projects">
-        <h2>Entrepreneurial Ventures</h2>
-        <ul class="projects" data-bind="foreach: entrepreneurialVentures">
-          <li class="employment-entry">
-            <h3 class="employment-meta-data">
-              <div data-bind="foreach:{data:title}" class="title">
-                <span class="title" data-bind="text:$data.name"></span>
-              </div>
-              <span class="organization-name" data-bind="text:company"></span>
-            </h3>
-
-            <div class="dates">
-              <div class="start">
-                <span class="month" data-bind="text:(start.month)"></span>
-                <span class="year" data-bind="text:(start.year)"></span>
-              </div>
-              <div class="end">
-                <span class="month" data-bind="text:end ? (end.month) : ''"></span>
-                <span class="year" data-bind="text:end ? end.year : ''"></span>
-              </div>
-            </div>
-
-            <div class="accomplishments">
-              <ul data-bind="foreach: {data:accomplishments.filter(x => !x.hide)}">
-                <li class="accomplishment" data-bind="text:description"></li>
-              </ul>
-              <h4 class="accomplishment-title">Accomplishments</h4>
-
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section class="projects">
-        <h2>Projects</h2>
-        <ul class="projects" data-bind="foreach: projects">
-          <li>
-            <h4 class="institution" data-bind="text:institution"></h4>
-            <div class="projects-meta-data">
-              <span class="institution" data-bind="text:name"></span>
-              <span class="description" data-bind="text:description"></span>
-              <div class="dates">
-                <span class="end" data-bind="text:end.year"></span>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-
-      <section class="volunteering">
-        <h2>Volunteering</h2>
-        <ul class="volunteering" data-bind="foreach: {data:volunteering.toSorted(sortByImportanceHigh)}">
-          <li>
-            <h4 class="institution" data-bind="text:institution"></h4>
-            <div class="volunteering-meta-data">
-              <span class="institution" data-bind="text:name"></span>
-              <div class="dates">
-                <div class="start">
-                  <span class="year" data-bind="text:(start.year)"></span>
+    <body id="main" data-bind="attr:{display:display}">
+        <div class="column-center">
+            <div class="header">
+                <h1 class="name">
+                    <span class="name" data-bind="text: name"></span>
+                </h1>
+                <div class="contact">
+                    <div class="contact-container">
+                        <div class="phone">
+                            <span data-bind="text: phone.areaCode"></span><span
+                                data-bind="text: phone.prefix"></span><span data-bind="text: phone.suffix"></span>
+                        </div>
+                    </div>
+                    <div class="contact-container">
+                        <span class="email" data-bind="text: email"></span>
+                    </div>
+                    <a target="_blank" class="stackoverflow"
+                        data-bind="text: stackoverflow, attr: { href:stackoverflow}"></a>
+                    <a target="_blank" class="website" data-bind="text: website, attr: { href:website}"></a>
                 </div>
-                <div class="end">
-                  <span class="year" data-bind="text:end ? end.year : ''"></span>
-                </div>
-              </div>
             </div>
-          </li>
-        </ul>
-      </section>
 
-      <section class="focus">
-        <h2>Specializations</h2>
-        <ul class="focus" data-bind="foreach:{data:focus.toSorted(sortByImportanceHigh)}">
-          <li data-bind="text:$data.name" class="focus"></li>
-        </ul>
-      </section>
-
-      <section class="technologies">
-        <h2>Technologies</h2>
-        <ul class="technologies technologyGrid" data-bind="foreach:{data:getTechnologyGroupings(technologies)}">
-          <li class="technologyGroup">
-            <h5 data-bind="text:$data.name"></h5>
-            <ul class="technologies" data-bind="foreach:{data:getTechnologyNames($data)}">
-              <li data-bind="text:$data"></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <section class="education">
-        <h2>Education</h2>
-        <ul class="education" data-bind="foreach: education">
-          <li class="education">
-            <h4 class="institution" data-bind="text:institution"> </h4>
-            <div class="institution-description">
-              <h5 class="education-description">
-                <span data-bind="text:degree"></span>
-                <span data-bind="text:study"></span>
-              </h5>
-              <div class="dates">
-                <div class="start">
-                  <span class="year" data-bind="text:(start.year)"></span>
-                </div>
-                <div class="end">
-                  <span class="year" data-bind="text:end ? end.year : ''"></span>
-                </div>
-              </div>
+            <div class="about" data-bind="foreach:about">
+                <p data-bind="text:$data"></p>
             </div>
-            <ul class="awards" data-bind="foreach: awards">
-              <li data-bind="text:$data"></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
 
-      <section class="awards">
-        <h2>Awards and Distinctions</h2>
-        <ul class="awards" data-bind="foreach: {data:awards.toSorted(sortByImportanceHigh)}">
-          <li>
-            <h4 class="institution" data-bind="text:institution"></h4>
-            <div class="award-meta-data">
-              <span class="institution" data-bind="text:name"></span>
-              <div class="dates">
-                <span class="end" data-bind="text:end.year"></span>
-              </div>
+
+            <div class="highlights">
+                <h3 class="highlights">Career Highlights</h3>
+                <ul class="highlights" data-bind="foreach: highlights">
+                    <li class="highlight" data-bind="text:$data.text"></li>
+                </ul>
             </div>
-          </li>
-        </ul>
-      </section>
 
-      <section class="presentation-wrapper">
-        <h2>Public Speaking Engagements</h2>
-        <ul class="presentations grid" data-bind="foreach:{data:presentations.toSorted(sortByTopic)}">
-          <li class="presentation">
-            <h5 data-bind="text:topic"></h5>
-            <ul class="presentationListing" data-bind="foreach:{data:title.toSorted(sortAlphabetical)}">
-              <li data-bind="text:$data" class="presentation"></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="presentation-overflow"></div>
-      </section>
+            <hr class="header-divider" />
 
-  </body>
+            <section class="employment">
+                <h3 class="highlights">Leadership Experience</h3>
+                <ul class="organization" data-bind="foreach:employment">
+                    <!-- ko if: !$data.entryOnly -->
+                    <li class="employment-entry">
+                        <h3 class="employment-meta-data executive">
+                            <span class="organization-name" data-bind="text:company"></span>
+                            <div data-bind="foreach:{data:title}" class="title">
+                                <span class="title" data-bind="text:$data.name"></span>
+                            </div>
+
+                        </h3>
+
+                        <div class="dates">
+                            <div class="start">
+                                <span class="month" data-bind="text:(start.month)"></span>
+                                <span class="year" data-bind="text:(start.year)"></span>
+                            </div>
+                            <!-- ko if: $data.end -->
+                            <div class="end">
+                                <span class="month" data-bind="text:end ? (end.month) : ''"></span>
+                                <span class="year" data-bind="text:end ? end.year : ''"></span>
+                            </div>
+                            <!-- /ko -->
+
+                            <!-- ko ifnot: $data.end -->
+                            <div class="end"><span class="present">Present</span></div>
+                            <!-- /ko -->
+
+                        </div>
+
+                        <div class="accomplishments executive-accomplishments">
+                            <ul data-bind="foreach: {data:executiveAccomplishments.filter(x => !x.hide)}">
+                                <li class="accomplishment">
+                                    <span class="executive-highlight" data-bind="text:$data.highlight"></span>
+                                    <span data-bind="text:$data.details"></span>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </li>
+                    <!-- /ko -->
+                </ul>
+
+                <!-- ko if: $data.previousRoles -->
+                <div class="employment-entry">
+                    <h3 class="employment-meta-data">
+                        <div class="title">
+                            <span class="title">Previous Roles</span>
+                        </div>
+                        <span class="organization-name"></span>
+                    </h3>
+
+                    <div class="dates">
+                        <div class="start">
+                            <span class="year" data-bind="text:($data.previousRoles.start.year)"></span>
+                        </div>
+                        <div class="end">
+                            <span class="year" data-bind="text:($data.previousRoles.end.year)"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /ko -->
+
+            </section>
+
+            <section class="projects">
+                <h2>Entrepreneurial Ventures</h2>
+                <ul class="projects" data-bind="foreach: entrepreneurialVentures">
+                    <li class="employment-entry">
+                        <h3 class="employment-meta-data executive">
+                            <span class="organization-name" data-bind="text:company"></span>
+                            <div data-bind="foreach:{data:title}" class="title">
+                                <span class="title" data-bind="text:$data.name"></span>
+                            </div>
+
+                        </h3>
+
+                        <div class="dates">
+                            <div class="start">
+                                <span class="month" data-bind="text:(start.month)"></span>
+                                <span class="year" data-bind="text:(start.year)"></span>
+                            </div>
+                            <div class="end">
+                                <span class="month" data-bind="text:end ? (end.month) : ''"></span>
+                                <span class="year" data-bind="text:end ? end.year : ''"></span>
+                            </div>
+                        </div>
+
+                        <div class="accomplishments executive-accomplishments">
+                            <ul data-bind="foreach: {data:executiveAccomplishments.filter(x => !x.hide)}">
+                                <li class="accomplishment">
+                                    <span class="executive-highlight" data-bind="text:$data.highlight"></span>
+                                    <span data-bind="text:$data.details"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="projects">
+                <h2>Projects</h2>
+                <ul class="projects" data-bind="foreach: projects">
+                    <li>
+                        <h4 class="institution" data-bind="text:institution"></h4>
+                        <div class="projects-meta-data">
+                            <span class="institution" data-bind="text:name"></span>
+                            <span class="description" data-bind="text:description"></span>
+                            <div class="dates">
+                                <span class="end" data-bind="text:end.year"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section class="volunteering">
+                <h2>Volunteering</h2>
+                <ul class="volunteering" data-bind="foreach: {data:volunteering.toSorted(sortByImportanceHigh)}">
+                    <li>
+                        <h4 class="institution" data-bind="text:institution"></h4>
+                        <div class="volunteering-meta-data">
+                            <span class="institution" data-bind="text:name"></span>
+                            <div class="dates">
+                                <div class="start">
+                                    <span class="year" data-bind="text:(start.year)"></span>
+                                </div>
+                                <div class="end">
+                                    <span class="year" data-bind="text:end ? end.year : ''"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="focus">
+                <h2>Specializations</h2>
+                <ul class="focus" data-bind="foreach:{data:focus.toSorted(sortByImportanceHigh)}">
+                    <li data-bind="text:$data.name" class="focus"></li>
+                </ul>
+            </section>
+
+            <section class="technologies">
+                <h2>Technologies</h2>
+                <ul class="technologies technologyGrid" data-bind="foreach:{data:getTechnologyGroupings(technologies)}">
+                    <li class="technologyGroup">
+                        <h5 data-bind="text:$data.name"></h5>
+                        <ul class="technologies" data-bind="foreach:{data:getTechnologyNames($data)}">
+                            <li data-bind="text:$data"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <ul class="education" data-bind="foreach: education">
+                    <li class="education">
+                        <h4 class="institution" data-bind="text:institution"> </h4>
+                        <div class="institution-description">
+                            <h5 class="education-description">
+                                <span data-bind="text:degree"></span>
+                                <span data-bind="text:study"></span>
+                            </h5>
+                            <div class="dates">
+                                <div class="start">
+                                    <span class="year" data-bind="text:(start.year)"></span>
+                                </div>
+                                <div class="end">
+                                    <span class="year" data-bind="text:end ? end.year : ''"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="awards" data-bind="foreach: awards">
+                            <li data-bind="text:$data"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="awards">
+                <h2>Awards and Distinctions</h2>
+                <ul class="awards" data-bind="foreach: {data:awards.toSorted(sortByImportanceHigh)}">
+                    <li class="institution-award">
+                        <h4 class="institution institution-award" data-bind="text:institution"></h4>
+                        <div class="award-meta-data awards-container">
+                            <span class="institution" data-bind="text:description"></span>,
+                            <span class="institution" data-bind="text:name"></span>,
+                            <span class="end" data-bind="text:end.year"></span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="presentation-wrapper">
+                <h2>Selected Speaking Topics</h2>
+                <ul class="presentations flex-column" data-bind="foreach:{data:selectedSpeakingTopics}">
+                    <li class="presentation">
+                        <span data-bind="text:$data.highlight" class="speaking-highlight"></span>
+                        <span data-bind="text:$data.details"></span>
+                    </li>
+                </ul>
+                <div class="presentation-overflow"></div>
+            </section>
+
+    </body>
 
 </html>

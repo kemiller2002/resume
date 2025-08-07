@@ -412,6 +412,10 @@ li.institution-award {
   display: inline;
 }
 
+span.present {
+  margin-left: 0.25em;
+}
+
 @page {
   size: A4;
   margin: 10mm;
