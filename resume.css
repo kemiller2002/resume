@@ -450,7 +450,7 @@ div.focusAreas > ul > li {
 }
 
 div.focusAreas > ul > li ~ li::before {
-  content: "|";
+  content: "·";
   margin-right: 0.25em;
 }
 
