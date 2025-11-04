@@ -60,11 +60,19 @@
     },
     {
       "institution": "Indiana State Fair",
+      "name": "Second Place",
+      "description": "Culinary Arts",
+      "end": { "year": "2025" },
+      "importance": 2
+    },
+    {
+      "institution": "Indiana State Fair",
       "name": "Honorable Mention (x2)",
       "description": "Culinary Arts",
       "end": { "year": "2023" },
       "importance": 2
     },
+
     {
       "institution": "CompleteLife",
       "name": "Visual Chronicles Art Show",
@@ -92,7 +100,30 @@
       "name": "Teaching Programming and Computer Science",
       "start": { "year": "2016" },
       "end": { "year": "2020" },
-      "importance": 1
+      "importance": 1,
+      "focusAreas": {
+        "display": false,
+        "entries": [
+          {
+            "name": "STEM education",
+            "display": true,
+            "notes": "Taught programming and computer science to K–12 students",
+            "weight": 8,
+            "keywords": ["STEM", "education", "programming", "computer science"]
+          },
+          {
+            "name": "Accessibility & vision impairment",
+            "display": true,
+            "notes": "Focus on adaptive technologies for vision-impaired learners",
+            "weight": 7,
+            "keywords": [
+              "accessibility",
+              "vision impairment",
+              "assistive technology"
+            ]
+          }
+        ]
+      }
     }
   ],
   "projects": [],
@@ -155,7 +186,7 @@
 
   "focus": [
     {
-      "name": "Adaptive Technologies, Vision Impairment",
+      "name": "Accessibility & Adaptive Technologies, Vision Impairment Solutions, Human-Centered Design",
       "importance": 1
     }
   ],
@@ -171,26 +202,31 @@
           "display": true
         }
       ],
+
       "executiveAccomplishments": [
         {
           "highlight": "Launched Echelon Foundry consulting practice",
           "details": "providing strategic technology and business advisory services to nonprofits, fintech companies, and investors."
         },
         {
-          "highlight": "Created and maintain HelixNote",
+          "highlight": "Created and maintain HelixNote,",
           "details": "a proprietary AI-powered documentation and analytics platform supporting diagnostic investigations, regulatory reporting, and modernization projects."
         },
         {
-          "highlight": "Developed the Echelon Diagnostic Framework",
+          "highlight": "Developed the Echelon Diagnostic Framework,",
           "details": "combining AI-assisted analysis, forensic investigation, and standards-based verification to identify and resolve complex system failures."
         },
         {
           "highlight": "Applied the framework across digital, financial, and physical domains",
-          "details": "including a 2024–2025 materials forensics study (ACI 302.1R-80 / ASTM) evaluating concrete integrity and pigment dispersion, and an independent analysis of fintech business models (e.g., Pave Finance) assessing structural risk and capital efficiency."
+          "details": "including a 2024-2025 materials forensics study (ACI 302.1R-80 / ASTM) evaluating concrete integrity and pigment dispersion, and an independent analysis of fintech business models assessing structural risk and capital efficiency."
         },
         {
           "highlight": "Delivered measurable improvements in diagnostic accuracy and audit traceability",
           "details": "through AI-driven automation, structured data capture, and evidence-based reporting."
+        },
+        {
+          "highlight": "Incorporated accessibility principles into AI-driven documentation workflows",
+          "details": "to ensure usability for low-vision and assistive-technology users, integrating inclusive design as part of HelixNote’s analytical interface."
         },
         {
           "highlight": "Advised executives and boards",
@@ -233,7 +269,7 @@
         },
         {
           "title": "DAF Platform Advisory Engagement",
-          "description": "Consulted on system design and donor lifecycle processes for a national financial institution’s philanthropic platform",
+          "description": "Consulted on system design and donor lifecycle processes for a national financial institution's philanthropic platform",
           "responsibilities": [
             "Mapped donor journey and grant workflows",
             "Recommended compliance and reporting improvements"
@@ -243,7 +279,7 @@
         },
         {
           "title": "Fintech Company Investment Review",
-          "description": "Conducted due diligence on a fintech platform’s architecture, financial performance, and market positioning for an investment group",
+          "description": "Conducted due diligence on a fintech platform's architecture, financial performance, and market positioning for an investment group",
           "responsibilities": [
             "Reviewed infrastructure scalability and technical debt",
             "Analyzed financial statements and revenue models"
@@ -281,7 +317,79 @@
         "AI integration strategy",
         "Donor lifecycle and compliance consulting",
         "Agile process assessment and coaching"
-      ]
+      ],
+
+      "focusAreas": {
+        "display": true,
+        "entries": [
+          {
+            "name": "AI-powered diagnostics",
+            "display": true,
+            "notes": "HelixNote platform and Echelon Diagnostic Framework for complex case analysis",
+            "weight": 10,
+            "keywords": [
+              "AI",
+              "HelixNote",
+              "diagnostics",
+              "OpenAI",
+              "LangChain",
+              "case summarization"
+            ]
+          },
+          {
+            "name": "Modernization strategy",
+            "display": true,
+            "notes": "DAF modernization, legacy system stabilization, and architecture advisory",
+            "weight": 9,
+            "keywords": [
+              "modernization",
+              "DAF",
+              "legacy systems",
+              "architecture",
+              "roadmapping"
+            ]
+          },
+          {
+            "name": "Systems & financial forensics",
+            "display": true,
+            "notes": "Concrete materials forensics and fintech model analysis (e.g., Pave Finance)",
+            "weight": 8,
+            "keywords": [
+              "forensics",
+              "fintech",
+              "Pave Finance",
+              "materials analysis",
+              "due diligence"
+            ]
+          },
+          {
+            "name": "Compliance automation",
+            "display": true,
+            "notes": "Standards-based verification, auditability, and regulated environments",
+            "weight": 7,
+            "keywords": [
+              "compliance",
+              "automation",
+              "regulation",
+              "audit trail",
+              "controls"
+            ]
+          },
+          {
+            "name": "Data-driven governance",
+            "display": true,
+            "notes": "Evidence-based executive reporting and decision support using structured data",
+            "weight": 7,
+            "keywords": [
+              "governance",
+              "data-driven",
+              "executive reporting",
+              "metrics",
+              "analytics"
+            ]
+          }
+        ]
+      }
     },
     {
       "company": "Ren",
@@ -510,7 +618,76 @@
         "Jira"
       ],
 
-      "responsibilities": ["Technology and architectural review", "Mentorship"]
+      "responsibilities": ["Technology and architectural review", "Mentorship"],
+
+      "focusAreas": {
+        "display": false,
+        "entries": [
+          {
+            "name": "Engineering leadership",
+            "display": true,
+            "notes": "Led nine engineering teams, head of engineering and quality, EA board member",
+            "weight": 10,
+            "keywords": [
+              "leadership",
+              "head of engineering",
+              "people management",
+              "org design"
+            ]
+          },
+          {
+            "name": "Operational optimization",
+            "display": true,
+            "notes": "Reduced operational expenses by $500K+ and improved efficiency via vendor and process changes",
+            "weight": 9,
+            "keywords": [
+              "cost reduction",
+              "operations",
+              "vendor optimization",
+              "efficiency"
+            ]
+          },
+          {
+            "name": "Agile transformation",
+            "display": true,
+            "notes": "Cut release cycles from 6 weeks to 2 days and improved roadmap predictability",
+            "weight": 9,
+            "keywords": [
+              "Agile",
+              "Scrum",
+              "delivery pipeline",
+              "time-to-market",
+              "forecasting"
+            ]
+          },
+          {
+            "name": "Architecture modernization",
+            "display": true,
+            "notes": "CI/CD redesign, branching strategy, microservices and portal modernization",
+            "weight": 8,
+            "keywords": [
+              "architecture",
+              "CI/CD",
+              "branching strategy",
+              "microservices",
+              "DevOps"
+            ]
+          },
+          {
+            "name": "Governance & compliance",
+            "display": true,
+            "notes": "Enterprise Architecture and Security Compliance Board participation",
+            "weight": 7,
+            "keywords": [
+              "governance",
+              "security",
+              "compliance",
+              "architecture board",
+              "risk"
+            ]
+          }
+        ]
+      }
     },
     {
       "company": "T2 Systems",
@@ -651,7 +828,69 @@
         "Extract transform and load programs",
         "Design discussion and prototyping of application migration to Azure",
         "PCI compliance liaison for the T2 Ascent product"
-      ]
+      ],
+
+      "focusAreas": {
+        "display": false,
+        "entries": [
+          {
+            "name": "Deployment reliability",
+            "display": true,
+            "notes": "Stabilized 300+ production environments and aligned DB/app releases",
+            "weight": 9,
+            "keywords": [
+              "deployment",
+              "reliability",
+              "production support",
+              "release management"
+            ]
+          },
+          {
+            "name": "Automation & diagnostics",
+            "display": true,
+            "notes": ".NET CLR Profiler, monitoring, reporting, and diagnostic tooling",
+            "weight": 8,
+            "keywords": [
+              "diagnostics",
+              "monitoring",
+              "profiling",
+              "tooling",
+              "observability"
+            ]
+          },
+          {
+            "name": "Agile process improvement",
+            "display": true,
+            "notes": "Cross-team software development restructuring and process reforms",
+            "weight": 7,
+            "keywords": [
+              "Agile",
+              "process improvement",
+              "team velocity",
+              "cross-functional"
+            ]
+          },
+          {
+            "name": "Cloud DevOps",
+            "display": true,
+            "notes": "Azure DevOps CI/CD optimization and build/release automation",
+            "weight": 7,
+            "keywords": ["Azure DevOps", "CI/CD", "DevOps", "automation"]
+          },
+          {
+            "name": "Team enablement",
+            "display": true,
+            "notes": "Lunch & Learns, onboarding, and training initiatives",
+            "weight": 6,
+            "keywords": [
+              "training",
+              "mentoring",
+              "knowledge sharing",
+              "onboarding"
+            ]
+          }
+        ]
+      }
     },
     {
       "company": "TCC Software Solutions",
@@ -796,7 +1035,72 @@
         "Development Manager",
         "Special Development Initiatives",
         "Azure consultant"
-      ]
+      ],
+
+      "focusAreas": {
+        "display": false,
+        "entries": [
+          {
+            "name": "Licensing optimization",
+            "display": true,
+            "notes": "Saved $250K annually via Microsoft Gold Partner program realignment",
+            "weight": 9,
+            "keywords": [
+              "licensing",
+              "cost optimization",
+              "Microsoft Gold Partner"
+            ]
+          },
+          {
+            "name": "Talent development",
+            "display": true,
+            "notes": "Internship program and university pipeline creation",
+            "weight": 8,
+            "keywords": [
+              "talent pipeline",
+              "internship",
+              "university recruiting",
+              "hiring"
+            ]
+          },
+          {
+            "name": "Public sector modernization",
+            "display": true,
+            "notes": "Indiana DNR Unity rewrite for statewide water resource management",
+            "weight": 8,
+            "keywords": [
+              "public sector",
+              "modernization",
+              "Indiana DNR",
+              "water systems"
+            ]
+          },
+          {
+            "name": "Cross-team alignment",
+            "display": true,
+            "notes": "Standardized development practices across multiple project teams",
+            "weight": 7,
+            "keywords": [
+              "alignment",
+              "standardization",
+              "communication",
+              "multi-team"
+            ]
+          },
+          {
+            "name": "Community engagement",
+            "display": true,
+            "notes": "Meetups and training that boosted TCC’s visibility and internal skills",
+            "weight": 6,
+            "keywords": [
+              "meetups",
+              "community",
+              "training",
+              "developer relations"
+            ]
+          }
+        ]
+      }
     },
 
     {
@@ -863,7 +1167,37 @@
         "Provided requirements and proposed solution for an automation testing framework and assisted in training and implementation of Ranorex",
         "Proposed and implemented the solution to track and report application performance",
         "Proposed and assisted in implementation of Redis state server and consulted to provide access controls securing stored information"
-      ]
+      ],
+
+      "focusAreas": {
+        "display": false,
+        "entries": [
+          {
+            "name": "Authorization & security",
+            "display": true,
+            "notes": "Authorization AI and workflow engine design with security considerations",
+            "weight": 7,
+            "keywords": [
+              "authorization",
+              "authentication",
+              "security",
+              "workflow"
+            ]
+          },
+          {
+            "name": "Infrastructure & monitoring",
+            "display": true,
+            "notes": "Network monitoring, performance tracking, and audit preparation",
+            "weight": 6,
+            "keywords": [
+              "monitoring",
+              "infrastructure",
+              "performance",
+              "audits"
+            ]
+          }
+        ]
+      }
     },
     {
       "company": "Pan / Equifax",
@@ -903,7 +1237,26 @@
         "LaTeX",
         "TypeScript",
         "Redis"
-      ]
+      ],
+      "focusAreas": {
+        "display": false,
+        "entries": [
+          {
+            "name": "Assessment platforms",
+            "display": true,
+            "notes": "Scheduling, proctoring, and configuration management systems for assessments",
+            "weight": 7,
+            "keywords": ["assessments", "scheduling", "proctoring", "platform"]
+          },
+          {
+            "name": "Developer education & security",
+            "display": true,
+            "notes": "Monthly training on development tech and security topics",
+            "weight": 6,
+            "keywords": ["training", "security", "developer education"]
+          }
+        ]
+      }
     },
     {
       "company": "Union Acceptance Corporation",
@@ -998,7 +1351,55 @@
       "technologies": [],
       "responsibilities": [],
       "importance": 1,
-      "entryOnly": false
+      "entryOnly": false,
+      "focusAreas": {
+        "display": false,
+        "entries": [
+          {
+            "name": "Food manufacturing",
+            "display": true,
+            "notes": "Oversaw production processes and ingredient/packaging choices",
+            "weight": 8,
+            "keywords": [
+              "food production",
+              "manufacturing",
+              "ingredients",
+              "packaging"
+            ]
+          },
+          {
+            "name": "B2B expansion",
+            "display": true,
+            "notes": "Expanded into B2B gifting and wholesale channels",
+            "weight": 8,
+            "keywords": ["B2B", "wholesale", "gifting", "distribution"]
+          },
+          {
+            "name": "Operational efficiency",
+            "display": true,
+            "notes": "Reduced production costs by over 20%",
+            "weight": 7,
+            "keywords": [
+              "cost reduction",
+              "operations",
+              "efficiency",
+              "sourcing"
+            ]
+          },
+          {
+            "name": "Sales strategy",
+            "display": true,
+            "notes": "Restructured sales responsibilities, boosting performance by 25%",
+            "weight": 7,
+            "keywords": [
+              "sales",
+              "team structure",
+              "customer segments",
+              "revenue growth"
+            ]
+          }
+        ]
+      }
     },
     {
       "company": "Full Out Solutions",
@@ -1041,7 +1442,44 @@
       ],
       "responsibilities": [],
       "importance": 1,
-      "entryOnly": false
+      "entryOnly": false,
+
+      "focusAreas": {
+        "display": false,
+        "entries": [
+          {
+            "name": "E-commerce development",
+            "display": true,
+            "notes": "Cheer team merchandise storefront and fundraising tools",
+            "weight": 8,
+            "keywords": ["e-commerce", "fundraising", "merchandise", "cheer"]
+          },
+          {
+            "name": "Mobile application design",
+            "display": true,
+            "notes": "Performance tracking and highlight reel app for athletes",
+            "weight": 7,
+            "keywords": [
+              "mobile",
+              "performance tracking",
+              "video",
+              "recruiting"
+            ]
+          },
+          {
+            "name": "Data-driven media",
+            "display": true,
+            "notes": "Beat analysis engine to match music and choreography",
+            "weight": 6,
+            "keywords": [
+              "audio analysis",
+              "beat detection",
+              "choreography",
+              "ML-ish"
+            ]
+          }
+        ]
+      }
     },
     {
       "company": "Devatoria",
@@ -1083,7 +1521,44 @@
       ],
       "responsibilities": [],
       "importance": 1,
-      "entryOnly": false
+      "entryOnly": false,
+
+      "focusAreas": {
+        "display": false,
+        "entries": [
+          {
+            "name": "Regulatory analysis",
+            "display": true,
+            "notes": "Analyzed organizations for operation outside state regulations",
+            "weight": 8,
+            "keywords": [
+              "regulation",
+              "compliance",
+              "state law",
+              "risk analysis"
+            ]
+          },
+          {
+            "name": "Financial forensics",
+            "display": true,
+            "notes": "Investigated tax exposure, bankruptcy patterns, and misconduct",
+            "weight": 8,
+            "keywords": [
+              "financial forensics",
+              "tax",
+              "bankruptcy",
+              "money laundering"
+            ]
+          },
+          {
+            "name": "Consumer protection",
+            "display": true,
+            "notes": "Work focused on transparency and remediation for affected parties",
+            "weight": 7,
+            "keywords": ["consumer protection", "fraud", "transparency"]
+          }
+        ]
+      }
     }
   ],
 
@@ -1180,5 +1655,258 @@
       "Karate": { "active": true },
       "CodedUI": { "active": true }
     }
-  }
+  },
+
+  "globalFocusAreas": [
+    {
+      "name": "AI-powered diagnostics",
+      "display": true,
+      "weight": 10,
+      "roles": ["Echelon Foundry"],
+      "keywords": [
+        "AI",
+        "HelixNote",
+        "diagnostics",
+        "case summarization",
+        "OpenAI",
+        "LangChain"
+      ],
+      "notes": "Use of AI and HelixNote for analysis, documentation, and diagnostic frameworks."
+    },
+    {
+      "name": "Modernization strategy",
+      "display": true,
+      "weight": 10,
+      "roles": ["Echelon Foundry", "Ren", "TCC Software Solutions"],
+      "keywords": [
+        "modernization",
+        "legacy systems",
+        "DAF",
+        "platform rewrite",
+        "roadmapping"
+      ],
+      "notes": "End-to-end modernization of platforms in nonprofit/financial and public sector contexts."
+    },
+    {
+      "name": "Systems & financial forensics",
+      "display": true,
+      "weight": 9,
+      "roles": ["Echelon Foundry", "Devatoria"],
+      "keywords": [
+        "forensics",
+        "financial analysis",
+        "Pave Finance",
+        "materials analysis",
+        "due diligence"
+      ],
+      "notes": "Diagnostic investigation of fintech models, tax/bankruptcy patterns, and physical systems like concrete."
+    },
+    {
+      "name": "Compliance & governance",
+      "display": true,
+      "weight": 9,
+      "roles": [
+        "Echelon Foundry",
+        "Ren",
+        "TCC Software Solutions",
+        "Devatoria"
+      ],
+      "keywords": [
+        "compliance",
+        "governance",
+        "security",
+        "regulation",
+        "audit trail",
+        "risk"
+      ],
+      "notes": "Security and architecture boards, regulatory review, and forensic work around organizations operating near regulatory boundaries."
+    },
+    {
+      "name": "Operational optimization",
+      "display": true,
+      "weight": 9,
+      "roles": [
+        "Ren",
+        "T2 Systems",
+        "TCC Software Solutions",
+        "The Candy Dish"
+      ],
+      "keywords": [
+        "cost reduction",
+        "operational efficiency",
+        "vendor optimization",
+        "sourcing",
+        "automation"
+      ],
+      "notes": "Hard cost savings (software, infra, licensing, sourcing) and process streamlining in both tech and manufacturing."
+    },
+    {
+      "name": "Engineering leadership",
+      "display": true,
+      "weight": 10,
+      "roles": [
+        "Ren",
+        "T2 Systems",
+        "TCC Software Solutions",
+        "Echelon Foundry"
+      ],
+      "keywords": [
+        "leadership",
+        "org design",
+        "team management",
+        "coaching",
+        "technical direction"
+      ],
+      "notes": "Leading multi-team orgs, restructuring teams, and providing technical/strategic direction."
+    },
+    {
+      "name": "Agile transformation",
+      "display": true,
+      "weight": 9,
+      "roles": [
+        "Ren",
+        "T2 Systems",
+        "TCC Software Solutions",
+        "Echelon Foundry"
+      ],
+      "keywords": [
+        "Agile",
+        "Scrum",
+        "delivery pipeline",
+        "time-to-market",
+        "process improvement"
+      ],
+      "notes": "Overhauling delivery processes, improving velocity, predictability, and release cadence."
+    },
+    {
+      "name": "Architecture & DevOps",
+      "display": true,
+      "weight": 9,
+      "roles": ["Ren", "T2 Systems", "TCC Software Solutions"],
+      "keywords": [
+        "architecture",
+        "CI/CD",
+        "microservices",
+        "Azure DevOps",
+        "distributed systems"
+      ],
+      "notes": "Modern, distributed architectures, CI/CD pipelines, and high-reliability deployment practices."
+    },
+    {
+      "name": "Diagnostic tooling & observability",
+      "display": true,
+      "weight": 8,
+      "roles": ["T2 Systems", "Echelon Foundry", "Infinite AI"],
+      "keywords": [
+        "diagnostics",
+        "profiling",
+        "monitoring",
+        "observability",
+        "tooling"
+      ],
+      "notes": "Building profilers, health monitors, and structured diagnostic/reporting systems."
+    },
+    {
+      "name": "Licensing & cost optimization",
+      "display": true,
+      "weight": 8,
+      "roles": ["TCC Software Solutions", "Ren", "The Candy Dish"],
+      "keywords": [
+        "licensing",
+        "cost optimization",
+        "negotiation",
+        "materials costs"
+      ],
+      "notes": "Reducing costs via Microsoft licensing, vendor consolidation, and sourcing changes."
+    },
+    {
+      "name": "Talent development & education",
+      "display": true,
+      "weight": 8,
+      "roles": ["TCC Software Solutions", "T2 Systems", "Ren", "IPS 55"],
+      "keywords": [
+        "training",
+        "mentoring",
+        "internships",
+        "STEM education",
+        "knowledge sharing"
+      ],
+      "notes": "Mentoring engineers, building internship pipelines, and teaching programming in schools."
+    },
+    {
+      "name": "Public sector & infrastructure modernization",
+      "display": true,
+      "weight": 7,
+      "roles": ["TCC Software Solutions", "Echelon Foundry"],
+      "keywords": [
+        "public sector",
+        "Indiana DNR",
+        "water management",
+        "infrastructure"
+      ],
+      "notes": "Modernizing state-level systems and analyzing physical infrastructure like concrete installations."
+    },
+    {
+      "name": "E-commerce & digital products",
+      "display": true,
+      "weight": 7,
+      "roles": ["Full Out Solutions", "The Candy Dish"],
+      "keywords": [
+        "e-commerce",
+        "digital products",
+        "fundraising",
+        "merchandise"
+      ],
+      "notes": "Building e-commerce platforms for cheer teams and productizing B2B gifting/wholesale."
+    },
+    {
+      "name": "Financial analysis & risk",
+      "display": true,
+      "weight": 8,
+      "roles": ["Echelon Foundry", "Devatoria"],
+      "keywords": [
+        "financial analysis",
+        "risk",
+        "tax",
+        "bankruptcy",
+        "capital efficiency"
+      ],
+      "notes": "Analyzing fintech business models and investigating tax/bankruptcy-related risk for remediation."
+    },
+    {
+      "name": "Food manufacturing & culinary operations",
+      "display": true,
+      "weight": 6,
+      "roles": ["The Candy Dish"],
+      "keywords": [
+        "food production",
+        "culinary",
+        "manufacturing",
+        "B2B gifting"
+      ],
+      "notes": "Experience in food production, cost control, and expansion into B2B channels."
+    },
+    {
+      "name": "Regulatory & consumer protection",
+      "display": true,
+      "weight": 7,
+      "roles": ["Devatoria", "Echelon Foundry"],
+      "keywords": ["regulation", "consumer protection", "fraud", "compliance"],
+      "notes": "Identifying regulatory exposure and supporting consumer-oriented remediation strategies."
+    },
+    {
+      "name": "STEM education & accessibility",
+      "display": true,
+      "weight": 7,
+      "roles": ["IPS 55"],
+      "keywords": [
+        "STEM",
+        "education",
+        "accessibility",
+        "vision impairment",
+        "assistive tech"
+      ],
+      "notes": "Teaching programming and focusing on adaptive technologies for vision-impaired learners."
+    }
+  ]
 }

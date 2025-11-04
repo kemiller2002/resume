@@ -95,6 +95,7 @@ h1 > .about {
   grid-template-rows:
     [header] auto [responsibilities] auto
     [accomplishments] auto
+    [focusAreas] auto
     [technologies] auto;
   margin-bottom: 1em;
 }
@@ -163,6 +164,15 @@ div.title > span.title:not(:last-child)::after {
   grid-column-end: content-border-right;
   display: flex;
   flex-direction: column-reverse;
+}
+
+.employment-entry > .focusAreas {
+  grid-row-start: focusAreas;
+  grid-column-start: border-left;
+  grid-column-end: content-border-right;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 0.25em;
 }
 
 :not(ul:has(li)) ~ .accomplishment-title {
@@ -414,6 +424,34 @@ li.institution-award {
 
 span.present {
   margin-left: 0.25em;
+}
+
+div.focusAreas {
+  flex-direction: row !important;
+}
+
+div.focusAreas > * ~ * {
+  margin-left: 0.25em;
+}
+
+div.focusAreas > h4 {
+  flex-grow: 2;
+  white-space: nowrap;
+}
+
+div.focusAreas > ul {
+  flex-grow: 2;
+}
+
+div.focusAreas > ul > li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 0em;
+}
+
+div.focusAreas > ul > li ~ li::before {
+  content: "|";
+  margin-right: 0.25em;
 }
 
 @page {

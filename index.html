@@ -185,6 +185,15 @@
                             </ul>
                         </div>
 
+                        <!-- ko if: ($data.focusAreas && $data.focusAreas.display) -->
+                        <div class="focusAreas executive-accomplishments">
+                            <h4>Focus Areas:</h4>
+                            <ul data-bind="foreach:focusAreas.entries">
+                                <li data-bind="text:name"></li>
+                            </ul>
+
+                        </div>
+                        <!-- /ko -->
 
                     </li>
                     <!-- /ko -->
