@@ -455,6 +455,27 @@ div.focusAreas > ul > li ~ li::before {
   margin-right: 0.25em;
 }
 
+ul.study {
+  display: inline;
+  padding: 0em;
+}
+
+ul.study > li {
+  list-style-type: none;
+  display: inline;
+  text-wrap: nowrap;
+}
+
+ul.study > li {
+  list-style-type: none;
+  display: inline;
+  text-wrap: nowrap;
+}
+
+ul.study > :not(:last-child)::after {
+  content: ",";
+}
+
 @page {
   size: A4;
   margin: 10mm;

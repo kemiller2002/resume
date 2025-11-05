@@ -187,7 +187,7 @@
 
                         <!-- ko if: ($data.focusAreas && $data.focusAreas.display) -->
                         <div class="focusAreas executive-accomplishments">
-                            <h4>Focus Areas:</h4>
+                            <h4 class="focusAreas">Focus Areas:</h4>
                             <ul data-bind="foreach:focusAreas.entries">
                                 <li data-bind="text:name"></li>
                             </ul>
@@ -320,7 +320,9 @@
                         <div class="institution-description">
                             <h5 class="education-description">
                                 <span data-bind="text:degree"></span>
-                                <span data-bind="text:study"></span>
+                                <ul class="study" data-bind="foreach:study">
+                                    <li class="study" data-bind="text:$data">adsf</li>
+                                </ul>
                             </h5>
                             <div class="dates">
                                 <div class="start">
