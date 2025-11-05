@@ -187,6 +187,7 @@ div.title > span.title:not(:last-child)::after {
 .dates {
   display: flex;
   flex-direction: row;
+  white-space: nowrap;
 }
 
 .project {
