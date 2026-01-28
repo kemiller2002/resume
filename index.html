@@ -125,8 +125,11 @@
                     <div class="contact-container">
                         <span class="email" data-bind="text: email"></span>
                     </div>
+
+                     <!-- ko if: (stackoverflow.display) -->
                     <a target="_blank" class="stackoverflow"
-                        data-bind="text: stackoverflow, attr: { href:stackoverflow}"></a>
+                        data-bind="text: stackoverflow.href, attr: { href:stackoverflow.href}"></a>
+                       <!-- /ko -->
                     <a target="_blank" class="website" data-bind="text: website, attr: { href:website}"></a>
                 </div>
             </div>

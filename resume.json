@@ -4,7 +4,10 @@
   "email": "kevin@echelonfoundry.com",
   "website": "http://kevinmmiller.us",
   "github": "https://github.com/kemiller2002",
-  "stackoverflow": "https://stackoverflow.com/users/1942",
+  "stackoverflow": {
+    "display": false,
+    "href": "https://stackoverflow.com/users/1942"
+  },
 
   "about": [
     "Technology executive with over 25 years of experience leading engineering organizations, scaling distributed teams, and delivering enterprise-grade solutions across financial, nonprofit, and consumer sectors. Proven ability to accelerate delivery timelines, reduce operational costs, and align technical innovation with strategic business outcomes. Founder of multiple software ventures and recognized with Microsoft’s MVP Award for technical leadership. As a trained chocolatier and former sous-chef in culinary competitions, I bring creativity, discipline, and attention to detail to every domain I lead. Public speaker and content contributor with an audience reach of over 18 million through conferences, technical publications, and community engagement."
