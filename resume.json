@@ -1,6 +1,10 @@
 {
   "name": "Kevin Miller",
-  "phone": { "areaCode": "317", "prefix": "450", "suffix": "0255" },
+  "phone": {
+    "areaCode": "317",
+    "prefix": "450",
+    "suffix": "0255"
+  },
   "email": "kevin@echelonfoundry.com",
   "website": "http://kevinmmiller.us",
   "github": "https://github.com/kemiller2002",
@@ -8,11 +12,9 @@
     "display": false,
     "href": "https://stackoverflow.com/users/1942"
   },
-
   "about": [
-    "Technology executive with over 25 years of experience leading engineering organizations, scaling distributed teams, and delivering enterprise-grade solutions across financial, nonprofit, and consumer sectors. Proven ability to accelerate delivery timelines, reduce operational costs, and align technical innovation with strategic business outcomes. Founder of multiple software ventures and recognized with Microsoft’s MVP Award for technical leadership. As a trained chocolatier and former sous-chef in culinary competitions, I bring creativity, discipline, and attention to detail to every domain I lead. Public speaker and content contributor with an audience reach of over 18 million through conferences, technical publications, and community engagement."
+    "Technology executive with over 25 years of experience leading engineering organizations, scaling distributed teams, and delivering enterprise-grade solutions across financial, nonprofit, and consumer sectors. Proven ability to accelerate delivery timelines, reduce operational costs, and align technical innovation with strategic business outcomes. Founder of Echelon Foundry, creator of HelixNote, and developer of Clarity, an applied diagnostic and decision framework used in real-world investigations, executive decision support, and evidence-based reporting. Recognized with Microsoft’s MVP Award for technical leadership and community impact. Experienced in AI-enabled systems, modernization initiatives, distributed architectures, engineering leadership, and organizational transformation. As a trained chocolatier and former sous-chef in culinary competitions, I bring creativity, discipline, and attention to detail to every domain I lead. Public speaker and content contributor with an audience reach exceeding 18 million through conferences, technical publications, and community engagement."
   ],
-
   "highlights": [
     {
       "display": true,
@@ -33,11 +35,16 @@
     {
       "display": true,
       "text": "Partnered closely with product and business stakeholders to align engineering priorities with customer impact and growth strategy"
+    },
+    {
+      "display": true,
+      "text": "Created Clarity, an evidence-based decision framework now applied to executive decision support, investigations, modernization efforts, and complex diagnostic analysis"
     }
   ],
-
   "address": {
-    "line": ["6312 N. Rural St"],
+    "line": [
+      "6312 N. Rural St"
+    ],
     "city": "Indianapolis",
     "state": "IN",
     "zip": "46220"
@@ -50,9 +57,16 @@
         "Psychology (Cognition, Learning)",
         "Economics minor coursework completed"
       ],
-      "start": { "year": "1996" },
-      "end": { "year": "2000" },
-      "awards": ["Academic Scholarship", "Award for Excellence in Education"],
+      "start": {
+        "year": "1996"
+      },
+      "end": {
+        "year": "2000"
+      },
+      "awards": [
+        "Academic Scholarship",
+        "Award for Excellence in Education"
+      ],
       "importance": 1
     }
   ],
@@ -60,7 +74,9 @@
     {
       "institution": "Microsoft",
       "description": "Most Valuable Professional",
-      "end": { "year": "2016" },
+      "end": {
+        "year": "2016"
+      },
       "name": "Developer Technologies",
       "importance": 10
     },
@@ -68,29 +84,36 @@
       "institution": "Indiana State Fair",
       "name": "Second Place",
       "description": "Culinary Arts",
-      "end": { "year": "2025" },
+      "end": {
+        "year": "2025"
+      },
       "importance": 2
     },
     {
       "institution": "Indiana State Fair",
       "name": "Honorable Mention (x2)",
       "description": "Culinary Arts",
-      "end": { "year": "2023" },
+      "end": {
+        "year": "2023"
+      },
       "importance": 2
     },
-
     {
       "institution": "CompleteLife",
       "name": "Visual Chronicles Art Show",
       "description": "Juried Exhibition",
-      "end": { "year": "2024" },
+      "end": {
+        "year": "2024"
+      },
       "importance": 3
     },
     {
       "institution": "No Starch Press",
       "name": "Book of F#",
       "description": "Technical Reviewer",
-      "end": { "year": "2014" },
+      "end": {
+        "year": "2014"
+      },
       "importance": 1
     }
   ],
@@ -104,8 +127,12 @@
     {
       "institution": "IPS 55",
       "name": "Teaching Programming and Computer Science",
-      "start": { "year": "2016" },
-      "end": { "year": "2020" },
+      "start": {
+        "year": "2016"
+      },
+      "end": {
+        "year": "2020"
+      },
       "importance": 1,
       "focusAreas": {
         "display": false,
@@ -115,7 +142,12 @@
             "display": true,
             "notes": "Taught programming and computer science to K–12 students",
             "weight": 8,
-            "keywords": ["STEM", "education", "programming", "computer science"]
+            "keywords": [
+              "STEM",
+              "education",
+              "programming",
+              "computer science"
+            ]
           },
           {
             "name": "Accessibility & vision impairment",
@@ -156,7 +188,6 @@
         "Functional Pipelining"
       ]
     },
-
     {
       "topic": "Software Development Methodologies",
       "title": [
@@ -165,12 +196,13 @@
         "My Team is Awesome and Yours Is Too"
       ]
     },
-
     {
       "topic": "General Development",
-      "title": ["Regular Expressions", "Time: Taking a Minute to Ponder It"]
+      "title": [
+        "Regular Expressions",
+        "Time: Taking a Minute to Ponder It"
+      ]
     },
-
     {
       "topic": "Hacking",
       "title": [
@@ -182,25 +214,30 @@
     },
     {
       "topic": "F#",
-      "title": ["Introduction to F#"]
+      "title": [
+        "Introduction to F#"
+      ]
     },
     {
       "topic": "Git",
-      "title": ["Git: The Last Database You'll Ever Need ;)"]
+      "title": [
+        "Git: The Last Database You'll Ever Need ;)"
+      ]
     }
   ],
-
   "focus": [
     {
       "name": "Accessibility & Adaptive Technologies, Vision Impairment Solutions, Human-Centered Design",
       "importance": 1
     }
   ],
-
   "employment": [
     {
       "company": "Echelon Foundry",
-      "start": { "month": "February", "year": "2024" },
+      "start": {
+        "month": "February",
+        "year": "2024"
+      },
       "end": null,
       "title": [
         {
@@ -208,70 +245,93 @@
           "display": true
         }
       ],
-
       "executiveAccomplishments": [
         {
-          "highlight": "Launched Echelon Foundry consulting practice",
-          "details": "providing strategic technology and business advisory services to nonprofits, fintech companies, and investors."
+          "highlight": "Founded Echelon Foundry,",
+          "details": "providing executive technology advisory services, AI-enabled solutions, modernization guidance, and investigative analysis across nonprofit, fintech, healthcare, and infrastructure domains."
         },
         {
           "highlight": "Created and maintain HelixNote,",
-          "details": "a proprietary AI-powered documentation and analytics platform supporting diagnostic investigations, regulatory reporting, and modernization projects."
+          "details": "an AI-powered platform for structured documentation, evidence management, reporting, and diagnostic investigations."
+        },
+        {
+          "highlight": "Created Clarity,",
+          "details": "a practical decision and diagnostic framework used to structure evidence, assumptions, decisions, risks, and reevaluation criteria in complex investigations and modernization initiatives."
         },
         {
           "highlight": "Developed the Echelon Diagnostic Framework,",
-          "details": "combining AI-assisted analysis, forensic investigation, and standards-based verification to identify and resolve complex system failures."
+          "details": "combining AI-assisted analysis, forensic investigation techniques, standards-based verification, and structured evidence evaluation."
         },
         {
-          "highlight": "Applied the framework across digital, financial, and physical domains",
-          "details": "including a 2024-2025 materials forensics study (ACI 302.1R-80 / ASTM) evaluating concrete integrity and pigment dispersion, and an independent analysis of fintech business models assessing structural risk and capital efficiency."
+          "highlight": "Applied these frameworks across digital, financial, healthcare, and physical domains,",
+          "details": "including modernization planning, diagnostic investigations, financial due diligence, healthcare case documentation, and infrastructure assessments."
         },
         {
-          "highlight": "Delivered measurable improvements in diagnostic accuracy and audit traceability",
-          "details": "through AI-driven automation, structured data capture, and evidence-based reporting."
+          "highlight": "Delivered measurable improvements in diagnostic accuracy and audit traceability,",
+          "details": "through AI-driven automation, structured evidence capture, and repeatable analytical workflows."
         },
         {
-          "highlight": "Incorporated accessibility principles into AI-driven documentation workflows",
-          "details": "to ensure usability for low-vision and assistive-technology users, integrating inclusive design as part of HelixNote’s analytical interface."
+          "highlight": "Integrated accessibility-first design principles,",
+          "details": "ensuring AI-assisted documentation and reporting workflows remain usable for low-vision and assistive technology users."
         },
         {
-          "highlight": "Advised executives and boards",
-          "details": "across technology, finance, and infrastructure sectors on modernization, compliance, and AI adoption strategy."
-        },
-        {
-          "highlight": "Mentored engineering and leadership teams",
-          "details": "in diagnostic thinking, cultural transformation, and evidence-based modernization practices."
+          "highlight": "Advised executives, boards, and investors,",
+          "details": "on modernization strategy, architecture governance, AI adoption, technology due diligence, and operational risk."
         }
       ],
       "accomplishments": [
         {
-          "description": "Advised nonprofits and financial institutions on DAF architecture, grant flow design, and compliance risk mitigation",
+          "description": "Created and applied Clarity, a structured framework for evidence mapping, decision support, assumption tracking, and reevaluation planning",
           "importance": 10
         },
         {
-          "description": "Developed HelixNote, leveraging AI integration and prompt engineering to automate documentation workflows for complex cases",
+          "description": "Developed HelixNote, leveraging AI integration and prompt engineering to automate documentation workflows for complex healthcare, technical, and investigative cases",
+          "importance": 10
+        },
+        {
+          "description": "Advised nonprofits and financial institutions on DAF architecture, modernization strategy, grant workflow design, and compliance risk mitigation",
           "importance": 9
         },
         {
-          "description": "Reviewed fintech and technology company financials and operations for investor-led acquisition and funding evaluations",
+          "description": "Reviewed technology companies, fintech organizations, and operational models for investor-led acquisition, modernization, and funding evaluations",
           "importance": 8
         },
         {
-          "description": "Provided agile leadership consulting, including survey creation and organizational maturity analysis to align delivery practices with strategic goals",
-          "importance": 7
+          "description": "Provided executive coaching and organizational advisory services focused on delivery maturity, engineering effectiveness, and decision quality",
+          "importance": 8
         }
       ],
       "projects": [
         {
+          "title": "Clarity Decision and Diagnostic Framework",
+          "description": "Designed and applied a structured framework for converting ambiguous problems into traceable evidence, assumptions, decisions, risks, and reevaluation paths",
+          "responsibilities": [
+            "Framework design",
+            "Evidence mapping",
+            "Decision modeling",
+            "Diagnostic workflow development",
+            "Executive reporting"
+          ],
+          "display": [
+            "management",
+            "architect"
+          ],
+          "importance": 10
+        },
+        {
           "title": "HelixNote AI Documentation Platform",
-          "description": "Designed and implemented AI-powered summarization and structured reporting system for regulated and complex environments",
+          "description": "Designed and implemented an AI-powered documentation, summarization, and reporting platform supporting healthcare investigations, modernization initiatives, diagnostics, and evidence-based analysis",
           "responsibilities": [
             "Prompt engineering and AI model integration",
             "Workflow automation design",
-            "User interface and reporting templates"
+            "Structured reporting architecture",
+            "Accessibility-focused user experience design"
           ],
-          "display": ["architect", "developer"],
-          "importance": 9
+          "display": [
+            "architect",
+            "developer"
+          ],
+          "importance": 10
         },
         {
           "title": "DAF Platform Advisory Engagement",
@@ -280,7 +340,10 @@
             "Mapped donor journey and grant workflows",
             "Recommended compliance and reporting improvements"
           ],
-          "display": ["management", "architect"],
+          "display": [
+            "management",
+            "architect"
+          ],
           "importance": 8
         },
         {
@@ -290,7 +353,9 @@
             "Reviewed infrastructure scalability and technical debt",
             "Analyzed financial statements and revenue models"
           ],
-          "display": ["management"],
+          "display": [
+            "management"
+          ],
           "importance": 8
         },
         {
@@ -301,22 +366,28 @@
             "Drafted and refined survey questions",
             "Advised on data interpretation for leadership workshops"
           ],
-          "display": ["management"],
+          "display": [
+            "management"
+          ],
           "importance": 7
         }
       ],
       "technologies": [
         "AI Integration",
         "Azure OpenAI Service",
-        "LangChain",
         "OpenAI GPT-4",
+        "LangChain",
         "Prompt Engineering",
-        "Agile Delivery",
-        "Financial Analysis",
+        "Structured Decision Systems",
+        "Clarity Framework",
+        "HelixNote",
         "Architecture Assessment",
-        "Jira",
+        "Agile Delivery",
+        "AWS",
         "Azure",
-        "AWS"
+        "Jira",
+        "Financial Analysis",
+        "Executive Advisory"
       ],
       "responsibilities": [
         "Technology and architectural review",
@@ -324,10 +395,23 @@
         "Donor lifecycle and compliance consulting",
         "Agile process assessment and coaching"
       ],
-
       "focusAreas": {
         "display": true,
         "entries": [
+          {
+            "name": "Clarity decision framework",
+            "display": true,
+            "notes": "Applied framework for evidence mapping, assumption management, decision support, risk evaluation, and structured reevaluation",
+            "weight": 10,
+            "keywords": [
+              "Clarity",
+              "decision framework",
+              "evidence mapping",
+              "decision support",
+              "risk analysis",
+              "reevaluation"
+            ]
+          },
           {
             "name": "AI-powered diagnostics",
             "display": true,
@@ -399,8 +483,14 @@
     },
     {
       "company": "Ren",
-      "start": { "month": "January", "year": "2020" },
-      "end": { "month": "January", "year": "2025" },
+      "start": {
+        "month": "January",
+        "year": "2020"
+      },
+      "end": {
+        "month": "January",
+        "year": "2025"
+      },
       "title": [
         {
           "name": "Director of Engineering",
@@ -411,7 +501,6 @@
           "display": true
         }
       ],
-
       "executiveAccomplishments": [
         {
           "highlight": "Cut operational expenses by over $500,000 annually",
@@ -490,13 +579,11 @@
           "description": "Restructured acquired engineering teams and processes, reducing time to market by 90%",
           "importance": 9
         },
-
         {
           "description": "Secured over $50,000 in free distributed architecture training for development staff",
           "importance": 4
         }
       ],
-
       "projects": [
         {
           "title": "Donor Advised Fund Summit committee member",
@@ -510,7 +597,9 @@
         {
           "title": "Ren security and compliance board member",
           "description": "Board focused on creating and revising policies on security and compliance",
-          "responsibilities": ["Advised on application and data security"],
+          "responsibilities": [
+            "Advised on application and data security"
+          ],
           "hideResponsibilities": true,
           "importance": 1
         },
@@ -522,10 +611,11 @@
             "Managed managers and individual contributors, ensuring strategic alignment and effective team leadership"
           ],
           "hideResponsibilities": true,
-          "display": ["management"],
+          "display": [
+            "management"
+          ],
           "importance": 10
         },
-
         {
           "title": "Head of Software Development Procedures",
           "description": "Set software development practices for engineering and quality assurance teams",
@@ -533,10 +623,13 @@
             "Set direction of software development practices"
           ],
           "hideResponsibilities": true,
-          "display": ["management", "architect", "developer"],
+          "display": [
+            "management",
+            "architect",
+            "developer"
+          ],
           "importance": 9
         },
-
         {
           "title": "Head of Quality Assurance",
           "description": "Led a high-performing team to ensure zero data loss, sustained operational efficiency, and the flawless management of client funds with no financial missteps",
@@ -547,10 +640,11 @@
             "Improved efficiency by restructuring testing documentation processes"
           ],
           "hideResponsibilities": true,
-          "display": ["management"],
+          "display": [
+            "management"
+          ],
           "importance": 8
         },
-
         {
           "title": "Head of Enterprise Architecture Board",
           "description": "Group of executives and architects, which resulted in consolidation of technologies, increased scalability, stability, and efficiency in time to market",
@@ -558,10 +652,11 @@
             "Led the creation and administration of the Enterprise Architecture Board to drive technology consolidation and strategic decision-making"
           ],
           "hideResponsibilities": true,
-          "display": ["management"],
+          "display": [
+            "management"
+          ],
           "importance": 2
         },
-
         {
           "title": "Grant Recommendation Project",
           "description": "Evaluated business processes and led the development of a new application to enhance the client user interface and improve operational efficiency",
@@ -571,30 +666,47 @@
             "Development"
           ],
           "hideResponsibilities": true,
-          "display": ["management"],
+          "display": [
+            "management"
+          ],
           "importance": 6
         },
         {
           "title": "Microsite portal implementation",
           "description": "Refactor legacy portal into smaller composable systems to allow segregated rapid development and deployment",
-          "responsibilities": ["Architecture and development"],
-          "display": ["architect", "developer"],
+          "responsibilities": [
+            "Architecture and development"
+          ],
+          "display": [
+            "architect",
+            "developer"
+          ],
           "importance": 1,
           "hide": true
         },
         {
           "title": "Microservice implementation",
           "description": "Transform underlying application model and processes into a service based architecture meshed through GraphQL",
-          "responsibilities": ["Architecture and development"],
-          "display": ["architect", "developer"],
+          "responsibilities": [
+            "Architecture and development"
+          ],
+          "display": [
+            "architect",
+            "developer"
+          ],
           "importance": 1,
           "hide": true
         },
         {
           "title": "Legacy portal stabilization initiative",
           "description": "Assumed control of all aspects of legacy portal system concerning stability.  Reorganized and set path for branching strategy and deployment process",
-          "responsibilities": ["Architecture and development"],
-          "display": ["architect", "developer"],
+          "responsibilities": [
+            "Architecture and development"
+          ],
+          "display": [
+            "architect",
+            "developer"
+          ],
           "importance": 1,
           "hide": true
         }
@@ -623,9 +735,10 @@
         "AI Integration and Conversational AI",
         "Jira"
       ],
-
-      "responsibilities": ["Technology and architectural review", "Mentorship"],
-
+      "responsibilities": [
+        "Technology and architectural review",
+        "Mentorship"
+      ],
       "focusAreas": {
         "display": false,
         "entries": [
@@ -697,15 +810,20 @@
     },
     {
       "company": "T2 Systems",
-      "start": { "month": "October", "year": "2018" },
-      "end": { "month": "January", "year": "2020" },
+      "start": {
+        "month": "October",
+        "year": "2018"
+      },
+      "end": {
+        "month": "January",
+        "year": "2020"
+      },
       "title": [
         {
           "name": "Senior Developer",
           "display": true
         }
       ],
-
       "executiveAccomplishments": [
         {
           "highlight": "Stabilized deployment across 300+ production environments,",
@@ -763,21 +881,27 @@
         {
           "title": "Data Archival Project",
           "description": "A system to locate clusters of related data based on certain changing criteria, remove them from the client installation, send them to the central reporting system, and verify the contents with stored records",
-          "responsibilities": ["Architecture and development"],
+          "responsibilities": [
+            "Architecture and development"
+          ],
           "importance": 1,
           "hideResponsibilities": true
         },
         {
           "title": ".NET CLR Profiler",
           "description": "A monitoring system which hooked into the .NET runtime for monitoring and reporting data surrounding exceptions",
-          "responsibilities": ["Architecture and development"],
+          "responsibilities": [
+            "Architecture and development"
+          ],
           "hideResponsibilities": true,
           "importance": 1
         },
         {
           "title": "T2 Lunch and Learns",
           "description": "A semi-monthly activity where an internal or external person teaches the development group on a topic",
-          "responsibilities": ["Proposal, creation, and administration"],
+          "responsibilities": [
+            "Proposal, creation, and administration"
+          ],
           "hideResponsibilities": true,
           "importance": 1
         },
@@ -797,7 +921,9 @@
           "title": "User Migration Strategy",
           "hideResponsibilities": true,
           "description": "A comprehensive plan for moving users across multiple systems to a single microservice datastore",
-          "responsibilities": ["Architect"],
+          "responsibilities": [
+            "Architect"
+          ],
           "importance": 1
         },
         {
@@ -812,7 +938,6 @@
           "importance": 1
         }
       ],
-
       "technologies": [
         "C#",
         "F#",
@@ -826,7 +951,6 @@
         "Git",
         "Azure DevOps"
       ],
-
       "responsibilities": [
         "Azure DevOps administrator",
         "Load testing",
@@ -835,7 +959,6 @@
         "Design discussion and prototyping of application migration to Azure",
         "PCI compliance liaison for the T2 Ascent product"
       ],
-
       "focusAreas": {
         "display": false,
         "entries": [
@@ -881,7 +1004,12 @@
             "display": true,
             "notes": "Azure DevOps CI/CD optimization and build/release automation",
             "weight": 7,
-            "keywords": ["Azure DevOps", "CI/CD", "DevOps", "automation"]
+            "keywords": [
+              "Azure DevOps",
+              "CI/CD",
+              "DevOps",
+              "automation"
+            ]
           },
           {
             "name": "Team enablement",
@@ -900,20 +1028,24 @@
     },
     {
       "company": "TCC Software Solutions",
-      "start": { "month": "April", "year": "2015" },
-      "end": { "month": "September", "year": "2018" },
+      "start": {
+        "month": "April",
+        "year": "2015"
+      },
+      "end": {
+        "month": "September",
+        "year": "2018"
+      },
       "title": [
         {
           "name": "Development Manager",
           "display": true
         },
-
         {
           "name": "Senior Architect",
           "display": true
         }
       ],
-
       "executiveAccomplishments": [
         {
           "highlight": "Reduced annual software licensing costs by $250,000",
@@ -940,7 +1072,6 @@
           "details": "ensuring scalability, maintainability, and alignment with strategic business goals"
         }
       ],
-
       "accomplishments": [
         {
           "description": "Increased client visibility to TCC's Microsoft Gold Partner program and reorganized offerings which resulted in a reduction of $250,000 licensing expenses annually",
@@ -968,7 +1099,6 @@
           "hide": true
         }
       ],
-
       "projects": [
         {
           "title": "Development Manager",
@@ -977,7 +1107,9 @@
             "Managed both managers and individual contributors",
             "Technical direction (development, quality assurance, and technical analysis)"
           ],
-          "display": ["management"],
+          "display": [
+            "management"
+          ],
           "importance": 10,
           "hideResponsibilities": true
         },
@@ -1042,7 +1174,6 @@
         "Special Development Initiatives",
         "Azure consultant"
       ],
-
       "focusAreas": {
         "display": false,
         "entries": [
@@ -1108,11 +1239,16 @@
         ]
       }
     },
-
     {
       "company": "Infinite AI",
-      "start": { "month": "November", "year": "2014" },
-      "end": { "month": "March", "year": "2015" },
+      "start": {
+        "month": "November",
+        "year": "2014"
+      },
+      "end": {
+        "month": "March",
+        "year": "2015"
+      },
       "title": [
         {
           "name": "Developer III",
@@ -1120,7 +1256,6 @@
         }
       ],
       "entryOnly": true,
-
       "accomplishments": [
         {
           "description": "Development regarding authorization and workflow systems",
@@ -1135,13 +1270,17 @@
         {
           "title": "Authorization AI",
           "description": "The system responsible for handling authentication and authorization.  It allowed users to share a common logon across all products",
-          "responsibilities": ["Architecture and development"],
+          "responsibilities": [
+            "Architecture and development"
+          ],
           "importance": 1
         },
         {
           "title": "Workflow Engine",
           "description": "The system designed to integrate into different modules requiring a state machine to administrate and track workflows",
-          "responsibilities": ["Architecture and development"],
+          "responsibilities": [
+            "Architecture and development"
+          ],
           "importance": 1
         },
         {
@@ -1155,7 +1294,6 @@
           "importance": 1
         }
       ],
-
       "description": "Developed and maintained applications for scheduling, proctoring assessments, software configuration management, and system monitoring",
       "technologies": [
         "C#",
@@ -1174,7 +1312,6 @@
         "Proposed and implemented the solution to track and report application performance",
         "Proposed and assisted in implementation of Redis state server and consulted to provide access controls securing stored information"
       ],
-
       "focusAreas": {
         "display": false,
         "entries": [
@@ -1207,8 +1344,14 @@
     },
     {
       "company": "Pan / Equifax",
-      "start": { "month": "January", "year": "2007" },
-      "end": { "month": "November", "year": "2014" },
+      "start": {
+        "month": "January",
+        "year": "2007"
+      },
+      "end": {
+        "month": "November",
+        "year": "2014"
+      },
       "title": [
         {
           "name": "Developer II",
@@ -1221,7 +1364,6 @@
           "description": "Created and maintained applications for scheduling, proctoring assessments, software configuration management, and system monitoring",
           "importance": 1
         },
-
         {
           "description": "Implemented a monthly training program around development technologies, software development, and security",
           "importance": 1
@@ -1252,22 +1394,37 @@
             "display": true,
             "notes": "Scheduling, proctoring, and configuration management systems for assessments",
             "weight": 7,
-            "keywords": ["assessments", "scheduling", "proctoring", "platform"]
+            "keywords": [
+              "assessments",
+              "scheduling",
+              "proctoring",
+              "platform"
+            ]
           },
           {
             "name": "Developer education & security",
             "display": true,
             "notes": "Monthly training on development tech and security topics",
             "weight": 6,
-            "keywords": ["training", "security", "developer education"]
+            "keywords": [
+              "training",
+              "security",
+              "developer education"
+            ]
           }
         ]
       }
     },
     {
       "company": "Union Acceptance Corporation",
-      "start": { "month": "June", "year": "2000" },
-      "end": { "month": "October", "year": "2003" },
+      "start": {
+        "month": "June",
+        "year": "2000"
+      },
+      "end": {
+        "month": "October",
+        "year": "2003"
+      },
       "title": [
         {
           "name": "Developer II",
@@ -1294,8 +1451,14 @@
     },
     {
       "company": "JPMorgan Chase",
-      "start": { "month": "October", "year": "2003" },
-      "end": { "month": "January", "year": "2007" },
+      "start": {
+        "month": "October",
+        "year": "2003"
+      },
+      "end": {
+        "month": "January",
+        "year": "2007"
+      },
       "title": [
         {
           "name": "Technical Officer",
@@ -1310,12 +1473,17 @@
       "importance": 1
     }
   ],
-
   "entrepreneurialVentures": [
     {
       "company": "The Candy Dish",
-      "start": { "month": "June", "year": "1996" },
-      "end": { "month": "March", "year": "2020" },
+      "start": {
+        "month": "June",
+        "year": "1996"
+      },
+      "end": {
+        "month": "March",
+        "year": "2020"
+      },
       "title": [
         {
           "name": "Vice President",
@@ -1378,7 +1546,12 @@
             "display": true,
             "notes": "Expanded into B2B gifting and wholesale channels",
             "weight": 8,
-            "keywords": ["B2B", "wholesale", "gifting", "distribution"]
+            "keywords": [
+              "B2B",
+              "wholesale",
+              "gifting",
+              "distribution"
+            ]
           },
           {
             "name": "Operational efficiency",
@@ -1409,15 +1582,20 @@
     },
     {
       "company": "Full Out Solutions",
-      "start": { "month": "October", "year": "2016" },
-      "end": { "month": "March", "year": "2019" },
+      "start": {
+        "month": "October",
+        "year": "2016"
+      },
+      "end": {
+        "month": "March",
+        "year": "2019"
+      },
       "title": [
         {
           "name": "Co-Founder",
           "display": true
         }
       ],
-
       "executiveAccomplishments": [
         {
           "highlight": "Prototyped an e-commerce platform enabling cheer teams to sell branded merchandise",
@@ -1449,7 +1627,6 @@
       "responsibilities": [],
       "importance": 1,
       "entryOnly": false,
-
       "focusAreas": {
         "display": false,
         "entries": [
@@ -1458,7 +1635,12 @@
             "display": true,
             "notes": "Cheer team merchandise storefront and fundraising tools",
             "weight": 8,
-            "keywords": ["e-commerce", "fundraising", "merchandise", "cheer"]
+            "keywords": [
+              "e-commerce",
+              "fundraising",
+              "merchandise",
+              "cheer"
+            ]
           },
           {
             "name": "Mobile application design",
@@ -1489,8 +1671,14 @@
     },
     {
       "company": "Devatoria",
-      "start": { "month": "February", "year": "2018" },
-      "end": { "month": "March", "year": "2019" },
+      "start": {
+        "month": "February",
+        "year": "2018"
+      },
+      "end": {
+        "month": "March",
+        "year": "2019"
+      },
       "title": [
         {
           "name": "Co-Founder",
@@ -1528,7 +1716,6 @@
       "responsibilities": [],
       "importance": 1,
       "entryOnly": false,
-
       "focusAreas": {
         "display": false,
         "entries": [
@@ -1561,13 +1748,16 @@
             "display": true,
             "notes": "Work focused on transparency and remediation for affected parties",
             "weight": 7,
-            "keywords": ["consumer protection", "fraud", "transparency"]
+            "keywords": [
+              "consumer protection",
+              "fraud",
+              "transparency"
+            ]
           }
         ]
       }
     }
   ],
-
   "selectedSpeakingTopics": [
     {
       "highlight": "C# & .NET",
@@ -1590,85 +1780,216 @@
       "details": "Git Strategy, Time Management, Regular Expressions"
     }
   ],
-  "previousRoles": { "start": { "year": "2000" }, "end": { "year": "2014" } },
-  "technologies": {
-    "Programming Languages": {
-      "C#": { "active": true },
-      "F#": { "active": true },
-      "C++": { "active": true },
-      "TypeScript": { "active": true },
-      "JavaScript": { "active": true },
-      "SQL": { "active": true },
-      "Java": { "active": true },
-      "Python": { "active": true },
-      "Ruby": { "active": true }
+  "previousRoles": {
+    "start": {
+      "year": "2000"
     },
-    "Cloud Platforms and DevOps": {
-      "AWS": { "active": true },
-      "Azure": { "active": true },
-      "Azure DevOps": { "active": true },
-      "Kubernetes": { "active": true },
-      "Docker": { "active": true },
-      "Octopus Deploy": { "active": true },
-      "Kafka": { "active": true },
-      "LaunchDarkly": { "active": true },
-      "Split.IO": { "active": true }
-    },
-    "Web and Frontend Technologies": {
-      "React": { "active": true },
-      "Vue.js": { "active": true },
-      "Angular": { "active": true },
-      "Web Components": { "active": true },
-      "ASP.NET": { "active": true },
-      "Node.js": { "active": true },
-      "Metabase": { "active": true }
-    },
-    "Databases": {
-      "PostgreSQL": { "active": true },
-      "MSSQL Server": { "active": true },
-      "Oracle": { "active": true },
-      "Cosmos DB": { "active": true },
-      "DynamoDB": { "active": true },
-      "Snowflake": { "active": true },
-      "Neo4J": { "active": true },
-      "Redis": { "active": true },
-      "MongoDB": { "active": true }
-    },
-    "AI, ML, and Cognitive Technologies": {
-      "Microsoft Cognitive Services": { "active": true },
-      "OpenAI GPT (ChatGPT, GPT-4)": { "active": true },
-      "Azure OpenAI Service": { "active": true },
-      "GitHub Copilot": { "active": true },
-      "LangChain": { "active": true }
-    },
-    "Software Development and Architecture": {
-      "Microservices Architecture": { "active": true },
-      "Distributed Systems": { "active": true },
-      "Functional Programming": { "active": true },
-      "Secure Software Development Lifecycle (SSDLC)": { "active": true },
-      "Agile, Scrum, Kanban": { "active": true },
-      "Product Management": { "active": true },
-      "Technical Roadmapping and Prioritization": { "active": true }
-    },
-    "Agile and Project Management Tools": {
-      "VersionOne": { "active": true },
-      "Jira": { "active": true },
-      "Azure DevOps Boards": { "active": true }
-    },
-    "Test Automation": {
-      "Playwright": { "active": true },
-      "Selenium": { "active": true },
-      "Karate": { "active": true },
-      "CodedUI": { "active": true }
+    "end": {
+      "year": "2014"
     }
   },
-
+  "technologies": {
+    "Programming Languages": {
+      "C#": {
+        "active": true
+      },
+      "F#": {
+        "active": true
+      },
+      "C++": {
+        "active": true
+      },
+      "TypeScript": {
+        "active": true
+      },
+      "JavaScript": {
+        "active": true
+      },
+      "SQL": {
+        "active": true
+      },
+      "Java": {
+        "active": true
+      },
+      "Python": {
+        "active": true
+      },
+      "Ruby": {
+        "active": true
+      }
+    },
+    "Cloud Platforms and DevOps": {
+      "AWS": {
+        "active": true
+      },
+      "Azure": {
+        "active": true
+      },
+      "Azure DevOps": {
+        "active": true
+      },
+      "Kubernetes": {
+        "active": true
+      },
+      "Docker": {
+        "active": true
+      },
+      "Octopus Deploy": {
+        "active": true
+      },
+      "Kafka": {
+        "active": true
+      },
+      "LaunchDarkly": {
+        "active": true
+      },
+      "Split.IO": {
+        "active": true
+      }
+    },
+    "Web and Frontend Technologies": {
+      "React": {
+        "active": true
+      },
+      "Vue.js": {
+        "active": true
+      },
+      "Angular": {
+        "active": true
+      },
+      "Web Components": {
+        "active": true
+      },
+      "ASP.NET": {
+        "active": true
+      },
+      "Node.js": {
+        "active": true
+      },
+      "Metabase": {
+        "active": true
+      }
+    },
+    "Databases": {
+      "PostgreSQL": {
+        "active": true
+      },
+      "MSSQL Server": {
+        "active": true
+      },
+      "Oracle": {
+        "active": true
+      },
+      "Cosmos DB": {
+        "active": true
+      },
+      "DynamoDB": {
+        "active": true
+      },
+      "Snowflake": {
+        "active": true
+      },
+      "Neo4J": {
+        "active": true
+      },
+      "Redis": {
+        "active": true
+      },
+      "MongoDB": {
+        "active": true
+      }
+    },
+    "AI, ML, and Cognitive Technologies": {
+      "Microsoft Cognitive Services": {
+        "active": true
+      },
+      "OpenAI GPT (ChatGPT, GPT-4)": {
+        "active": true
+      },
+      "Azure OpenAI Service": {
+        "active": true
+      },
+      "GitHub Copilot": {
+        "active": true
+      },
+      "LangChain": {
+        "active": true
+      }
+    },
+    "Software Development and Architecture": {
+      "Microservices Architecture": {
+        "active": true
+      },
+      "Distributed Systems": {
+        "active": true
+      },
+      "Functional Programming": {
+        "active": true
+      },
+      "Secure Software Development Lifecycle (SSDLC)": {
+        "active": true
+      },
+      "Agile, Scrum, Kanban": {
+        "active": true
+      },
+      "Product Management": {
+        "active": true
+      },
+      "Technical Roadmapping and Prioritization": {
+        "active": true
+      }
+    },
+    "Agile and Project Management Tools": {
+      "VersionOne": {
+        "active": true
+      },
+      "Jira": {
+        "active": true
+      },
+      "Azure DevOps Boards": {
+        "active": true
+      }
+    },
+    "Test Automation": {
+      "Playwright": {
+        "active": true
+      },
+      "Selenium": {
+        "active": true
+      },
+      "Karate": {
+        "active": true
+      },
+      "CodedUI": {
+        "active": true
+      }
+    }
+  },
   "globalFocusAreas": [
+    {
+      "name": "Decision intelligence & diagnostic frameworks",
+      "display": true,
+      "weight": 10,
+      "roles": [
+        "Echelon Foundry"
+      ],
+      "keywords": [
+        "Clarity",
+        "decision intelligence",
+        "evidence mapping",
+        "decision support",
+        "diagnostic reasoning",
+        "structured analysis"
+      ],
+      "notes": "Creation and practical application of Clarity, a framework for evidence-based decision making, risk analysis, and diagnostic investigations."
+    },
     {
       "name": "AI-powered diagnostics",
       "display": true,
       "weight": 10,
-      "roles": ["Echelon Foundry"],
+      "roles": [
+        "Echelon Foundry"
+      ],
       "keywords": [
         "AI",
         "HelixNote",
@@ -1683,7 +2004,11 @@
       "name": "Modernization strategy",
       "display": true,
       "weight": 10,
-      "roles": ["Echelon Foundry", "Ren", "TCC Software Solutions"],
+      "roles": [
+        "Echelon Foundry",
+        "Ren",
+        "TCC Software Solutions"
+      ],
       "keywords": [
         "modernization",
         "legacy systems",
@@ -1697,7 +2022,10 @@
       "name": "Systems & financial forensics",
       "display": true,
       "weight": 9,
-      "roles": ["Echelon Foundry", "Devatoria"],
+      "roles": [
+        "Echelon Foundry",
+        "Devatoria"
+      ],
       "keywords": [
         "forensics",
         "financial analysis",
@@ -1788,7 +2116,11 @@
       "name": "Architecture & DevOps",
       "display": true,
       "weight": 9,
-      "roles": ["Ren", "T2 Systems", "TCC Software Solutions"],
+      "roles": [
+        "Ren",
+        "T2 Systems",
+        "TCC Software Solutions"
+      ],
       "keywords": [
         "architecture",
         "CI/CD",
@@ -1802,7 +2134,11 @@
       "name": "Diagnostic tooling & observability",
       "display": true,
       "weight": 8,
-      "roles": ["T2 Systems", "Echelon Foundry", "Infinite AI"],
+      "roles": [
+        "T2 Systems",
+        "Echelon Foundry",
+        "Infinite AI"
+      ],
       "keywords": [
         "diagnostics",
         "profiling",
@@ -1816,7 +2152,11 @@
       "name": "Licensing & cost optimization",
       "display": true,
       "weight": 8,
-      "roles": ["TCC Software Solutions", "Ren", "The Candy Dish"],
+      "roles": [
+        "TCC Software Solutions",
+        "Ren",
+        "The Candy Dish"
+      ],
       "keywords": [
         "licensing",
         "cost optimization",
@@ -1829,7 +2169,12 @@
       "name": "Talent development & education",
       "display": true,
       "weight": 8,
-      "roles": ["TCC Software Solutions", "T2 Systems", "Ren", "IPS 55"],
+      "roles": [
+        "TCC Software Solutions",
+        "T2 Systems",
+        "Ren",
+        "IPS 55"
+      ],
       "keywords": [
         "training",
         "mentoring",
@@ -1843,7 +2188,10 @@
       "name": "Public sector & infrastructure modernization",
       "display": true,
       "weight": 7,
-      "roles": ["TCC Software Solutions", "Echelon Foundry"],
+      "roles": [
+        "TCC Software Solutions",
+        "Echelon Foundry"
+      ],
       "keywords": [
         "public sector",
         "Indiana DNR",
@@ -1856,7 +2204,10 @@
       "name": "E-commerce & digital products",
       "display": true,
       "weight": 7,
-      "roles": ["Full Out Solutions", "The Candy Dish"],
+      "roles": [
+        "Full Out Solutions",
+        "The Candy Dish"
+      ],
       "keywords": [
         "e-commerce",
         "digital products",
@@ -1869,7 +2220,10 @@
       "name": "Financial analysis & risk",
       "display": true,
       "weight": 8,
-      "roles": ["Echelon Foundry", "Devatoria"],
+      "roles": [
+        "Echelon Foundry",
+        "Devatoria"
+      ],
       "keywords": [
         "financial analysis",
         "risk",
@@ -1883,7 +2237,9 @@
       "name": "Food manufacturing & culinary operations",
       "display": true,
       "weight": 6,
-      "roles": ["The Candy Dish"],
+      "roles": [
+        "The Candy Dish"
+      ],
       "keywords": [
         "food production",
         "culinary",
@@ -1896,15 +2252,25 @@
       "name": "Regulatory & consumer protection",
       "display": true,
       "weight": 7,
-      "roles": ["Devatoria", "Echelon Foundry"],
-      "keywords": ["regulation", "consumer protection", "fraud", "compliance"],
+      "roles": [
+        "Devatoria",
+        "Echelon Foundry"
+      ],
+      "keywords": [
+        "regulation",
+        "consumer protection",
+        "fraud",
+        "compliance"
+      ],
       "notes": "Identifying regulatory exposure and supporting consumer-oriented remediation strategies."
     },
     {
       "name": "STEM education & accessibility",
       "display": true,
       "weight": 7,
-      "roles": ["IPS 55"],
+      "roles": [
+        "IPS 55"
+      ],
       "keywords": [
         "STEM",
         "education",
