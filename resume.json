@@ -1918,14 +1918,20 @@
       "Microsoft Cognitive Services": {
         "active": false
       },
-      "OpenAI GPT (ChatGPT, GPT-4)": {
+      "OpenAI GPT": {
+        "active": true
+      },
+      "Google Gemini": {
+        "active": true
+      },
+      "Anthropic  Claude": {
         "active": true
       },
       "Azure OpenAI Service": {
         "active": true
       },
       "GitHub Copilot": {
-        "active": true
+        "active": false
       },
       "LangChain": {
         "active": true
