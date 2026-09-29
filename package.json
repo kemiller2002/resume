@@ -1,0 +1,13 @@
+{
+  "name": "resume",
+  "private": true,
+  "description": "Kevin Miller's resume: resume.json rendered with Knockout into semantic HTML styled by Folio.",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/run-resume-tests.mjs"
+  },
+  "devDependencies": {
+    "knockout": "3.5.1",
+    "playwright": "1.63.0"
+  }
+}
