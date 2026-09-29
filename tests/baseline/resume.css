@@ -1,0 +1,484 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+H1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+H2 {
+  margin-bottom: 0em;
+}
+
+H3 {
+  margin: 0em;
+  margin-bottom: 0.25em;
+}
+
+H4 {
+  margin: 0em;
+}
+
+H5 {
+  margin: 0em;
+}
+
+section {
+  margin-bottom: 0.5em;
+}
+
+body {
+  display: none;
+}
+
+body[display="true"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-center {
+  padding: 0.25em;
+  max-width: 800px;
+}
+.name {
+  flex-grow: 2;
+  text-align: center;
+}
+
+h1 > .name {
+  margin-bottom: 0.25em;
+  display: block;
+}
+
+h1 > .about {
+  display: block;
+  font-size: 0.5em;
+  font-weight: 300;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+.phone > * ~ * {
+  margin-left: 0em;
+  padding-left: 0em;
+}
+.phone > * ~ *::before {
+  content: ".";
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  /*margin-right: 30px;*/
+  margin-bottom: 0.25em;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.employment-entry {
+  display: grid;
+  grid-template-columns:
+    [border-left] 5% [border-left-2] 15%
+    [content-center-left] 10% [content-center-left-2] 20%
+    [content-center-right-2] 20% [content-center-right] 10%
+    [border-right] 15% [border-right-2] 5%;
+
+  grid-template-rows:
+    [header] auto [responsibilities] auto
+    [accomplishments] auto
+    [focusAreas] auto
+    [technologies] auto;
+  margin-bottom: 1em;
+}
+
+.employment-meta-data {
+  grid-column-start: border-left;
+  grid-column-end: content-center-right-2;
+}
+
+span.title {
+  white-space: nowrap;
+}
+
+div.title > span.title:not(:last-child)::after {
+  content: ",";
+}
+
+.projects {
+  grid-column-start: content;
+}
+
+.employment-entry > .dates {
+  grid-row-start: header;
+  grid-column-start: content-center-right-2;
+  grid-column-end: -1;
+  justify-content: right;
+}
+
+.employment-entry > .title {
+  grid-row-start: header;
+  grid-column-start: border-left;
+  grid-column-end: content-center;
+}
+
+.organization-name {
+  font-size: small;
+}
+
+.executive > .organization-name {
+  font-size: medium;
+}
+
+.executive > .organization-name {
+  font-size: medium;
+}
+
+.executive > .title {
+  font-style: italic;
+  font-weight: 300;
+  font-size: medium;
+}
+
+.organization {
+  padding: 0em;
+}
+
+.employment-entry > .projects {
+  grid-row-start: responsibilities;
+  grid-column-start: border-left-2;
+  grid-column-end: border-right-2;
+}
+
+.employment-entry > .accomplishments {
+  grid-row-start: accomplishments;
+  grid-column-start: border-left-2;
+  grid-column-end: content-border-right;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.employment-entry > .focusAreas {
+  grid-row-start: focusAreas;
+  grid-column-start: border-left;
+  grid-column-end: content-border-right;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 0.25em;
+}
+
+:not(ul:has(li)) ~ .accomplishment-title {
+  display: none;
+}
+
+.start ~ .end::before {
+  content: "-";
+  margin-left: 0.25em;
+}
+
+.dates {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+.project {
+  margin-bottom: 0.25em;
+}
+
+.project > .title {
+  display: block;
+}
+
+.project > .description {
+  display: block;
+}
+
+.institution-description {
+  display: flex;
+  flex-grow: 2;
+}
+
+.institution {
+  flex-grow: 2;
+}
+
+.hide {
+  display: none;
+}
+
+h5.education-description {
+  flex-grow: 2;
+}
+
+.dates {
+  justify-content: right;
+}
+
+.presentations {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap;
+  padding: 0em;
+}
+
+.presentation {
+  list-style-type: none;
+}
+.presentation-wrapper {
+  page-break-inside: avoid;
+}
+
+ul.project {
+  padding-left: 0px;
+  list-style-type: none;
+}
+ul.focus,
+ul.projects,
+ul.volunteering,
+ul.technologies,
+ul.awards {
+  margin: 0em;
+  list-style: none;
+  padding: 0em;
+}
+
+ul.awards > li {
+  margin-bottom: 0.25em;
+}
+
+ul.education {
+  padding: 0em;
+}
+
+li.education {
+  list-style: none;
+}
+.volunteering-meta-data,
+.projects-meta-data,
+.award-meta-data {
+  display: flex;
+}
+.projects-meta-data > .institution,
+.award-meta-data > .institution {
+  flex-grow: 2;
+}
+
+.award-meta-data > .dates {
+  justify-content: right;
+}
+
+ul {
+  margin-top: 0em;
+}
+
+div.highlights {
+  margin-top: 0.5em;
+}
+
+h3.highlights {
+  margin-top: 0.25em;
+}
+
+ul.highlights {
+  padding: 0em;
+  margin: 0em;
+}
+
+li.accomplishment {
+  list-style-type: square;
+}
+li.highlight {
+  list-style-type: none;
+  margin-bottom: 0.2em;
+}
+
+ul.technologies {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1 1 0px;
+  padding-left: 0em;
+  gap: 0.25em;
+}
+
+section.technologies {
+  flex-direction: column;
+}
+.technology {
+  list-style-type: none;
+  margin-right: 0.25em;
+}
+
+.technology:not(:last-child)::after {
+  content: ",";
+}
+
+.employment-entry > .technologies {
+  grid-row-start: technologies;
+  grid-column-start: border-left-2;
+  grid-column-end: content-border-right;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.projects-meta-data > .institution {
+  flex-grow: 0;
+}
+
+.projects-meta-data > .description {
+  flex-grow: 2;
+}
+
+.projects-meta-data > .institution ~ .description::before {
+  content: "-";
+  margin: 0em 0.25em;
+}
+
+li.technologyGroup {
+  flex-grow: 2;
+  margin-bottom: 0.5em;
+}
+
+ul.presentations > ul {
+  padding: 0em;
+  text-wrap: nowrap;
+  flex-direction: row;
+  /* display: flex; */
+}
+
+ul.presentations {
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 2;
+}
+
+ul.presentationListing {
+  padding: 0em;
+  margin-bottom: 0.5em;
+}
+
+.executive-accomplishments > ul {
+  padding-left: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, 300px);
+}
+
+ul.technologyGrid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, 200px);
+}
+
+li.presentation {
+  margin-bottom: 0.25em;
+}
+
+.executive-highlight {
+  font-weight: 600;
+}
+
+h3.executive {
+  flex-direction: column-reverse;
+}
+
+ul.flex-column {
+  flex-direction: column;
+}
+
+.speaking-highlight {
+  font-weight: 600;
+}
+.speaking-highlight::after {
+  content: ":";
+}
+
+h4.institution-award::after {
+  content: "-";
+  margin: 0em 0.25em;
+}
+
+h4.institution-award {
+  flex-grow: 0;
+}
+
+li.institution-award {
+  display: flex;
+  flex-direction: row;
+}
+
+.awards-container {
+  display: inline;
+}
+
+span.present {
+  margin-left: 0.25em;
+}
+
+div.focusAreas {
+  flex-direction: row !important;
+}
+
+div.focusAreas > * ~ * {
+  margin-left: 0.25em;
+}
+
+div.focusAreas > h4 {
+  flex-grow: 2;
+  white-space: nowrap;
+}
+
+div.focusAreas > ul {
+  flex-grow: 2;
+}
+
+div.focusAreas > ul > li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 0em;
+}
+
+div.focusAreas > ul > li ~ li::before {
+  content: "·";
+  margin-right: 0.25em;
+}
+
+ul.study {
+  display: inline;
+  padding: 0em;
+}
+
+ul.study > li {
+  list-style-type: none;
+  display: inline;
+  text-wrap: nowrap;
+}
+
+ul.study > li {
+  list-style-type: none;
+  display: inline;
+  text-wrap: nowrap;
+}
+
+ul.study > :not(:last-child)::after {
+  content: ",";
+}
+
+@page {
+  size: A4;
+  margin: 10mm;
+  border: 1px solid black;
+  padding-top: 0.4em;
+}

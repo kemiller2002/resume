@@ -1,0 +1,25 @@
+{
+  "description": "Pre-migration pages preserved from master ba786e461d6ead25e28dde0913d2a7773e780379. Tests render them with the current resume.json and compare against the migrated pages. Every intended word-level difference is listed; anything else fails.",
+  "baselineCommit": "ba786e461d6ead25e28dde0913d2a7773e780379",
+  "folioReference": "kemiller2002/folio tests/fixtures/profiles/reference/manifest.json (RD-01..RD-05)",
+  "variants": {
+    "index": {
+      "removed": ["Projects", "Test", "Automation"],
+      "added": [],
+      "reasons": [
+        "RD-01: the empty Projects section is no longer rendered when resume.json has no projects.",
+        "RD-02: technology categories with no active technologies are no longer rendered."
+      ]
+    },
+    "developer": {
+      "removed": ["[object", "Object]", "Projects", "Test", "Automation", "Learning),Coursework"],
+      "added": ["Present", "Learning),", "Coursework"],
+      "reasons": [
+        "RD-01 and RD-02 as for index.",
+        "RD-03: the stackoverflow object printed as [object Object]; the link now follows stackoverflow.display like index.html.",
+        "RD-04: open-ended ranges now print Present.",
+        "RD-05: the study list printed without a separator; it is now an inline list."
+      ]
+    }
+  }
+}
